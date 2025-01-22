@@ -1,0 +1,178 @@
+.div {
+    display: flex;
+}
+
+.offers {
+    width: 300%;
+    padding: 5rem 7rem;
+}
+
+.offer-head h1 {
+    color: orangered;
+    font-size: 30px;
+}
+
+.offer-head p {
+    color: rgb(2, 2, 46);
+}
+
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offer-item,
+.offer-items {
+    text-align: center;
+    align-items: center;
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.offer-item,
+.offer-head p,
+.offer-items p,
+.principal-desk p {
+    font-size: 16px;
+}
+
+.offer-item img,
+.offer-items img {
+    width: 50px;
+    margin-top: 10px;
+}
+
+.offer-items img {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(6955%)
+        hue-rotate(-15deg) brightness(94%) contrast(175%);
+}
+
+.offer-items p,
+.offer-items h2 {
+    color: orangered;
+}
+
+.offer-item p,
+.offer-item h2 {
+    color: rgb(2, 2, 46);
+}
+
+.principal-desk {
+    background-color: aliceblue;
+    color: rgb(2, 2, 46);
+    display: flex;
+    border-left: 2px solid rgba(2, 2, 46, 0.05);
+    border-bottom: 2px solid rgba(2, 2, 46, 0.05);
+    border-radius: 0 0 0 10px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.principal .image {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: auto;
+}
+
+.principal .image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.about-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-principal h1 {
+    font-size: 30px;
+    color: orangered;
+}
+
+
+.principal button {
+    margin-top: 4.2rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(2, 2, 46);
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.principal button:hover {
+    background-color: orangered;
+    color: #fff;
+}
+
+.offers, .principal-desk p {
+    line-height: 2rem;
+    margin: 0.5rem 2rem;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    .offers-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .offers {
+        margin: 0;
+        padding: 0;
+    }
+
+    .offer-head {
+        padding: 1rem 0 0 1rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offers {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .offer-head {
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .offer-head h1 {
+        font-size: 24px;
+    }
+
+    .principal-desk {
+        border: 2px solid rgba(2, 2, 46, 0.05);
+        border-radius: 10px;
+    }
+
+    .about-principal h1 {
+        font-size: 24px;
+    }
+
+    .principal button {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,45 @@
+.footer {
+    display: block;
+    background-color: rgb(2, 2, 46);
+    color: orangered;
+    padding: 0.5rem 0;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem 0;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .copyright {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        display: flex;
+        font-size: 0.8rem;
+    }
+
+    .copyright {
+        padding: 1rem 0;
+    }
+    
+    .copyright p {
+        text-align: center;
+    }
+}

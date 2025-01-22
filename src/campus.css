@@ -1,0 +1,31 @@
+.campus {
+    display: flex;
+    background-color: white;
+    border-bottom: 2px solid rgba(2, 2, 46, 0.2);
+}
+
+.campus-photo {
+    width: 25%;
+    text-align: center;
+}
+
+.campus-photo img {
+    width: 60%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .campus {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .campus-photo {
+        width: 100%;
+    }
+
+    .campus-photo img {
+        width: 80%;
+        height: auto;
+    }
+}

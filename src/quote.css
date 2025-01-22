@@ -1,0 +1,107 @@
+.reqforaquote {
+  display: flex;
+  background-color: aliceblue;
+  flex-direction: column;
+  padding-left: 50%;
+  border-bottom: 2px solid rgba(2, 2, 46, 0.2);
+}
+
+.quote,
+.form {
+  margin: 2rem 8rem 0 5rem;
+}
+
+.quote h1 {
+  color: orangered;
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+
+.quote p {
+  color: rgb(2, 2, 46);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.form input[type="text"],
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 10px 0;
+  background: transparent;
+  resize: none;
+  color: rgba(2, 2, 46, 0.55);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(2, 2, 46, 0.2);
+  font-size: 16px;
+}
+
+.form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-size: 12px 12px;
+  padding-right: 15px;
+}
+
+.form textarea {
+  border-bottom: 2px solid rgba(2, 2, 46, 0.2);
+  font-size: 16px;
+}
+
+.reqforaquote select {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(2, 2, 46, 0.2);
+  color: rgba(2, 2, 46, 0.55);
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-size: 12px 12px;
+  padding-right: 15px;
+}
+
+.form input[type="submit"] {
+  background-color: orangered;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(2, 2, 46);
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 768px) {
+  .reqforaquote {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .quote h1 {
+    font-size: 24px;
+  }
+
+  .quote,
+  .form {
+    margin: 1rem 2rem 0 2rem;
+  }
+
+  /*     
+    .form textarea {
+        padding: 0 5px;
+        margin: 10px 0;
+    } */
+}

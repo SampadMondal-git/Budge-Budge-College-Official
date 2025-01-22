@@ -1,0 +1,85 @@
+.teachers-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teachers-heading h1 {
+    color: orangered;
+    margin-bottom: 2rem;
+}
+
+.teachers-heading p {
+    color: rgb(2, 2, 46);
+}
+
+.teachers-list {
+    display: flex;
+}
+
+.teachers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 360px;
+    margin-top: 2rem;
+    background-color: orangered;
+    color: rgb(2, 2, 46);
+}
+
+.color {
+    background-color: rgb(2, 2, 46);
+    color: orangered;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .teachers-heading h1 {
+        font-size: 24px;
+    }
+    .teachers-list {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .teachers {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .max-width {
+        background-color: orangered;
+        color: rgb(2, 2, 46);
+    }
+
+    .min-width {
+        background-color: rgb(2, 2, 46);
+        color: orangered;
+    }
+}
+
+@media (max-width: 767px) {
+    .teachers-heading h1 {
+        font-size: 24px;
+    }
+
+    .teachers-heading p {
+        font-size: 16px;
+        line-height: 2rem;
+        text-align: center;
+        margin: 0 1rem 2rem 1rem;
+    }
+
+    .teachers-list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .teachers {
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+}
