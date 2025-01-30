@@ -26,13 +26,13 @@ export function Courses() {
             </div>
         </div>
 
-            <div class="our-courses">
+            <div className="our-courses">
                 <div class="title">
                     <h1>Our Courses</h1>
                     <p>Our courses offer expert-led, practical learning experiences designed to build and enhance your
                         skills effectively.</p>
                 </div>
-                <div class="course">
+                <div className="course">
                     <div class="course1">
                         <img src="Icons/arts.png" alt="Bachelor of Arts" />
                         <h2>Bachelor of Arts (B.A.)</h2>
@@ -42,7 +42,7 @@ export function Courses() {
                             english, philosophy, psychology, sociology and sanskrit.
                         </p>
                     </div>
-                    <div class="course2">
+                    <div className="course2">
                         <img src="Icons/science.png" alt="Bachelor of Science" />
                         <h2>Bachelor of Science (B.Sc.)</h2>
                         <p>
@@ -50,7 +50,7 @@ export function Courses() {
                             skills in various fields, such as physics, chemistry, zoology, botany and mathematics.
                         </p>
                     </div>
-                    <div class="course3">
+                    <div className="course3">
                         <img src="Icons/commerce.png" alt="Bachelor of Commerce" />
                         <h2>Bachelor of Commerce (B.Com.)</h2>
                         <p>
