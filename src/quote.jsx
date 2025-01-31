@@ -1,15 +1,15 @@
 import React from 'react'
-import './quote.css'
+import myStyles from './quote.module.css'
 
 export function Quote() {
   return (
     <>
-      <div className="reqforaquote">
-        <div className="quote">
+      <div className={myStyles.reqforaquote}>
+        <div className={myStyles.quote}>
           <h1>Request A Quote</h1>
           <p>Fill out the form below to schedule a free consultation with a certified teacher.</p>
         </div>
-        <div className="form">
+        <div className={myStyles.form}>
           <form>
             <input type="text" id="firstName" placeholder="First Name" />
             <input type="text" id="lastName" placeholder="Last Name" />

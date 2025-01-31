@@ -1,4 +1,4 @@
-.links-section {
+.links_section {
   background-color: rgb(2, 2, 46);
   display: flex;
   color: orangered;
@@ -24,9 +24,9 @@
   align-items: center;
 }
 
-.foot-location,
-.foot-email,
-.foot-call {
+.foot_location,
+.foot_email,
+.foot_call {
   display: flex;
   margin-bottom: 1rem;
   align-items: center;
@@ -38,17 +38,17 @@
   border-radius: 5px;
 }
 
-.links-section h1 {
+.links_section h1 {
   margin-bottom: 2rem;
   font-size: 30px;
 }
 
-.links-section p {
+.links_section p {
   display: flex;
   font-size: 16px;
 }
 
-.links-section ul {
+.links_section ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -57,7 +57,7 @@
   gap: 1rem;
 }
 
-.links-section a {
+.links_section a {
   text-decoration: none;
   color: orangered;
   &:hover {
@@ -85,12 +85,12 @@
 }
 
 @media (max-width: 768px) {
-  .links-section {
+  .links_section {
     flex-direction: column;
     padding: 2rem;
   }
 
-  .links-section h1 {
+  .links_section h1 {
     margin-bottom: 1rem;
     font-size: 24px;
   }

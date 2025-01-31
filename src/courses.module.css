@@ -1,11 +1,11 @@
-.courses-container {
+.courses_container {
     display: flex;
     justify-content: space-between;
     margin: 3rem 10rem;
     color: rgb(2, 2, 46);
 }
 
-.our-courses {
+.our_courses {
   text-align: center;
   padding-bottom: 60px;
   margin-top: 50px;
@@ -27,6 +27,11 @@
   display: flex;
   text-align: center;
   margin-top: 2rem;
+}
+
+.course img {
+  width: 65px;
+  height: 65px;
 }
 
 .course1,
@@ -65,7 +70,7 @@
 
 
 @media (max-width: 768px) {
-    .courses-container {
+    .courses_container {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(2,1fr);
@@ -79,7 +84,7 @@
         align-items: center;
     }
 
-    .our-courses {
+    .our_courses {
         margin-top: 0;
     }
 

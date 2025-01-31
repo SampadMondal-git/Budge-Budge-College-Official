@@ -1,5 +1,3 @@
-/* Global Styles */
-
 .slide.active {
   opacity: 1;
   transform: scale(1.1);
@@ -7,7 +5,7 @@
 
 .boxes {
   display: flex;
-  flex-wrap: wrap; /* Add this to make the boxes wrap on smaller screens */
+  flex-wrap: wrap;
   line-height: 1.8rem;
 }
 
@@ -18,8 +16,6 @@
 .boxes h1 {
   font-size: 26px;
 }
-
-/* Box Styles */
 
 .box1,
 .box3 {
@@ -51,8 +47,6 @@
   align-items: center;
   text-align: center;
 }
-
-/* Image Styles */
 
 .box1 img {
   width: 80px;
@@ -124,23 +118,22 @@
   }
 }
 
-/* Media Queries */
 @media (max-width: 767px) {
   .box1,
   .box2,
   .box3,
   .box4 {
     width: 100%;
-    height: auto; /* Increase the height of the div in smaller screens */
+    height: auto;
   }
   .box1 img,
   .box2 img,
   .box3 img,
   .box4 img {
-    width: 40px; /* Adjust the image size for smaller screens */
+    width: 40px;
   }
   .boxes p {
-    font-size: 16px; /* Adjust the font size for smaller screens */
+    font-size: 16px;
     line-height: 1.5rem;
   }
 
@@ -150,23 +143,22 @@
   }
 }
 
-/* For extra small screens (small mobile devices) */
 @media (max-width: 479px) {
   .box1,
   .box2,
   .box3,
   .box4 {
     width: 100%;
-    height: auto; /* Increase the height of the div in extra small screens */
+    height: auto;
     padding: 35px;
   }
   .box1 img,
   .box2 img,
   .box3 img,
   .box4 img {
-    width: 80px; /* Adjust the image size for extra small screens */
+    width: 80px;
   }
   .boxes p {
-    font-size: 16px; /* Adjust the font size for extra small screens */
+    font-size: 16px;
   }
 }

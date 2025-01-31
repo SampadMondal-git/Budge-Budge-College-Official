@@ -1,8 +1,8 @@
-.college-container {
+.college_container {
     display: flex;
 }
 
-.college-image, .about-college {
+.college_image, .about_college {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,24 +12,24 @@
     text-align: center;
 }
 
-.college-image {
+.college_image {
     height: 400px;
 }
 
-.college-image img {
+.college_image img {
     max-width: 80%;
     height: 100%;
     border-radius: 5px;
     margin-bottom: 0;
 }
 
-.about-college h1 {
+.about_college h1 {
     font-size: 30px;
     color: orangered;
     margin-bottom: 1rem;
 }
 
-.about-college p {
+.about_college p {
     font-size: 16px;
     color: rgb(2, 2, 46);
     line-height: 2rem;
@@ -37,22 +37,22 @@
 }
 
 @media (max-width: 768px) {
-    .college-container {
+    .college_container {
         flex-direction: column;
     }
 
-    .college-container, .about-college, .college-image {
+    .college_container, .about_college, .college_image {
         width: 100%;
         align-items: center;
     }
 
-    .college-image {
+    .college_image {
         height: 200px;
         margin-top: 1rem;
         padding: 0;
     }
 
-    .about-college h1 {
+    .about_college h1 {
         font-size: 24px;
     }
 }
