@@ -9,12 +9,12 @@ export function Navbar() {
       <div className={myStyles.info}>
         <div className={myStyles.contact}>
           <div className={myStyles.email}>
-          <i className="ri-message-3-fill"></i>
+            <i className="ri-message-3-fill"></i>
             <p>Email: budgebudgecollege@gmail.com</p>
           </div>
 
           <div className={myStyles.phone}>
-          <i className="ri-phone-fill"></i>
+            <i className="ri-phone-fill"></i>
             <p>Phone: 033 24701454 | 033 24805168</p>
           </div>
         </div>
@@ -24,7 +24,6 @@ export function Navbar() {
           <a href="/"><button>Notification</button></a>
         </div>
       </div>
-
       <Body />
       <Footer />
     </>

@@ -19,7 +19,7 @@ export function Quote() {
               <option value="Bachelor in Science">Bachelor in Science</option>
               <option value="Bachelor in Commerce">Bachelor in Commerce</option>
             </select>
-            <input type="text" placeholder="Phone Number" />
+            <input type="number" placeholder="Phone Number" />
             <textarea placeholder="Message"></textarea>
             <input type="submit" value="Request A Quote" />
           </form>

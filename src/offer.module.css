@@ -30,6 +30,10 @@
     margin: 10px;
 }
 
+.offer_item h2, .offer_items h2 {
+    font-size: 26px;
+}
+
 .offer_item,
 .offer_head p,
 .offer_items p,
@@ -41,6 +45,7 @@
 .offer_items img {
     width: 50px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .offer_items img {
@@ -159,7 +164,7 @@
         margin: 1rem 1rem 0 1rem;
     }
 
-    .offer_head h1 {
+    .offer_head h1, .offers_container h2 {
         font-size: 24px;
     }
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import myStyles from './slideshow.module.css';
 import image1 from './images/1.jpeg';
 import image2 from './images/2.jpeg';
@@ -12,7 +12,7 @@ import image8 from './images/8.jpeg';
 export const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const slides = [
+  const slides = useMemo(() => [
     { id: 'slide-1', src: image1, alt: "Slide 1" },
     { id: 'slide-2', src: image2, alt: "Slide 2" },
     { id: 'slide-3', src: image3, alt: "Slide 3" },
@@ -21,16 +21,16 @@ export const Slideshow = () => {
     { id: 'slide-6', src: image6, alt: "Slide 6" },
     { id: 'slide-7', src: image7, alt: "Slide 7" },
     { id: 'slide-8', src: image8, alt: "Slide 8" },
-  ];
+  ], []);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-  };
+  }, [slides.length]);
 
   useEffect(() => {
     const timeout = setTimeout(nextSlide, 5000);
     return () => clearTimeout(timeout);
-  }, [currentIndex]);
+  }, [nextSlide]);
 
   return (
     <section className={myStyles.container}>

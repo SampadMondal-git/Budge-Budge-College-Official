@@ -24,6 +24,7 @@
 }
 
 .form input[type="text"],
+.form input[type="number"],
 .form select,
 .form textarea {
   width: 100%;

@@ -17,6 +17,10 @@
   margin-bottom: 0.5rem;
 }
 
+.questions p {
+  margin-bottom: 0;
+}
+
 .location {
   width: 60%;
   display: flex;

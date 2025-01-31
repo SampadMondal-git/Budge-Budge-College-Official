@@ -29,13 +29,13 @@ export function Courses() {
         </div>
 
             <div className={myStyles.our_courses}>
-                <div class={myStyles.title}>
+                <div className={myStyles.title}>
                     <h1>Our Courses</h1>
                     <p>Our courses offer expert-led, practical learning experiences designed to build and enhance your
                         skills effectively.</p>
                 </div>
                 <div className={myStyles.course}>
-                    <div class={myStyles.course1}>
+                    <div className={myStyles.course1}>
                         <img src={BA} alt="Bachelor of Arts" />
                         <h2>Bachelor of Arts (B.A.)</h2>
                         <p>
