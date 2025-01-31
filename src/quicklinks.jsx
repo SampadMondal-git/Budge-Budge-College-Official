@@ -9,15 +9,15 @@ export function Quicklinks() {
                     <h1>Have Questions?</h1>
                     <div className="contact-foot">
                         <div className="foot-location">
-                            <i className="ri-user-location-line"></i>
+                        <i class="ri-map-pin-user-fill"></i>
                             <p>7, Deshbandhu Chittaranjan Road, Budge Budge, 24 Parganas (South), Kolkata - 700137 </p>
                         </div>
                         <div className="foot-email">
-                            <i classNameName="ri-mail-send-line"></i>
+                        <i class="ri-message-3-fill"></i>
                             <p>budgebudgecollege@gmail.com</p>
                         </div>
                         <div className="foot-call">
-                            <i classNameName="ri-phone-line"></i>
+                        <i class="ri-phone-fill"></i>
                             <p>033 24701454 | 033 24805168</p>
                         </div>
                     </div>

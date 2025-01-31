@@ -8,12 +8,12 @@ export function Navbar() {
       <div className="info">
         <div className="contact">
           <div className="email">
-            <i className="ri-mail-send-line"></i>
+          <i class="ri-message-3-fill"></i>
             <p>Email: budgebudgecollege@gmail.com</p>
           </div>
 
           <div className="phone">
-            <i className="ri-phone-line"></i>
+          <i class="ri-phone-fill"></i>
             <p>Phone: 033 24701454 | 033 24805168</p>
           </div>
         </div>

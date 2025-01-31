@@ -69,7 +69,7 @@ export function Offer() {
                             <p className="speech">It is an honor to speak at Budge Budge College, founded in 1971. Initially operating from a different location, the college later moved to its current site. We are fortunate to have had renowned writer Narayan Ganguly as our Founder President and Professor Prithwis Dutta as our founding principal. For decades, this institution has been a beacon of education in the Kolkata suburbs.</p>
                         </div>
                         <div className="principal-button">
-                            <a href="Pdf files/PRINCIPAL CV.pdf">
+                            <a href="Pdf files/PRINCIPAL CV.pdf" download="PRINCIPAL CV.pdf">
                                 <button>Download Resume</button>
                             </a>
                         </div>
