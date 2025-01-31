@@ -48,6 +48,17 @@
   padding-right: 15px;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
 .form textarea {
   border-bottom: 2px solid rgba(2, 2, 46, 0.2);
   font-size: 16px;
