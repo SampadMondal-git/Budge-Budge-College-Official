@@ -1,13 +1,12 @@
 import React from 'react'
 import './navlink.css'
-// import Logo from './icons/logo.3.0.png'
+import Logo from './icons/college-logo-3.0.png'
 export function Navlink() {
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    {/* <a className="navbar-brand" href='/'><img src={Logo} alt="Logo" width="50" height="50" className="d-inline-block align-text-top" /></a> */}
-                    <a className="navbar-brand" href='/'>Budge Budge College</a>
+                    <a className="navbar-brand" href='/'><img src={Logo} alt="Logo" height={"60px"} className="d-inline-block align-text-top logo-css" /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
