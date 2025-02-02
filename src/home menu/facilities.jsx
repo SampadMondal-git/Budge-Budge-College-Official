@@ -1,9 +1,9 @@
 import React from 'react'
 import myStyles from './facilities.module.css'
-import teacher from './icons/teacher.png'
-import special from './icons/school.png'
-import book from './icons/bookshelf.png'
-import sport from './icons/strategy.png'
+import teacher from '../icons/teacher.png'
+import special from '../icons/school.png'
+import book from '../icons/bookshelf.png'
+import sport from '../icons/strategy.png'
 export function Facilities() {
     return (
         <>

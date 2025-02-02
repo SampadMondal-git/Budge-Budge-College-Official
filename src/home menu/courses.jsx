@@ -1,8 +1,8 @@
 import React from 'react'
 import myStyles from './courses.module.css'
-import BA from './icons/arts.png'
-import BSc from './icons/science.png'
-import BCom from './icons/commerce.png'
+import BA from '../icons/arts.png'
+import BSc from '../icons/science.png'
+import BCom from '../icons/commerce.png'
 export function Courses() {
     return (
         <>

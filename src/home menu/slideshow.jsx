@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import myStyles from './slideshow.module.css';
-import image1 from './images/1.jpeg';
-import image2 from './images/2.jpeg';
-import image3 from './images/3.jpeg';
-import image4 from './images/4.jpeg';
-import image5 from './images/5.jpeg';
-import image6 from './images/6.jpeg';
-import image7 from './images/7.jpeg';
-import image8 from './images/8.jpeg';
+import image1 from '../images/1.jpeg';
+import image2 from '../images/2.jpeg';
+import image3 from '../images/3.jpeg';
+import image4 from '../images/4.jpeg';
+import image5 from '../images/5.jpeg';
+import image6 from '../images/6.jpeg';
+import image7 from '../images/7.jpeg';
+import image8 from '../images/8.jpeg';
 
 export const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

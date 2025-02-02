@@ -106,4 +106,9 @@
     background-color: orangered;
     color: rgb(2, 2, 46) !important;
   }
+
+  .dropdown-menu a:hover {
+    background-color: orangered !important;
+    color: white !important;
+  }
 }

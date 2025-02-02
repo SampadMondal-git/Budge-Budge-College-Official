@@ -1,6 +1,6 @@
 import React from 'react'
 import myStyles from './college.module.css'
-import collegeImage from "./images/1.jpeg";
+import collegeImage from "../images/1.jpeg";
 export function College() {
     return (
         <>

@@ -1,12 +1,12 @@
 import React from 'react'
 import myStyles from './offer.module.css'
-import principal from './images/principal.png'
-import safety from './icons/safety.png'
-import reading from './icons/reading.png'
-import certified from './icons/certified.png'
-import classroom from './icons/classroom.png'
-import creative from './icons/creative.png'
-import sport from './icons/sport.png'
+import principal from '../images/principal.png'
+import safety from '../icons/safety.png'
+import reading from '../icons/reading.png'
+import certified from '../icons/certified.png'
+import classroom from '../icons/classroom.png'
+import creative from '../icons/creative.png'
+import sport from '../icons/sport.png'
 export function Offer() {
     return (
         <>

@@ -1,9 +1,9 @@
 import React from 'react'
 import myStyles from './campus.module.css'
-import smokefreezone from './images/smokefree-zone.jpg'
-import raggingfreezone from './images/anti-ragging.jpg'
-import plasticfreezone from './images/plastic-free.jpg'
-import freewifizone from './images/wifi.jpg'
+import smokefreezone from '../images/smokefree-zone.jpg'
+import raggingfreezone from '../images/anti-ragging.jpg'
+import plasticfreezone from '../images/plastic-free.jpg'
+import freewifizone from '../images/wifi.jpg'
 export function Campus() {
   return (
     <>

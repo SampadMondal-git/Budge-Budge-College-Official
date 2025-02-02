@@ -1,6 +1,6 @@
 import React from 'react'
 import './navlink.css'
-import Logo from './icons/college-logo-3.0.png'
+import Logo from '../icons/college-logo-3.0.png'
 export function Navlink() {
     return (
         <>

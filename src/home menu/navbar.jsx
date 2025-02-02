@@ -1,7 +1,5 @@
 import myStyles from './Navbar.module.css';
-import { Body } from './body.jsx';
-import { Footer } from './footer.jsx';
-
+import { Navlink } from './navlink.jsx';
 export function Navbar() {
 
   return (
@@ -24,8 +22,8 @@ export function Navbar() {
           <a href="/"><button>Notification</button></a>
         </div>
       </div>
-      <Body />
-      <Footer />
+
+      <Navlink />
     </>
   );
 }
