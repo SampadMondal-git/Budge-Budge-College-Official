@@ -8,7 +8,6 @@ import { Courses } from '../home page/courses.jsx'
 import { Teachers } from '../home page/teachers.jsx'
 import { Quote } from '../home page/quote.jsx'
 import { Campus } from '../home page/campus.jsx'
-import { Quicklinks } from '../home page/quicklinks.jsx'
 
 export function Body() {
   return (
@@ -21,7 +20,6 @@ export function Body() {
     <Teachers />
     <Quote />
     <Campus />
-    <Quicklinks />
     </>
   )
 }

@@ -1,0 +1,46 @@
+.rules {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(2, 2, 46);
+}
+
+.rules h1 {
+    background-color: orangered;
+    color: rgb(2, 2, 46);
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.sub_heading {
+    gap: 1rem;
+    background-color: orangered;
+    color: rgb(2, 2, 46);
+    margin: 1rem 5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 30px rgba(255, 68, 0, 0.500);
+}
+
+.sub_heading h5 {
+    margin: 0;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.sub_heading li {
+    padding: 0.5rem 3rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .rules h1 {
+        font-size: 24px;
+    }
+
+    .sub_heading {
+        width: 100%;
+        margin: 0.5rem 0;
+        border-radius: 0;
+    }
+}

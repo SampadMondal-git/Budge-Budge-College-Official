@@ -1,9 +1,10 @@
 import React from 'react'
 import myStyles from './footer.module.css'
-
+import { Quicklinks } from '../home page/quicklinks.jsx'
 export function Footer() {
     return (
         <>
+            <Quicklinks />
             <div className={myStyles.footer}>
                 <div className={myStyles.copyright}>
                     <p>Copyright &copy; 2024 <a href="/">Budge Budge College</a>. All Rights Reserved.</p>

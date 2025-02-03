@@ -61,7 +61,18 @@
   margin-bottom: 0rem !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar>.container-fluid {
+    flex-direction: column;
+  }
+
+  .navbar-nav {
+    gap: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
   .dropdown-toggle::after {
     display: none !important;
   }
@@ -73,7 +84,7 @@
   }
 
   .navbar-nav {
-    padding-right: 2rem !important;
+    padding-right: 2rem;
     gap: 0.5rem;
   }
 
@@ -90,6 +101,20 @@
   .navbar-brand {
     margin-left: 0.5rem !important;
     margin-bottom: 0.5rem !important;
+  }
+
+  .dropdown-menu a {
+    background-color: orangered;
+    color: rgb(2, 2, 46) !important;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: orangered !important;
+    color: white !important;
+  }
+
+  .container-fluid {
+    padding-left: calc(var(--bs-gutter-x)* .9);
   }
 
   /* .dropdown-menu {

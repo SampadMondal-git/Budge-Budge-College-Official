@@ -3,6 +3,7 @@
     background-color: rgb(2, 2, 46);
     color: orangered;
     padding: 0.5rem 0;
+    border-top: 1px solid rgb(100, 100, 100);
 }
 
 .copyright {

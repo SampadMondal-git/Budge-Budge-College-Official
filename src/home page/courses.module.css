@@ -44,7 +44,7 @@
 .course3 {
   width: 33.33%;
   font-size: 16px;
-  line-height: 35px;
+  line-height: 2rem;
   padding: 30px;
 }
 
@@ -104,7 +104,7 @@
       }
 
       .title p {
-        line-height: 2rem;
+        line-height: 1.5rem;
       }
 
     .course {
@@ -117,5 +117,6 @@
         height: auto;
         margin: 0;
         padding: 30px 20px;
+        line-height: 1.5rem;
     }
 }
