@@ -1,6 +1,7 @@
 import React from 'react'
-import './body.css'
+import './body.module.css'
 import { motion } from 'framer-motion'
+import styles from './body.module.css'
 import { Slideshow } from '../home page/slideshow.jsx'
 import { Facilities } from '../home page/facilities.jsx'
 import { Offer } from '../home page/offer.jsx'
@@ -37,6 +38,7 @@ export function Body() {
     <>
       <Slideshow />
       <motion.div
+        className={styles.animatedSection}
         initial="initial"
         whileInView="animate"
         exit="exit"
@@ -46,6 +48,7 @@ export function Body() {
       </motion.div>
 
       <motion.div
+        className={styles.animatedSection}
         initial="initial"
         whileInView="animate"
         exit="exit"
@@ -55,6 +58,7 @@ export function Body() {
       </motion.div>
 
       <motion.div
+        className={styles.animatedSection}
         initial="initial"
         whileInView="animate"
         exit="exit"
@@ -64,6 +68,7 @@ export function Body() {
       </motion.div>
 
       <motion.div
+        className={styles.animatedSection}
         initial="initial"
         whileInView="animate"
         exit="exit"
@@ -73,6 +78,7 @@ export function Body() {
       </motion.div>
 
       <motion.div
+        className={styles.animatedSection}
         initial="initial"
         whileInView="animate"
         exit="exit"
@@ -82,6 +88,7 @@ export function Body() {
       </motion.div>
 
       <motion.div
+        className={styles.animatedSection}
         initial="initial"
         whileInView="animate"
         exit="exit"
@@ -91,6 +98,7 @@ export function Body() {
       </motion.div>
 
       <motion.div
+        className={styles.animatedSection}
         initial="initial"
         whileInView="animate"
         exit="exit"
