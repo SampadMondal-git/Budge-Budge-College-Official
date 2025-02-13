@@ -1,0 +1,105 @@
+.heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading h1 {
+    background-color: orangered;
+    color: rgb(2, 2, 46);
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(2, 2, 46);
+}
+
+.bsc_honours, .bsc_general {
+    background-color: orangered;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 48%;
+}
+
+.bsc_honours h1, .bsc_general h1 {
+    font-size: 22px;
+    color: rgb(2, 2, 46);
+    margin-bottom: 10px;
+}
+
+.subjects_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.subject {
+    padding: 10px;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    background-color: rgb(2, 2, 46);
+}
+
+.subject h1 {
+    font-size: 1.2em;
+    color: orangered;
+}
+
+.subject h2 {
+    font-size: 1.1em;
+    color: white;
+}
+
+.subject h3 {
+    font-size: 0.9em;
+    color: orangered;
+}
+
+.subject p {
+    margin: 5px 0;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .courses {
+        flex-direction: column; /* Stack courses vertically on smaller screens */
+    }
+
+    .bsc_honours, .bsc_general {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Space between stacked divs */
+    }
+
+    .subjects_grid {
+        grid-template-columns: 1fr; /* Stack subjects in a single column on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading h1 {
+        font-size: 1.5em;
+    }
+
+    .bsc_honours h1, .bsc_general h1 {
+        font-size: 1.3em;
+    }
+
+    .subject h1 {
+        font-size: 1em;
+    }
+
+    .subject h2 {
+        font-size: 0.9em;
+    }
+
+    .subject h3 {
+        font-size: 0.7em;
+    }
+}

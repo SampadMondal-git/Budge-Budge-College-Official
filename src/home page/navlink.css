@@ -42,6 +42,10 @@
   }
 }
 
+.navbar {
+  padding: 0 !important;
+}
+
 .navbar-expand-lg .navbar-nav .dropdown-menu a {
   color: rgb(2, 2, 46);
   padding: 0.6rem 0.5rem;
@@ -59,6 +63,8 @@
 .navbar-brand {
   margin-left: 3.5rem !important;
   margin-bottom: 0rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {

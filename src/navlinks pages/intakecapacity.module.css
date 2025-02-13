@@ -1,0 +1,148 @@
+.intake_capacity {
+    display: flex;
+    flex-direction: column;
+}
+
+.intake_capacity h1 {
+    background-color: orangered;
+    color: rgb(2, 2, 46);
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 20px;
+    width: 90%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #1a237e, #0d47a1);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 26px;
+}
+
+.header h2 {
+    font-size: 24px;
+}
+
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.center {
+    text-align: center;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f4f7;
+}
+
+.notes {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #fff9e6;
+    border-left: 4px solid #ffc107;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .intake_capacity h1 {
+        font-size: 24px;
+    }
+    
+    th, td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .header {
+        padding: 1.2rem;
+    }
+    
+    .header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    table {
+        min-width: 100%;
+    }
+    
+    th, td {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem;
+    }
+    
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header h2 {
+        font-size: 18px;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .notes {
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,82 @@
+.academic_subcommittee {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .academic_subcommittee h1 {
+    background-color: orangered;
+    color: rgb(2, 2, 46);
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .staffs {
+      background-color: rgb(2, 2, 46);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 5rem 12rem;
+      max-width: 100%;
+      box-sizing: border-box;
+      overflow-x: auto;
+  }
+  
+  table {
+      background-color: orangered;
+      border-radius: 10px;
+  }
+  
+  th {
+      text-align: center;
+  }
+  
+  th, td {
+      border: 2px solid rgb(2, 2, 46);
+      color: rgb(2, 2, 46);
+      padding: 8px;
+      min-width: 100%;
+  }
+  
+  
+  @media (max-width: 768px) {
+      .academic_subcommittee h1 {
+          font-size: 24px;
+      }
+  
+      .staffs {
+          flex-direction: column;
+          padding: 2rem 3rem;
+      }
+  
+      th, td {
+          font-size: 14px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .academic_subcommittee h1 {
+          font-size: 20px;
+      }
+  
+      th, td {
+          font-size: 15px;
+          padding: 4px;
+      }
+  
+      .staffs {
+          padding: 5px;
+      }
+  }
+  
+  @media (max-width: 375px) {
+      th, td {
+          font-size: 12px;
+          padding: 2px;
+      }
+  
+      .staffs {
+          padding: 2px;
+      }
+  }
