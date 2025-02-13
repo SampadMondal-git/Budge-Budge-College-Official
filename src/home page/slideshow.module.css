@@ -128,7 +128,7 @@ body {
     }
 
     .slider_indicators {
-        bottom: 20px;
+        bottom: 0px;
         gap: 8px;
     }
 
@@ -144,7 +144,7 @@ body {
     }
 
     .slider_indicators {
-        bottom: 15px;
+        bottom: 0px;
         gap: 6px;
     }
 
