@@ -39,6 +39,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Body />} />
+        <Route path="/body" element={<Body />} />
         <Route path="/rules&regulations" element={<Rulesandregulations />} />
         <Route path="/aims&objectives" element={<Aimsandobjective />} />
         <Route path="/mission&vision" element={<Missionandvision />} />
