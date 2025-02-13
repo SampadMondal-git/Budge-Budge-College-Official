@@ -1,0 +1,12 @@
+.animatedSection {
+  width: 100%;
+}
+
+/* Disable animations on mobile devices */
+@media (max-width: 768px) {
+  .animatedSection {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+} 
