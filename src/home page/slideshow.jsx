@@ -37,12 +37,6 @@ export const Slideshow = () => {
     setCurrentIndex((prev) => (prev + 1) % slides.length);
   }, [currentIndex, slides.length]);
 
-  const prevSlide = useCallback(() => {
-    setDirection('prev');
-    setPreviousIndex(currentIndex);
-    setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
-  }, [currentIndex, slides.length]);
-
   useEffect(() => {
     const timeout = setTimeout(nextSlide, 5000);
     return () => clearTimeout(timeout);
