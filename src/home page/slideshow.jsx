@@ -11,6 +11,8 @@ import image8 from '../images/8.jpeg';
 
 export const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [previousIndex, setPreviousIndex] = useState(-1);
+  const [direction, setDirection] = useState('next');
 
   const slides = useMemo(() => [
     { id: 'slide-1', src: image1, alt: "Slide 1" },
@@ -23,27 +25,52 @@ export const Slideshow = () => {
     { id: 'slide-8', src: image8, alt: "Slide 8" },
   ], []);
 
+  const goToSlide = (index) => {
+    setDirection(index > currentIndex ? 'next' : 'prev');
+    setPreviousIndex(currentIndex);
+    setCurrentIndex(index);
+  };
+
   const nextSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-  }, [slides.length]);
+    setDirection('next');
+    setPreviousIndex(currentIndex);
+    setCurrentIndex((prev) => (prev + 1) % slides.length);
+  }, [currentIndex, slides.length]);
+
+  const prevSlide = useCallback(() => {
+    setDirection('prev');
+    setPreviousIndex(currentIndex);
+    setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
+  }, [currentIndex, slides.length]);
 
   useEffect(() => {
     const timeout = setTimeout(nextSlide, 5000);
     return () => clearTimeout(timeout);
   }, [nextSlide]);
-
   return (
     <section className={myStyles.container}>
       <div className={myStyles.slider_wrapper}>
-        <div className={myStyles.slider}>
+        <div className={`${myStyles.slider} ${myStyles[direction]}`}>
           {slides.map((slide, index) => (
-            <img 
-              key={slide.id} 
-              id={slide.id} 
-              src={slide.src} 
-              alt={slide.alt} 
-              className={index === currentIndex ? myStyles.active : ''} 
-            />
+            <img
+              key={slide.id}
+              src={slide.src}
+              alt={slide.alt}
+              className={`${index === currentIndex ? myStyles.active :
+                  index === previousIndex ? myStyles.previous : ''
+                }`}/>
+          ))}
+        </div>
+
+        <div className={myStyles.slider_indicators}>
+          {slides.map((slide, index) => (
+            <button
+              key={`indicator-${slide.id}`}
+              className={`${myStyles.indicator} ${index === currentIndex ? myStyles.indicator_active : ''}`}
+              onClick={() => goToSlide(index)}
+              aria-label={`Go to slide ${index + 1}`}>
+              <span className={myStyles.indicator_dot}></span>
+            </button>
           ))}
         </div>
       </div>
