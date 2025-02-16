@@ -1,0 +1,188 @@
+/* .Phd {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(2, 2, 46);
+}
+
+.Phd h1 {
+  background-color: orangered;
+  color: rgb(2, 2, 46);
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.container h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container th,
+.container td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+.container th {
+  background-color: #2c3e50;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.container tr:hover {
+  background-color: #f5f5f5;
+}
+
+.container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.container .department {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.container .university {
+  color: #2c3e50;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .container h1 {
+    font-size: 1.8rem;
+  }
+
+  .container th,
+  .container td {
+    padding: 10px;
+    font-size: 14px;
+  }
+} */
+
+
+/* PhD.module.css */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --light-bg: #f9f9f9;
+  --dark-text: #2c3e50;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.section_title {
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.scholar_header {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+.scholar_header h3 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.designation {
+  color: var(--dark-text);
+  font-size: 0.9rem;
+}
+
+.department {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.thesis {
+  color: var(--dark-text);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.university {
+  color: var(--secondary-color);
+  font-style: italic;
+}
+
+.year {
+  background: var(--light-bg);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .section_title {
+      font-size: 20px;
+  }
+  
+  .grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .card {
+      padding: 1.2rem;
+  }
+}
