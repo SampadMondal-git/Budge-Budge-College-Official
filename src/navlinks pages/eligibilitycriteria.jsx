@@ -1,14 +1,16 @@
 import React from 'react'
-import myStyles from './eligibilitycriteria.module.css'
+import myStyle from './eligibilitycriteria.module.css'
 export function Eligibilitycriteria() {
     return (
         <>
-            <div className={myStyles.eligibility_criteria}>
-                <h1>ELIGIBILITY CRITERIA</h1>
-            </div>
+            <div className={myStyle.container}>
+                <h2 className={myStyle.section_title}>Eligibility Criteria</h2>
 
-            <div className={myStyles.content}>
-                <p>No content available right now</p>
+                <div className={myStyle.grid}>
+                    <div className={myStyle.contact_info}>
+                        <p>No content available right now</p>
+                    </div>
+                </div>
             </div>
         </>
     )

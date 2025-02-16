@@ -1,17 +1,3 @@
-.office_infrastructure {
-  display: flex;
-  flex-direction: column;
-}
-
-.office_infrastructure h1 {
-  background-color: orangered;
-  color: rgb(2, 2, 46);
-  margin: 0;
-  padding: 1rem 0;
-  text-align: center;
-  font-size: 30px;
-}
-
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
@@ -27,8 +13,7 @@
 
 .section_title {
   color: var(--primary-color);
-  text-align: center;
-  font-size: 24px;
+  font-size: 30px;
   margin: 40px 0 20px;
   padding-bottom: 10px;
   border-bottom: 3px solid var(--secondary-color);
@@ -55,6 +40,7 @@
 
 .card h3 {
   color: var(--secondary-color);
+  font-size: 1.2rem;
   margin-bottom: 15px;
   padding-bottom: 10px;
   border-bottom: 2px solid #eee;
@@ -92,8 +78,9 @@
 }
 
 @media (max-width: 768px) {
-  .office_infrastructure h1 {
+  .section_title {
     font-size: 24px;
+    text-align: center;
   }
 
   .server_features h4 {

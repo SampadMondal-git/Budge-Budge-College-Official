@@ -3,77 +3,108 @@ import myStyles from './nonteachingstaff.module.css'
 export function Nonteachingstaff() {
     return (
         <>
-            <div className={myStyles.nonteaching_staff}>
-                <h1>Non-Teaching Staff</h1>
-            </div>
-            <div className={myStyles.staffs}>
-                <table>
-                    <tr>
-                        <th>Member</th>
-                        <th>Designation</th>
-                        <th>Qualification</th>
-                    </tr>
-                    <tr>
-                        <td>ANIS AHMED</td>
-                        <td>Computer Operator (Whole Time Contractual)</td>
-                        <td>B.Sc. (Hons)- Diploma in Computer Application</td>
-                    </tr>
-                    <tr>
-                        <td>BIKASH ROY</td>
-                        <td>Sweeper (Part-time)</td>
-                        <td>Class VIII passed</td>
-                    </tr>
-                    <tr>
-                        <td>SMT. ASHA DEY</td>
-                        <td>Teachers' Room Attendant (Contractual temporary)</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>SRI DIPAK KAYAL</td>
-                        <td>Guard</td>
-                        <td>Madhyamik Passed</td>
-                    </tr>
-                    <tr>
-                        <td>SRI NILESH ROY</td>
-                        <td>Laboratory Attendant, Dept. of Physics / Office Worker</td>
-                        <td>B.Sc. (Pure)</td>
-                    </tr>
-                    <tr>
-                        <td>SRI SAROJ NAG</td>
-                        <td>Laboratory Attendant, Dept. of Chemistry / Office Worker</td>
-                        <td>B.Sc. (Bio)</td>
-                    </tr>
-                    <tr>
-                        <td>SRI SOMENATH BOSE</td>
-                        <td>Electrician-cum-caretaker / Head Clerk (Acting)</td>
-                        <td>B.Sc., ITI Diploma in Electrical</td>
-                    </tr>
-                    <tr>
-                        <td>SRI SUBRATA KARMAKAR</td>
-                        <td>Laboratory Attendant, Dept. of Geography / Office Worker</td>
-                        <td>M.Com. LL.B</td>
-                    </tr>
-                    <tr>
-                        <td>SRI SWAPAN KUMAR MAJHI</td>
-                        <td>Guard</td>
-                        <td>H.S. (10+2) Passed</td>
-                    </tr>
-                    <tr>
-                        <td>SRI TANAY BHUNIYA</td>
-                        <td>Laboratory Attendant, Dept. of Botany/ Office Worker</td>
-                        <td>B.Sc.</td>
-                    </tr>
-                    <tr>
-                        <td>SRI TAPAS SHOW</td>
-                        <td>Laboratory Attendant, Dept. of Zoology</td>
-                        <td>B.A.</td>
-                    </tr>
-                    <tr>
-                        <td>SRI TARAPADA GAYEN Retired on 31/05/2024</td>
-                        <td>Peon (Library Section)</td>
-                        <td>H.S. (10+2),B.A.</td>
-                    </tr>
-                </table>
+            <div className={myStyles.container}>
+                <h2 className={myStyles.section_title}>Non-Teaching Staff</h2>
+
+                <div className={myStyles.teaching_staffs}>
+                    <div className={myStyles.staffs}>
+                        <h5>ANIS AHMED</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Computer Operator (Whole Time Contractual)</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> B.Sc. (Hons)- Diploma in Computer Application</p>
+                        </div>
+                    </div>
+
+                    <div className={myStyles.staffs}>
+                        <h5>BIKASH ROY</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Sweeper (Part-time)</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> Class VIII passed</p>
+                        </div>
+                    </div>
+
+                    <div className={myStyles.staffs}>
+                        <h5>SMT. ASHA DEY</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Teachers' Room Attendant (Contractual temporary)</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> </p>
+                        </div>
+                    </div>
+
+                    <div className={myStyles.staffs}>
+                        <h5>SRI DIPAK KAYAL</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Guard</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> Madhyamik Passed</p>
+                        </div>
+                    </div>
+
+                    <div className={myStyles.staffs}>
+                        <h5>SRI NILESH ROY</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Laboratory Attendant, Dept. of Physics / Office Worker</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> B.Sc. (Pure)</p>
+                        </div>
+                    </div>
+
+                    <div className={myStyles.staffs}>
+                        <h5>SRI SAROJ NAG</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Laboratory Attendant, Dept. of Chemistry / Office Worker</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> B.Sc. (Bio)</p>
+                        </div>
+                    </div>
+
+                    <div className={myStyles.staffs}>
+                        <h5>SRI SOMENATH BOSE</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Electrician-cum-caretaker / Head Clerk (Acting)</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> B.Sc., ITI Diploma in Electrical</p>
+                        </div>
+                    </div>
+
+                    <div className={myStyles.staffs}>
+                        <h5>SRI SUBRATA KARMAKAR</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Laboratory Attendant, Dept. of Geography / Office Worker</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> M.Com. LL.B</p>
+                        </div>
+                    </div>
+
+                    <div className={myStyles.staffs}>
+                        <h5>SRI SWAPAN KUMAR MAJHI</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Guard</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> H.S. (10+2) Passed</p>
+                            <p><span className={myStyles.highlight}>Stream:</span> Commerce</p>
+                            <p><span className={myStyles.highlight}>Subject:</span> Accounting And Finance</p>
+                        </div>
+                    </div>
+
+                    <div className={myStyles.staffs}>
+                        <h5>SRI TANAY BHUNIYA</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Laboratory Attendant, Dept. of Botany/ Office Worker</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> B.Sc.</p>
+                        </div>
+                    </div>
+
+                    <div className={myStyles.staffs}>
+                        <h5>SRI TAPAS SHOW</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Laboratory Attendant, Dept. of Zoology</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> B.A.</p>
+                        </div>
+                    </div>
+
+                    <div className={myStyles.staffs}>
+                        <h5>SRI TARAPADA GAYEN Retired on 31/05/2024</h5>
+                        <div className={myStyles.details}>
+                            <p><span className={myStyles.highlight}>Designation:</span> Peon (Library Section)</p>
+                            <p><span className={myStyles.highlight}>Qualification:</span> H.S. (10+2),B.A.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )

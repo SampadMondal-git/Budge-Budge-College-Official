@@ -1,50 +1,42 @@
 import React from 'react'
 import myStyles from './sportssubcommittee.module.css'
+
 export function Sportssubcommittee() {
-  return (
-    <>
-    <div className={myStyles.sports_subcommittee}>
-                <h1>Sports Sub-Committee</h1>
+    return (
+        <div className={myStyles.container}>
+            <h2 className={myStyles.section_title}>Sports Sub-Committee</h2>
+
+            <div className={myStyles.governing_staffs}>
+                <div className={myStyles.staffs}>
+                    <h5>Sports Sub-Committee</h5>
+                    <p>Dr. Dipak Mandal<br /><span className={myStyles.designation}>Associate Prof., Dept. of History</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Sports Sub-Committee</h5>
+                    <p>Sajid Qamar<br /><span className={myStyles.designation}>Asst. Prof., Dept. of Geography</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Sports Sub-Committee</h5>
+                    <p>Sujit Kumar Mahato<br /><span className={myStyles.designation}>Asst. Prof., Dept. of Commerce</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Sports Sub-Committee</h5>
+                    <p>Mriganka Mallick<br /><span className={myStyles.designation}>SACT-II, Dept. of Commerce</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Sports Sub-Committee</h5>
+                    <p>Raj Kumar Shaw<br /><span className={myStyles.designation}>SACT-II, Dept. of Psychology</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Sports Sub-Committee</h5>
+                    <p>Sumit Santra<br /><span className={myStyles.designation}>SACT-II, Dept. of History</span></p>
+                </div>
             </div>
-            <div className={myStyles.staffs}>
-                <table>
-                    <tr>
-                        <th>Sub Committee Name</th>
-                        <th>Member</th>
-                        <th>Designation</th>
-                    </tr>
-                    <tr>
-                        <td>Sports Sub-Committee</td>
-                        <td>Dr. Dipak Mandal</td>
-                        <td>Associate Prof., Dept. of History</td>
-                    </tr>
-                    <tr>
-                        <td>Sports Sub-Committee</td>
-                        <td>Sajid Qamar</td>
-                        <td>Asst. Prof., Dept. of Geography</td>
-                    </tr>
-                    <tr>
-                        <td>Sports Sub-Committee</td>
-                        <td>Sujit Kumar Mahato</td>
-                        <td>Asst. Prof., Dept. of Commerce</td>
-                    </tr>
-                    <tr>
-                        <td>Sports Sub-Committee</td>
-                        <td>Mriganka Mallick</td>
-                        <td>SACT-II, Dept. of Commerce</td>
-                    </tr>
-                    <tr>
-                        <td>Sports Sub-Committee</td>
-                        <td>Raj Kumar Shaw</td>
-                        <td>SACT-II, Dept. of Psychology</td>
-                    </tr>
-                    <tr>
-                        <td>Sports Sub-Committee</td>
-                        <td>Sumit Santra</td>
-                        <td>SACT-II, Dept. of History</td>
-                    </tr>
-                </table>
-            </div>
-    </>
-  )
+        </div>
+    )
 }

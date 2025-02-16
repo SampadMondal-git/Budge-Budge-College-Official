@@ -4,13 +4,8 @@ import myStyles from './officeinfrastructure.module.css';
 export function Officeinfrastructure() {
     return (
         <>
-            <div className={myStyles.office_infrastructure}>
-                <h1>Office Infrastructure</h1>
-            </div>
-
             <div className={myStyles.container}>
-
-                <h2 className={myStyles.section_title}>College Office Infrastructure</h2>
+                <h2 className={myStyles.section_title}>Office Infrastructure</h2>
                 <div className={myStyles.grid}>
                     <div className={myStyles.card}>
                         <h3>Account & Cash Section</h3>

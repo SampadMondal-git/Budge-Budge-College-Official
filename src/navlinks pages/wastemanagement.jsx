@@ -3,12 +3,8 @@ import myStyles from './wastemanagement.module.css'
 export function Wastemanagement() {
     return (
         <>
-            <div className={myStyles.waste_management}>
-                <h1>Waste Management</h1>
-            </div>
-
             <div class={myStyles.container}>
-                <h2 class={myStyles.section_title}>Waste Management System</h2>
+                <h2 class={myStyles.section_title}>Waste Management</h2>
                 <div class={myStyles.grid}>
                     <div class={myStyles.card}>
                         <h3>Waste Management Overview</h3>

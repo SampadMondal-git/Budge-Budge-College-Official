@@ -3,22 +3,42 @@ import myStyles from "./aims&objective.module.css";
 
 export function Aimsandobjective() {
     return (
-        <div className={myStyles.rules}>
-            <h1>Aims & Objective</h1>
-            <div className={myStyles.sub_heading}>
-                <h5>
-                    The College is dedicated to nurturing a dynamic and enriching environment that fosters holistic student development, aligning with the evolving landscape of education. By introducing innovative academic programs and diverse co-curricular activities, we strive to create a vibrant and inspiring campus experience. Our core objectives include:
-                </h5>
-                <li>
-                    Empowering students with value-based education by instilling core moral values and nurturing their potential in every dimension to shape a brighter future.
-                </li>
-                <li>
-                    Ensuring students have ample access to the right resources while enhancing their engagement with modern ICT tools for a smarter, tech-driven learning experience.
-                </li>
-                <li>
-                    Dedicated to empowering the rural student community of South 24 Parganas, West Bengal, with a broader vision, while uplifting female students to help them make a stronger impact on society.
-                </li>
+        <div className={myStyles.container}>
+        <h2 className={myStyles.section_title}>Aims & Objectives</h2>
+        
+        <div className={myStyles.grid}>
+            <div className={myStyles.card}>
+                <h3>Educational Philosophy</h3>
+                <div className={myStyles.point}>
+                    <p>The College aims to foster an atmosphere of all-round development amongst the students through:</p>
+                    <ul className={myStyles.equipment_list}>
+                        <li>Innovative teaching-learning processes</li>
+                        <li>Modern academic curriculum</li>
+                        <li>Vibrant campus activities</li>
+                        <li>Comprehensive co-curricular programs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className={myStyles.card}>
+                <h3>Core Objectives</h3>
+                <div className={myStyles.point}>
+                    <p><span className={myStyles.highlight}>1. Value-Based Education:</span> 
+                        Inculcate moral values and nurture student potential across all dimensions
+                    </p>
+                    <p><span className={myStyles.highlight}>2. Digital Empowerment:</span> 
+                        Provide access to modern ICT resources and learning materials
+                    </p>
+                    <p><span className={myStyles.highlight}>3. Social Commitment:</span> 
+                        Empower rural and female students for better societal participation
+                    </p>
+                </div>
+
+                <div className={myStyles.point} style={{backgroundColor: "#e8f4fc", marginTop: "20px"}}>
+                    <p>🌟 Special Focus: Upliftment of female students from South 24 Parganas region</p>
+                </div>
             </div>
         </div>
+    </div>
     );
 }

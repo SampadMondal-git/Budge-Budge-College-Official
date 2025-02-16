@@ -1,50 +1,42 @@
 import React from 'react'
 import myStyles from './commonroomsubcommittee.module.css'
+
 export function Commonroomsubcommittee() {
     return (
-        <>
-            <div className={myStyles.common_room_subcommittee}>
-                <h1>Common Room Sub-Committee</h1>
+        <div className={myStyles.container}>
+            <h2 className={myStyles.section_title}>Common Room Sub-Committee</h2>
+
+            <div className={myStyles.governing_staffs}>
+                <div className={myStyles.staffs}>
+                    <h5>Common Room Sub-Committee</h5>
+                    <p>Dr. Debasis Upadhay<br /><span className={myStyles.designation}>Asst. Prof.,Dept. of Botany</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Common Room Sub-Committee</h5>
+                    <p>Dr. Anup Kumar Sahoo<br /><span className={myStyles.designation}>Convenor,Asst. Professor, Dept. of Physics</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Common Room Sub-Committee</h5>
+                    <p>Dr. Dipak Mandal<br /><span className={myStyles.designation}>Associate Professor, Dept. of History</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Common Room Sub-Committee</h5>
+                    <p>Dr. Samiran Panday<br /><span className={myStyles.designation}>Asst. Prof.,Dept. of Botany</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Common Room Sub-Committee</h5>
+                    <p>Buddham Tamang<br /><span className={myStyles.designation}>Asst. Prof., Dept. of Political Science</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Common Room Sub-Committee</h5>
+                    <p>Sumit Santra<br /><span className={myStyles.designation}>SACT-II, Dept. of History</span></p>
+                </div>
             </div>
-            <div className={myStyles.staffs}>
-                <table>
-                    <tr>
-                        <th>Sub Committee Name</th>
-                        <th>Member</th>
-                        <th>Designation</th>
-                    </tr>
-                    <tr>
-                        <td>Common Room Sub-Committee</td>
-                        <td>Dr. Debasis Upadhay</td>
-                        <td>Asst. Prof.,Dept. of Botany</td>
-                    </tr>
-                    <tr>
-                        <td>Common Room Sub-Committee</td>
-                        <td>Dr. Anup Kumar Sahoo</td>
-                        <td>Convenor,Asst. Professor, Dept. of Physics</td>
-                    </tr>
-                    <tr>
-                        <td>Common Room Sub-Committee</td>
-                        <td>Dr. Dipak Mandal</td>
-                        <td>Associate Prof., Dept. of History</td>
-                    </tr>
-                    <tr>
-                        <td>Common Room Sub-Committee</td>
-                        <td>Dr. Samiran Panday</td>
-                        <td>Asst. Prof.,Dept. of Botany</td>
-                    </tr>
-                    <tr>
-                        <td>Common Room Sub-Committee</td>
-                        <td>Buddham Tamang</td>
-                        <td>Asst. Prof., Dept. of Political Science</td>
-                    </tr>
-                    <tr>
-                        <td>Common Room Sub-Committee</td>
-                        <td>Sumit Santra</td>
-                        <td>SACT-II, Dept. of History</td>
-                    </tr>
-                </table>
-            </div>
-        </>
+        </div>
     )
 }

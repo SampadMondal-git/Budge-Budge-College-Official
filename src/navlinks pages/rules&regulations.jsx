@@ -3,65 +3,63 @@ import myStyles from "./rules&regulations.module.css";
 
 export function Rulesandregulations() {
     return (
-        <div className={myStyles.rules}>
-            <h1>Campus Rules & Regulations</h1>
-            <div className={myStyles.regulations}>
-                <p>
-                    Students must uphold strict discipline and decorum at all times within
-                    classrooms, the college office, laboratories, the library, and the
-                    entire campus. This is essential not only for their own growth but
-                    also to preserve the institution’s esteemed reputation in the
-                    community. They are expected to conduct themselves with utmost dignity
-                    and respect, ensuring complete silence while walking down the stairs,
-                    passing through corridors, and moving inside classrooms during off
-                    periods. Any deviation from these principles will not be tolerated.
-                </p>
-                <div className={myStyles.sub_heading}>
-                    <h5>
-                        However, every student must adhere to the following guidelines with
-                        utmost seriousness and responsibility:
-                    </h5>
-                    <li>
-                        Students must always show the highest level of respect and courtesy
-                        towards faculty members and fellow students, both within the college
-                        premises and beyond.
-                    </li>
-                    <li>
-                        Students must be in class when the bell rings, attend regularly, and need permission to enter or leave.
-                    </li>
-                    <li>
-                        Loitering in the corridors is strictly forbidden and will not be
-                        tolerated under any circumstances.
-                    </li>
-                    <li>
-                        When assembled, each class must take collective responsibility for the
-                        behavior and discipline of its members.
-                    </li>
-                    <li>
-                        In the absence of a teacher, students must maintain strict discipline
-                        and order to ensure that other ongoing classes remain undisturbed.
-                    </li>
-                    <li>
-                        Students are strictly prohibited from using any unfair means during
-                        examinations. Any violation will result in serious consequences.
-                    </li>
-                    <li>
-                        Any form of unruly behavior or misconduct within the college premises
-                        is strictly prohibited and will be dealt with severely.
-                    </li>
-                    <li>
-                        College property, including furniture, books, and other resources,
-                        must be handled with the utmost care and responsibility. Any damage or
-                        misuse will not be tolerated.
-                    </li>
-                    <li>
-                        Gossiping or any form of noise in the library is strictly prohibited
-                        to maintain a quiet and focused environment for all students.
-                    </li>
-                    <li>
-                        Any breach of discipline by a student or group of students will be
-                        taken very seriously and addressed with strict disciplinary action.
-                    </li>
+        <div className={myStyles.container}>
+            <h2 className={myStyles.section_title}>Rules & Regulations</h2>
+
+            <div className={myStyles.grid}>
+                <div className={myStyles.card}>
+                    <h3>General Conduct Expectations</h3>
+                    <div className={myStyles.point}>
+                        <p>Students must maintain discipline and peace in:</p>
+                        <ul className={myStyles.equipment_list}>
+                            <li>Class rooms</li>
+                            <li>College office</li>
+                            <li>Laboratories</li>
+                            <li>Library</li>
+                            <li>College campus</li>
+                        </ul>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p className={myStyles.highlight}>Key Behavioral Expectations:</p>
+                        <ul>
+                            <li>Maintain modesty and dignity at all times</li>
+                            <li>Observe silence in corridors and during off-periods</li>
+                            <li>Preserve institutional reputation in the locality</li>
+                        </ul>
+                    </div>
+
+                    <div className={myStyles.point} style={{backgroundColor: "#ffe6e6", marginTop: "20px"}}>
+                        <p>⚠️ Any behavior tarnishing the college's reputation will lead to immediate disciplinary review</p>
+                    </div>
+                </div>
+
+                <div className={myStyles.card}>
+                    <h3>Essential Rules & Regulations</h3>
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>1. Respectful Conduct:</span> Courtesy towards staff and peers on/off campus</p>
+                        <p><span className={myStyles.highlight}>2. Class Discipline:</span>
+                            <ul>
+                                <li>Be seated before bell rings</li>
+                                <li>No unauthorized entry/exit</li>
+                                <li>Mandatory regular attendance</li>
+                            </ul>
+                        </p>
+                        <p><span className={myStyles.highlight}>3. Movement Restrictions:</span> No corridor loitering</p>
+                        <p><span className={myStyles.highlight}>4. Collective Responsibility:</span> Class accountability for member conduct</p>
+                    </div>
+
+                    <div className={myStyles.point} style={{marginTop: "15px"}}>
+                        <p><span className={myStyles.highlight}>5. Self Governance:</span> Maintain order during teacher absences</p>
+                        <p><span className={myStyles.highlight}>6. Academic Integrity:</span> Strict prohibition of exam malpractice</p>
+                        <p><span className={myStyles.highlight}>7. Property Care:</span> Proper treatment of college assets</p>
+                        <p><span className={myStyles.highlight}>8. Library Etiquette:</span> Absolute no-gossiping policy</p>
+                        <p><span className={myStyles.highlight}>9. Disciplinary Actions:</span> Strict handling of rule violations</p>
+                    </div>
+
+                    <div className={myStyles.point} style={{backgroundColor: "#ffe6e6", marginTop: "20px"}}>
+                        <p>⚠️ Serious breaches may lead to suspension, expulsion, or legal action as per college regulations</p>
+                    </div>
                 </div>
             </div>
         </div>

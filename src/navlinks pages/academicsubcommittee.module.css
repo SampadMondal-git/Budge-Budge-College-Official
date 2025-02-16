@@ -1,82 +1,69 @@
-.academic_subcommittee {
-    display: flex;
-    flex-direction: column;
+.container {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
   }
   
-  .academic_subcommittee h1 {
-    background-color: orangered;
-    color: rgb(2, 2, 46);
-    margin: 0;
-    padding: 1rem 0;
-    text-align: center;
+  .section_title {
+    color: var(--primary-color);
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--secondary-color);
     font-size: 30px;
   }
   
+  .governing_staffs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
   .staffs {
-      background-color: rgb(2, 2, 46);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      padding: 5rem 12rem;
-      max-width: 100%;
-      box-sizing: border-box;
-      overflow-x: auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
   }
   
-  table {
-      background-color: orangered;
-      border-radius: 10px;
+  .staffs:hover {
+    transform: translateY(-5px);
   }
   
-  th {
-      text-align: center;
+  .staffs h5 {
+    color: #3498db;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+    font-size: 1.1rem;
   }
   
-  th, td {
-      border: 2px solid rgb(2, 2, 46);
-      color: rgb(2, 2, 46);
-      padding: 8px;
-      min-width: 100%;
+  .staffs p {
+    color: #2c3e50;
+    line-height: 1.6;
+    font-size: 0.95rem;
   }
   
+  .designation {
+    color: #666;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 0.5rem;
+  }
   
   @media (max-width: 768px) {
-      .academic_subcommittee h1 {
-          font-size: 24px;
-      }
+    .section_title {
+      font-size: 24px;
+      text-align: center;
+    }
   
-      .staffs {
-          flex-direction: column;
-          padding: 2rem 3rem;
-      }
+    .governing_staffs {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
   
-      th, td {
-          font-size: 14px;
-      }
+    .staffs {
+      padding: 1.2rem;
+      margin: 0 2rem;
+    }
   }
   
-  @media (max-width: 480px) {
-      .academic_subcommittee h1 {
-          font-size: 20px;
-      }
-  
-      th, td {
-          font-size: 15px;
-          padding: 4px;
-      }
-  
-      .staffs {
-          padding: 5px;
-      }
-  }
-  
-  @media (max-width: 375px) {
-      th, td {
-          font-size: 12px;
-          padding: 2px;
-      }
-  
-      .staffs {
-          padding: 2px;
-      }
-  }

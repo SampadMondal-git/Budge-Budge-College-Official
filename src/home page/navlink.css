@@ -124,7 +124,7 @@
 @media (max-width: 768px) {
   .navbar-brand {
     margin-left: 0.5rem !important;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.3rem !important;
   }
 
   .dropdown-menu a {
@@ -161,7 +161,11 @@
   }
 
   .dropdown-menu a {
-    padding-left: 2rem !important;
+    padding-left: 1rem !important;
+  }
+
+  .navbar-expand-lg .navbar-nav .dropdown-menu a {
+    padding: 0.5rem 0;
   }
 
   @keyframes slideDown {

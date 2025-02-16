@@ -1,222 +1,293 @@
 import React from 'react';
-import myStyles from './coursesoffered.module.css';
-
+import myStyles from './coursesoffered.module.css'
 export function Coursesoffered() {
     return (
-        <>
-            <div className={myStyles.heading}>
-                <h1>Courses Offered</h1>
-            </div>
+        <div className={myStyles.container}>
+            <h2 className={myStyles.section_title}>Courses Offered</h2>
 
-            <div className={myStyles.courses}>
-                <div className={myStyles.bsc_honours}>
-                    <h1>B.A. - 4 YEAR HONOURS / HONOURS WITH RESEARCH</h1>
-                    <div className={myStyles.subjects_grid}>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>Bengali</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>Education</p>
-                            <p>Philosophy</p>
-                            <p>History</p>
-                            <p>Education</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>Education</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>History</p>
-                            <p>Political Science</p>
-                            <p>Psychology</p>
-                            <p>Sociology</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>ENGLISH</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>History</p>
-                            <p>Political Science</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>GEOGRAPHY</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>History</p>
-                            <p>Political Science</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>HISTORY</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>Education</p>
-                            <p>Political Science</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>PHILOSOPHY</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>History</p>
-                            <p>Political Science</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>POLITICAL SCIENCE</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>Education</p>
-                            <p>History</p>
-                        </div>
+            <div className={myStyles.grid}>
+                <div className={myStyles.card}>
+                    <h3>B.A. - 4 YEAR HONOURS / HONOURS WITH RESEARCH</h3>
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> Bengali</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>Education</li>
+                                <li>Philosophy</li>
+                                <li>History</li>
+                                <li>Education</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> Education</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>History</li>
+                                <li>Political Science</li>
+                                <li>Psychology</li>
+                                <li>Sociology</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> English</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>History</li>
+                                <li>Political Science</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> Geography</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>History</li>
+                                <li>Political Science</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> History</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>Education</li>
+                                <li>Political Science</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> Philosophy</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>History</li>
+                                <li>Political Science</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> Political Science</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>Education</li>
+                                <li>History</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
 
-                <div className={myStyles.bsc_general}>
-                    <h1>B.A. - MULTIDISCIPLINARY</h1>
-                    <div className={myStyles.subjects_grid}>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>History</p>
-                            <p>Political Science</p>
-                            <p>Education</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>History</p>
-                            <p>Political Science</p>
-                            <p>Bengali</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>History</p>
-                            <p>Political Science</p>
-                            <p>Philosophy</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>History</p>
-                            <p>Political Science</p>
-                            <p>Geography</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>History</p>
-                            <p>Political Science</p>
-                            <p>Economics</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>Bengali</p>
-                            <p>Education</p>
-                            <p>Philosophy</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>Bengali</p>
-                            <p>Education</p>
-                            <p>Sanskrit</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>Bengali</p>
-                            <p>Philosophy</p>
-                            <p>Sanskrit</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>Psychology</p>
-                            <p>Sociology</p>
-                            <p>Education</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>Psychology</p>
-                            <p>Sociology</p>
-                            <p>Political Science</p>
-                        </div>
+                <div className={myStyles.card}>
+                    <h3>B.A. - MULTIDISCIPLINARY</h3>
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>1. Combination of Subjects:</span>
+                            <ul>
+                                <li>History</li>
+                                <li>Political Science</li>
+                                <li>Education</li>
+                            </ul>
+                        </p>
                     </div>
-                </div>
-            </div>
 
-            <div className={myStyles.courses}>
-                <div className={myStyles.bsc_honours}>
-                    <h1>B.SC. - 4 YEAR HONOURS / HONOURS WITH RESEARCH</h1>
-                    <div className={myStyles.subjects_grid}>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>BOTANY</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>Chemistry</p>
-                            <p>Zoology</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>FOOD & NUTRITION</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>Chemistry</p>
-                            <p>Zoology</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>GEOGRAPHY</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>Economics</p>
-                            <p>Psychology</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>ECONOMICS</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>Mathematics</p>
-                            <p>Political Science</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Honours Subjects</h1>
-                            <h2>ZOOLOGY</h2>
-                            <h3>Combination Allowed</h3>
-                            <p>Botany</p>
-                            <p>Chemistry</p>
-                        </div>
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>2. Combination of Subjects:</span>
+                            <ul>
+                                <li>History</li>
+                                <li>Political Science</li>
+                                <li>Bengali</li>
+                            </ul>
+                        </p>
                     </div>
-                </div>
 
-                <div className={myStyles.bsc_general}>
-                    <h1>B.SC. - MULTIDISCIPLINARY</h1>
-                    <div className={myStyles.subjects_grid}>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>Zoology</p>
-                            <p>Botany</p>
-                            <p>Chemistry</p>
-                        </div>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>Chemistry</p>
-                            <p>Physics</p>
-                            <p>Mathematics</p>
-                        </div>
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>3. Combination of Subjects:</span>
+                            <ul>
+                                <li>History</li>
+                                <li>Political Science</li>
+                                <li>Philosophy</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>4. Combination of Subjects:</span>
+                            <ul>
+                                <li>History</li>
+                                <li>Political Science</li>
+                                <li>Geography</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>5. Combination of Subjects:</span>
+                            <ul>
+                                <li>History</li>
+                                <li>Political Science</li>
+                                <li>Economics</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>6. Combination of Subjects:</span>
+                            <ul>
+                                <li>Bengali</li>
+                                <li>Education</li>
+                                <li>Philosophy</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>7. Combination of Subjects:</span>
+                            <ul>
+                                <li>Bengali</li>
+                                <li>Education</li>
+                                <li>Sanskrit</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>8. Combination of Subjects:</span>
+                            <ul>
+                                <li>Bengali</li>
+                                <li>Philosophy</li>
+                                <li>Sanskrit</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>9. Combination of Subjects:</span>
+                            <ul>
+                                <li>Psychology</li>
+                                <li>Sociology</li>
+                                <li>Education</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>10. Combination of Subjects:</span>
+                            <ul>
+                                <li>Psychology</li>
+                                <li>Sociology</li>
+                                <li>Political Science</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div className={myStyles.courses}>
-                <div className={myStyles.bsc_honours}>
-                    <h1>B.COM. - 4 YEAR HONOURS / HONOURS WITH RESEARCH</h1>
-                    <div className={myStyles.subjects_grid}>
-                    <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>As per University of Calcutta Syllabus</p>
-                        </div>
+            <div className={myStyles.grid}>
+                <div className={myStyles.card}>
+                    <h3>B.SC. - 4 YEAR HONOURS / HONOURS WITH RESEARCH</h3>
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> Botany</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>Chemistry</li>
+                                <li>Zoology</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> Food & Nutrition</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>Chemistry</li>
+                                <li>Zoology</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> Geography</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>Economics</li>
+                                <li>Psychology</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> Economics</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>Mathematics</li>
+                                <li>Political Science</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Honours Subject:</span> Zoology</p>
+                        <p><span className={myStyles.highlight}>Combination Allowed:</span>
+                            <ul>
+                                <li>Botany</li>
+                                <li>Chemistry</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
 
-                <div className={myStyles.bsc_general}>
-                    <h1>B.COM. - MULTIDISCIPLINARY</h1>
-                    <div className={myStyles.subjects_grid}>
-                        <div className={myStyles.subject}>
-                            <h1>Combination of Subjects</h1>
-                            <p>As per University of Calcutta Syllabus</p>
-                        </div>
+                <div className={myStyles.card}>
+                    <h3>B.SC. - MULTIDISCIPLINARY</h3>
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>1. Combination of Subjects:</span>
+                            <ul>
+                                <li>Zoology</li>
+                                <li>Botany</li>
+                                <li>Chemistry</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>2. Combination of Subjects:</span>
+                            <ul>
+                                <li>Chemistry</li>
+                                <li>Physics</li>
+                                <li>Mathematics</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
-        </>
+
+            <div className={myStyles.grid}>
+                <div className={myStyles.card}>
+                    <h3>B.COM. - 4 YEAR HONOURS / HONOURS WITH RESEARCH</h3>
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Combination of Subjects:</span>
+                            <ul>
+                                <li>As per University of Calcutta Syllabus</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div className={myStyles.card}>
+                    <h3>B.COM. - MULTIDISCIPLINARY</h3>
+                    <div className={myStyles.point}>
+                        <p><span className={myStyles.highlight}>Combination of Subjects:</span>
+                            <ul>
+                                <li>As per University of Calcutta Syllabus</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }

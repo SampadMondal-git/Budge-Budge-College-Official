@@ -1,83 +1,69 @@
-.governing_body {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(2, 2, 46);
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --light-bg: #f9f9f9;
+  --dark-text: #2c3e50;
 }
 
-.governing_body h1 {
-  background-color: orangered;
-  color: rgb(2, 2, 46);
-  margin: 0;
-  padding: 1rem 0;
-  text-align: center;
+.container {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+}
+
+.section_title {
+  color: var(--primary-color);
+  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--secondary-color);
   font-size: 30px;
 }
 
 .governing_staffs {
-  padding: 5rem 12rem;
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(2, 2, 46);
-}
-
-.governing_staffs h5 {
-  margin: 0;
-  padding: 1rem;
-  font-weight: 600;
-}
-
-.governing_staffs p {
-  font-size: 16px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .staffs {
-  background-color: orangered;
-  color: rgb(2, 2, 46);
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid rgb(2, 2, 46);
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-.staffs:first-child {
-  border-top: none;
-  border-radius: 10px 10px 0 0;
+.staffs:hover {
+  transform: translateY(-5px);
 }
 
-.staffs:last-child {
-  border-radius: 0 0 10px 10px;
+.staffs h5 {
+  color: var(--secondary-color);
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  font-size: 1.2rem;
 }
 
-
-@media (min-width: 992px) and (max-width: 1200px ){
-    .governing_staffs {
-        padding: 3rem 5rem;
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(2, 2, 46);
-      }
+.staffs p {
+  color: var(--dark-text);
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
-  .governing_body h1 {
-    font-size: 24px;
+  .section_title {
+      font-size: 24px;
+      text-align: center;
   }
-
-    .governing_staffs {
-        padding: 3rem 5rem;
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(2, 2, 46);
-      }
-}
-
-@media (max-width: 480px) {
-    .governing_staffs {
-        padding: 1rem 1rem;
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(2, 2, 46);
-      }
+  
+  .governing_staffs {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+  
+  .staffs {
+      padding: 1.2rem;
+      margin: 0 2rem;
+  }
 }

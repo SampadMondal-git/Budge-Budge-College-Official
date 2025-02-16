@@ -1,28 +1,25 @@
-.intake_capacity {
-    display: flex;
-    flex-direction: column;
-}
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section_title {
+    color: var(--primary-color);
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+    font-size: 30px;
+  }
 
-.intake_capacity h1 {
-    background-color: orangered;
-    color: rgb(2, 2, 46);
-    margin: 0;
-    padding: 1rem;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.container {
+.div_container {
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 20px;
-    width: 90%;
 }
 
 .header {
     text-align: center;
     margin-bottom: 2rem;
-    padding: 1.5rem;
+    padding: 0.5rem;
     background: linear-gradient(135deg, #1a237e, #0d47a1);
     color: white;
     border-radius: 10px;
@@ -35,6 +32,7 @@
 
 .header h2 {
     font-size: 24px;
+    margin-bottom: 0;
 }
 
 .table-container {
@@ -44,13 +42,13 @@
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-table {
+.table_container table {
     width: 100%;
     border-collapse: collapse;
     min-width: 600px;
 }
 
-th, td {
+.table_container th, .table_container td {
     padding: 1rem;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -60,17 +58,17 @@ th, td {
     text-align: center;
 }
 
-th {
+.table_container th {
     background-color: #f8f9fa;
     font-weight: 600;
     color: #2c3e50;
 }
 
-tr:nth-child(even) {
+.table_container tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-tr:hover {
+.table_container tr:hover {
     background-color: #f1f4f7;
 }
 
@@ -91,7 +89,12 @@ tr:hover {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .section_title {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .div_container {
         padding: 10px;
     }
 
@@ -99,7 +102,7 @@ tr:hover {
         font-size: 24px;
     }
     
-    th, td {
+    .table_container th, .table_container td {
         padding: 0.75rem;
         font-size: 0.9rem;
     }
@@ -109,22 +112,30 @@ tr:hover {
     }
     
     .header h1 {
-        font-size: 1.5rem;
+        font-size: 20px;
+    }
+
+    .header h2 {
+        font-size: 20px;
     }
 }
 
 @media (max-width: 600px) {
-    table {
+    .table_container table {
         min-width: 100%;
     }
     
-    th, td {
+    .table_container th, .table_container td {
         padding: 0.6rem;
         font-size: 0.85rem;
     }
 }
 
 @media (max-width: 480px) {
+    .intake_capacity h1 {
+        font-size: 20px;
+    }
+
     .header {
         padding: 1rem;
     }
@@ -137,12 +148,105 @@ tr:hover {
         font-size: 18px;
     }
     
-    th, td {
+    .table_container th, .table_container td {
         padding: 0.5rem;
         font-size: 0.8rem;
     }
     
     .notes {
+        font-size: 0.85rem;
+    }
+} */
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #f9f9f9;
+    --dark-text: #2c3e50;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.section_title {
+    color: var(--primary-color);
+    margin-bottom: 2.5rem;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.course_title {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+    font-size: 1.2rem;
+}
+
+.details p {
+    color: var(--dark-text);
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.notes {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: #fff9e6;
+    border-left: 4px solid #ffc107;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.notes p {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .section_title {
+        font-size: 24px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .card {
+        padding: 1.2rem;
+    }
+    
+    .notes {
+        padding: 1rem;
         font-size: 0.85rem;
     }
 }

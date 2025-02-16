@@ -31,7 +31,9 @@ import { Grievanceredressalcell } from './navlinks pages/grievanceredressalcell.
 import { Generalinfrastructure } from './navlinks pages/generalinfrastructure.jsx';
 import { Officeinfrastructure } from './navlinks pages/officeinfrastructure.jsx';
 import { Wastemanagement } from './navlinks pages/wastemanagement.jsx';
-
+import { PhD } from './navlinks pages/PhD.jsx';
+import { Researchproject } from './navlinks pages/researchproject.jsx';
+import { Contact } from './navlinks pages/contact.jsx';
 
 function App() {
   return (
@@ -39,7 +41,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Body />} />
-        <Route path="/body" element={<Body />} />
+        <Route path="/budgebudgecollege" element={<Body />} />
         <Route path="/rules&regulations" element={<Rulesandregulations />} />
         <Route path="/aims&objectives" element={<Aimsandobjective />} />
         <Route path="/mission&vision" element={<Missionandvision />} />
@@ -68,6 +70,9 @@ function App() {
         <Route path="/generalinfrastructure" element={<Generalinfrastructure />} />
         <Route path="/officeinfrastructure" element={<Officeinfrastructure />} />
         <Route path="/wastemanagement" element={<Wastemanagement />} />
+        <Route path="/phd" element={<PhD />} />
+        <Route path="/researchproject" element={<Researchproject />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

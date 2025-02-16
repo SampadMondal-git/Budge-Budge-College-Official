@@ -6,12 +6,12 @@
 
 .teachers_heading h1 {
     color: orangered;
-    margin-bottom: 2rem;
     font-size: 30px;
 }
 
 .teachers_heading p {
     color: rgb(2, 2, 46);
+    line-height: 2rem;
 }
 
 .teachers_list {
@@ -68,7 +68,6 @@
 
     .teachers_heading p {
         font-size: 16px;
-        line-height: 1.5rem;
         text-align: center;
         margin: 0 1rem 2rem 1rem;
     }

@@ -1,50 +1,47 @@
 import React from 'react'
 import myStyles from './financesubcommittee.module.css'
+
 export function Financesubcommittee() {
     return (
-        <>
-            <div className={myStyles.finance_subcommittee}>
-                <h1>Finance Sub-Committee</h1>
+        <div className={myStyles.container}>
+            <h2 className={myStyles.section_title}>Finance Sub-Committee</h2>
+
+            <div className={myStyles.governing_staffs}>
+                <div className={myStyles.staffs}>
+                    <h5>Finance Sub-Committee</h5>
+                    <p>Dr. Debjani Datta<br /><span className={myStyles.designation}>Chairperson - Principal</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Finance Sub-Committee</h5>
+                    <p>Shri Gautam Dasgupta<br /><span className={myStyles.designation}>GB Member (Ex-officio)</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Finance Sub-Committee</h5>
+                    <p>Dr. Partha Pratim Chaudhuri<br /><span className={myStyles.designation}>Associate Professor, Dept. of Zoology</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Finance Sub-Committee</h5>
+                    <p>Dr. Anup Kumar Sahoo<br /><span className={myStyles.designation}>Asst. Prof., Dept. of Physics</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Finance Sub-Committee</h5>
+                    <p>Dr. Gautam Das<br /><span className={myStyles.designation}>Convenor-Associate Prof., Dept. of Commerce and Bursar</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Finance Sub-Committee</h5>
+                    <p>Subrata Karmakar<br /><span className={myStyles.designation}>Laboratory Attendant, Dept. of Geography</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Finance Sub-Committee</h5>
+                    <p>Somenath Bose<br /><span className={myStyles.designation}>Member- Invitee Accountant (Acting)</span></p>
+                </div>
             </div>
-            <div className={myStyles.staffs}>
-                <table>
-                    <tr>
-                        <th>Sub Committee Name</th>
-                        <th>Member</th>
-                        <th>Designation</th>
-                    </tr>
-                    <tr>
-                        <td>Finance Sub-Committee</td>
-                        <td>Dr. Debjani Datta</td>
-                        <td>Chairperson - Principal</td>
-                    </tr>
-                    <tr>
-                        <td>Finance Sub-Committee</td>
-                        <td>Dr. Partha Pratim Chaudhuri</td>
-                        <td>Associate Professor, Dept. of Zoology</td>
-                    </tr>
-                    <tr>
-                        <td>Finance Sub-Committee</td>
-                        <td>Dr. Gautam Das</td>
-                        <td>Associate Professor, Dept. of Commerce</td>
-                    </tr>
-                    <tr>
-                        <td>Finance Sub-Committee</td>
-                        <td>Dr. Dipak Mandal</td>
-                        <td>Associate Professor, Dept. of History</td>
-                    </tr>
-                    <tr>
-                        <td>Finance Sub-Committee</td>
-                        <td>Dr. Shreya Chakravorty</td>
-                        <td>Asst. Prof., Dept. of English</td>
-                    </tr>
-                    <tr>
-                        <td>Finance Sub-Committee</td>
-                        <td>Dr. Reshmi Sarkar</td>
-                        <td>Convenor, Librarian</td>
-                    </tr>
-                </table>
-            </div>
-        </>
+        </div>
     )
 }

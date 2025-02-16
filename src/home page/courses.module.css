@@ -1,8 +1,8 @@
 .courses_container {
-    display: flex;
-    justify-content: space-between;
-    margin: 3rem 10rem;
-    color: rgb(2, 2, 46);
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 10rem;
+  color: rgb(2, 2, 46);
 }
 
 .our_courses {
@@ -21,12 +21,17 @@
   color: rgb(2, 2, 46);
   font-size: 16px;
   margin-bottom: 30px;
+  line-height: 2rem;
 }
 
 .course {
   display: flex;
   text-align: center;
   margin-top: 2rem;
+}
+
+.course p {
+  line-height: 2rem;
 }
 
 .course h2 {
@@ -73,50 +78,47 @@
     hue-rotate(-15deg) brightness(94%) contrast(175%);
 }
 
-
 @media (max-width: 768px) {
-    .courses_container {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2,1fr);
-        margin: 1rem 1rem 2rem 1rem;
-        gap: 2rem 0;
-    }
+  .courses_container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 1rem 2rem 1rem;
+    gap: 2rem 0;
+  }
 
-    .item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .our_courses {
-        margin-top: 0;
-    }
+  .our_courses {
+    margin-top: 0;
+  }
 
-    .title {
-        margin: 0 10px;
-    }
+  .title {
+    margin: 0 10px;
+  }
 
-    .title h1 {
-        color: orangered;
-        margin-bottom: 0.5rem;
-        font-size: 24px;
-      }
+  .title h1 {
+    color: orangered;
+    margin-bottom: 0.5rem;
+    font-size: 24px;
+  }
 
-      .title p {
-        line-height: 1.5rem;
-      }
+  .course {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
 
-    .course {
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    .course1, .course2, .course3 {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 30px 20px;
-        line-height: 1.5rem;
-    }
+  .course1,
+  .course2,
+  .course3 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 30px 20px;
+    line-height: 1.5rem;
+  }
 }

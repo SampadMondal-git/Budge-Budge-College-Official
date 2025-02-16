@@ -28,14 +28,14 @@ export function Navlink() {
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to='/body'><img src={Logo} alt="Logo" height={"60px"} className="d-inline-block align-text-top logo-css" /></Link>
+                    <Link className="navbar-brand" to='/budgebudgecollege'><img src={Logo} alt="Logo" height={"60px"} className="d-inline-block align-text-top logo-css" /></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/body">Home</Link>
+                                <Link className="nav-link active" aria-current="page" to="/budgebudgecollege" onClick={handleLinkClick}>Home</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,7 +44,7 @@ export function Navlink() {
                                 <ul className="dropdown-menu">
                                     <li><Link className="dropdown-item" to="/rules&regulations" onClick={handleLinkClick}>Rules & Regulations</Link></li>
                                     <li><Link className="dropdown-item" to="aims&objectives" onClick={handleLinkClick}>Aims & Objectives</Link></li>
-                                    <li><Link className="dropdown-item" to="mission&vision" onClick={handleLinkClick}>Mission & Vision</Link></li>
+                                    <li><Link className="dropdown-item" to="mission&vision" onClick={handleLinkClick}>Vision & Mission</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown">
@@ -112,15 +112,15 @@ export function Navlink() {
                                     Research
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="/" onClick={handleLinkClick}>PhD</a></li>
-                                    <li><a className="dropdown-item" href="/" onClick={handleLinkClick}>Research Projects</a></li>
+                                    <li><Link className="dropdown-item" to="/phd" onClick={handleLinkClick}>PhD</Link></li>
+                                    <li><Link className="dropdown-item" to="/researchproject" onClick={handleLinkClick}>Research Projects</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Other Links</a>
+                                <a className="nav-link active" aria-current="page" href="/" onClick={handleLinkClick}>Other Links</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Contact Us</a>
+                                <Link className="nav-link active" aria-current="page" to="/contact" onClick={handleLinkClick}>Contact Us</Link>
                             </li>
                         </ul>
                     </div>

@@ -1,45 +1,37 @@
 import React from 'react'
 import myStyles from './grievanceredressalcell.module.css'
+
 export function Grievanceredressalcell() {
     return (
-        <>
-            <div className={myStyles.grievance_redressal_cell}>
-                <h1>Grievance Redressal Cell</h1>
+        <div className={myStyles.container}>
+            <h2 className={myStyles.section_title}>Grievance Redressal Cell</h2>
+
+            <div className={myStyles.governing_staffs}>
+                <div className={myStyles.staffs}>
+                    <h5>Grievance Redressal Cell</h5>
+                    <p>Dr. Debjani Datta<br /><span className={myStyles.designation}>Chairperson - Principal</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Grievance Redressal Cell</h5>
+                    <p>Dr. Partha Pratim Chaudhuri<br /><span className={myStyles.designation}>Convener, Associate Professor, Dept. of Zoology</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Grievance Redressal Cell</h5>
+                    <p>Dr. Swati Sachdev<br /><span className={myStyles.designation}>Asst. Prof., Dept. of Geography</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Grievance Redressal Cell</h5>
+                    <p>Dr. Shruti Agrawal<br /><span className={myStyles.designation}>Asst. Prof., Dept. of Food & Nutrition</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Grievance Redressal Cell</h5>
+                    <p>Dr. Papia Das<br /><span className={myStyles.designation}>Asst. Prof., Dept. of Zoology</span></p>
+                </div>
             </div>
-            <div className={myStyles.staffs}>
-                <table>
-                    <tr>
-                        <th>Sub Committee Name</th>
-                        <th>Member</th>
-                        <th>Designation</th>
-                    </tr>
-                    <tr>
-                        <td>Grievance Redressal Cell</td>
-                        <td>Dr. Debjani Datta</td>
-                        <td>Chairperson - Principal</td>
-                    </tr>
-                    <tr>
-                        <td>Grievance Redressal Cell</td>
-                        <td>Dr. Partha Pratim Chaudhuri</td>
-                        <td>Convener, Associate Professor, Dept. of Zoology</td>
-                    </tr>
-                    <tr>
-                        <td>Grievance Redressal Cell</td>
-                        <td>Dr. Swati Sachdev</td>
-                        <td>Asst. Prof., Dept. of Geography</td>
-                    </tr>
-                    <tr>
-                        <td>Grievance Redressal Cell</td>
-                        <td>Dr. Shruti Agrawal</td>
-                        <td>Asst. Prof., Dept. of Food & Nutrition</td>
-                    </tr>
-                    <tr>
-                        <td>Grievance Redressal Cell</td>
-                        <td>Dr. Papia Das</td>
-                        <td>Asst. Prof., Dept. of Zoology</td>
-                    </tr>
-                </table>
-            </div>
-        </>
+        </div>
     )
 }

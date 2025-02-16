@@ -1,55 +1,47 @@
 import React from 'react'
 import myStyles from './magazinesubcommittee.module.css'
+
 export function Magazinesubcommittee() {
-  return (
-    <>
-    <div className={myStyles.magazine_subcommittee}>
-                <h1>Magazine Sub-Committee</h1>
+    return (
+        <div className={myStyles.container}>
+            <h2 className={myStyles.section_title}>Magazine Sub-Committee</h2>
+
+            <div className={myStyles.governing_staffs}>
+                <div className={myStyles.staffs}>
+                    <h5>Magazine Sub-Committee</h5>
+                    <p>Dr. Shreya Chakravorty<br /><span className={myStyles.designation}>Associate Prof., Dept. of English</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Magazine Sub-Committee</h5>
+                    <p>Dr. Papia Das<br /><span className={myStyles.designation}>Asst. Prof., Dept. of Zoology</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Magazine Sub-Committee</h5>
+                    <p>Smita Sahu<br /><span className={myStyles.designation}>Asst. Prof., Dept. of Food & Nutrition</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Magazine Sub-Committee</h5>
+                    <p>Dr. Reshmi Sarkar<br /><span className={myStyles.designation}>Convenor, Librarian</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Magazine Sub-Committee</h5>
+                    <p>Sujit Kumar Mahato<br /><span className={myStyles.designation}>Asst. Prof., Dept. of Commerce</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Magazine Sub-Committee</h5>
+                    <p>Payel Roy<br /><span className={myStyles.designation}>SACT-II, Dept. of Political Science</span></p>
+                </div>
+
+                <div className={myStyles.staffs}>
+                    <h5>Magazine Sub-Committee</h5>
+                    <p>Sumana Das<br /><span className={myStyles.designation}>SACT-II, Dept. of Geography</span></p>
+                </div>
             </div>
-            <div className={myStyles.staffs}>
-                <table>
-                    <tr>
-                        <th>Sub Committee Name</th>
-                        <th>Member</th>
-                        <th>Designation</th>
-                    </tr>
-                    <tr>
-                        <td>Magazine Sub-Committee</td>
-                        <td>Dr. Shreya Chakravorty</td>
-                        <td>Assistant Prof, Dept. of English</td>
-                    </tr>
-                    <tr>
-                        <td>Magazine Sub-Committee</td>
-                        <td>Dr. Papia Das</td>
-                        <td>Asst. Prof., Dept. of Zoology</td>
-                    </tr>
-                    <tr>
-                        <td>Magazine Sub-Committee</td>
-                        <td>Smita Sahu</td>
-                        <td>Asst. Prof., Dept. of Food & Nutrition</td>
-                    </tr>
-                    <tr>
-                        <td>Magazine Sub-Committee</td>
-                        <td>Dr. Reshmi Sarkar</td>
-                        <td>Convenor, Librarian</td>
-                    </tr>
-                    <tr>
-                        <td>Magazine Sub-Committee</td>
-                        <td>Sujit Kumar Mahato</td>
-                        <td>Asst. Prof., Dept. of Commerce</td>
-                    </tr>
-                    <tr>
-                        <td>Magazine Sub-Committee</td>
-                        <td>Payel Roy</td>
-                        <td>SACT-II, Dept. of Political Science</td>
-                    </tr>
-                    <tr>
-                        <td>Magazine Sub-Committee</td>
-                        <td>Sumana Das</td>
-                        <td>SACT-II, Dept. of Geography</td>
-                    </tr>
-                </table>
-            </div>
-    </>
-  )
+        </div>
+    )
 }

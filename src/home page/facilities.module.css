@@ -134,12 +134,11 @@
   }
   .boxes p {
     font-size: 16px;
-    line-height: 1.5rem;
+    line-height: 2rem;
   }
 
   .boxes h1 {
     font-size: 24px;
-    line-height: 1.5rem;
   }
 }
 
