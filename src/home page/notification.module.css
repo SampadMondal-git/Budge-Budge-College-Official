@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #f9f9f9;
+    --dark-text: #2c3e50;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.notice {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section_title {
+    color: var(--primary-color);
+    margin-bottom: 2.5rem;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.category {
+    margin-bottom: 1rem;
+}
+
+.category_title {
+    color: var(--secondary-color);
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+.category {
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) var(--light-bg);
+    scroll-behavior: smooth;
+}
+
+.grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.grid::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.grid::-webkit-scrollbar-track {
+    background: var(--light-bg);
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    text-align: start;
+    color: #3498db;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.card h4 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: right;
+    margin-top: auto;
+}
+
+.date span {
+    background: var(--light-bg);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.date span a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .section_title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 1.2rem;
+        min-height: auto;
+    }
+}
