@@ -117,7 +117,7 @@ export function Navlink() {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/" onClick={handleLinkClick}>Other Links</a>
+                                <Link className="nav-link active" aria-current="page" to="/otherlinks" onClick={handleLinkClick}>Other Links</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="/contact" onClick={handleLinkClick}>Contact Us</Link>
