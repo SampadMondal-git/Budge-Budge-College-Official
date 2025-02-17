@@ -34,6 +34,7 @@ import { Wastemanagement } from './navlinks pages/wastemanagement.jsx';
 import { PhD } from './navlinks pages/PhD.jsx';
 import { Researchproject } from './navlinks pages/researchproject.jsx';
 import { Contact } from './navlinks pages/contact.jsx';
+import { Notification } from './home page/notification.jsx'
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Body />} />
         <Route path="/budgebudgecollege" element={<Body />} />
+        <Route path="/notification" element={<Notification />} />
         <Route path="/rules&regulations" element={<Rulesandregulations />} />
         <Route path="/aims&objectives" element={<Aimsandobjective />} />
         <Route path="/mission&vision" element={<Missionandvision />} />
