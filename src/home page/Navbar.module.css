@@ -26,6 +26,16 @@
 .contact {
   display: flex;
   gap: 2rem;
+  font-size: 14px;
+}
+
+.contact p a {
+  color: orangered;
+  text-decoration: none;
+}
+
+.contact p a:hover {
+  color: white;
 }
 
 .contact p {
