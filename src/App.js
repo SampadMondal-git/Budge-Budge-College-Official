@@ -35,6 +35,7 @@ import { PhD } from './navlinks pages/PhD.jsx';
 import { Researchproject } from './navlinks pages/researchproject.jsx';
 import { Contact } from './navlinks pages/contact.jsx';
 import { Notification } from './home page/notification.jsx'
+import { Naac } from './navlinks pages/naac.jsx';
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
         <Route path="/phd" element={<PhD />} />
         <Route path="/researchproject" element={<Researchproject />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/naac" element={<Naac />} />
       </Routes>
       <Footer />
     </BrowserRouter>
