@@ -66,10 +66,6 @@
 }
 
 @media (max-width: 768px) {
-    .contact h1 {
-        font-size: 24px;
-    }
-
     .section_title {
         font-size: 24px;
         text-align: center;
