@@ -1,14 +1,6 @@
-:root {
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --accent-color: #e74c3c;
-  --light-bg: #f9f9f9;
-  --dark-text: #2c3e50;
-}
-
 .container {
   max-width: 1200px;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto;
 }
 
 .section_title {
@@ -23,6 +15,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .staffs {
@@ -52,9 +45,12 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+
   .section_title {
       font-size: 24px;
-      text-align: center;
   }
   
   .governing_staffs {
@@ -64,6 +60,5 @@
   
   .staffs {
       padding: 1.2rem;
-      margin: 0 2rem;
   }
 }

@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .card {
@@ -66,17 +66,16 @@
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+
     .section_title {
         font-size: 24px;
-        text-align: center;
     }
     
     .grid {
         grid-template-columns: 1fr;
         gap: 1rem;
-    }
-
-    .card {
-        margin: 0 2rem;
     }
 }

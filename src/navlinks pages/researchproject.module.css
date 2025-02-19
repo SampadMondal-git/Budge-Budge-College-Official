@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -64,9 +64,12 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+
   .section_title, .research_project h1 {
     font-size: 24px;
-    text-align: center;
   }
 
   .grid {
@@ -74,7 +77,6 @@
   }
 
   .card {
-    margin: 0 2rem;
     padding: 20px;
   }
 }

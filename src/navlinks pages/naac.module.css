@@ -1,179 +1,165 @@
 .container {
-    max-width: 1200px;
-    margin: 0 auto 2rem auto;
-  }
-  
-  .section_title {
-    color: var(--primary-color);
-    margin: 40px 0 20px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid var(--secondary-color);
-    font-size: 30px;
-  }
-  
-  .governing_staffs {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-  
-  .staffs {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .staffs:hover {
-    transform: translateY(-5px);
-  }
-  
-  .staffs h5 {
-    color: #3498db;
-    margin-bottom: 0.8rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #eee;
-    font-size: 1.1rem;
-  }
-  
-  .staffs p {
-    color: #2c3e50;
-    line-height: 1.6;
-    font-size: 0.95rem;
-  }
-  
-  .designation {
-    color: #666;
-    font-size: 0.9rem;
-    display: block;
-    margin-top: 0.5rem;
-  }
-  
-  @media (max-width: 768px) {
-    .section_title {
-      font-size: 24px;
-      text-align: center;
-    }
-  
-    .governing_staffs {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-  
-    .staffs {
-      padding: 1.2rem;
-      margin: 0 2rem;
-    }
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  
-  :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --light-bg: #f9f9f9;
-    --dark-text: #2c3e50;
-  }
-  
+.section_title {
+  color: var(--primary-color);
+  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--secondary-color);
+  font-size: 30px;
+}
+
+.governing_staffs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.staffs {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.staffs:hover {
+  transform: translateY(-5px);
+}
+
+.staffs h5 {
+  color: #3498db;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  font-size: 1.1rem;
+}
+
+.staffs p {
+  color: #2c3e50;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.designation {
+  color: #666;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+.point {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: var(--light-bg);
+  border-left: 4px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+.point a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.point a:hover {
+  text-decoration: underline;
+}
+
+.highlight {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.equipment_list {
+  /* columns: 2; */
+  list-style-type: none;
+}
+
+.equipment_list ul {
+  margin-bottom: 0;
+  padding-right: 0;
+}
+
+.equipment_list li {
+  padding: 0.2rem 0;
+}
+
+.equipment_list li::before {
+  content: "▹";
+  color: var(--secondary-color);
+  margin-right: 10px;
+}
+
+.equipment_list li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.equipment_list li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 0 2rem;
   }
-  
-  .section_title {
-    color: var(--primary-color);
-    margin: 40px 0 20px;
-    font-size: 30px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid var(--secondary-color);
-  }
-  
+
   .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-bottom: 30px;
-  }
-  
-  .card {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card h3 {
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #eee;
-  }
-  
-  .point {
-    margin-bottom: 15px;
-    padding: 15px;
-    background-color: var(--light-bg);
-    border-left: 4px solid var(--secondary-color);
-    border-radius: 5px;
-  }
-  
-  .highlight {
-    color: var(--accent-color);
-    font-weight: 600;
-  }
-  
-  .equipment_list {
-    /* columns: 2; */
-    list-style-type: none;
-  }
-  
-  .equipment_list ul {
-    margin-bottom: 0;
-    padding-right: 0;
-  }
-  
-  .equipment_list li {
-    padding: 0.2rem 0;
-  }
-  
-  .equipment_list li::before {
-    content: "▹";
-    color: var(--secondary-color);
-    margin-right: 10px;
+    grid-template-columns: 1fr;
   }
 
-  .equipment_list li a {
-    text-decoration: none;
-    color: var(--secondary-color);
+  .equipment-list {
+    columns: 1;
   }
 
-  .equipment_list li a:hover {
-    text-decoration: underline;
+  .section_title {
+    font-size: 24px;
+    }
+
+  .governing_staffs {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .waste_management h1 {
-      font-size: 24px;
-    }
-  
-    .container h2 {
-      font-size: 24px;
-      text-align: center;
-    }
-  
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .equipment-list {
-      columns: 1;
-    }
+
+  .staffs {
+    padding: 1.2rem;
   }
-  
+}
+
+
+/* .container {
+  padding: 0 2rem;
+} */
+
+/* font-size 1.1rem */
+
+/* gap 2rem or 1rem*/

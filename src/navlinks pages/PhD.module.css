@@ -82,23 +82,14 @@
 
 
 /* PhD.module.css */
-:root {
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --accent-color: #e74c3c;
-  --light-bg: #f9f9f9;
-  --dark-text: #2c3e50;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 .section_title {
   color: var(--primary-color);
-  margin-bottom: 2.5rem;
+  margin: 40px 0 20px;
   font-size: 30px;
   letter-spacing: 1.5px;
   border-bottom: 3px solid var(--secondary-color);
@@ -109,6 +100,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -132,7 +124,7 @@
 .scholar_header h3 {
   color: var(--secondary-color);
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .designation {
@@ -174,8 +166,12 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+
   .section_title {
-      font-size: 20px;
+      font-size: 24px;
   }
   
   .grid {
