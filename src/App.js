@@ -37,6 +37,7 @@ import { Contact } from './navlinks pages/contact.jsx';
 import { Notification } from './home page/notification.jsx'
 import { Naac } from './navlinks pages/naac.jsx';
 import { Otherlinks } from './navlinks pages/otherlinks.jsx';
+import { Iqac } from './navlinks pages/iqac.jsx';
 
 function App() {
   return (
@@ -79,6 +80,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/naac" element={<Naac />} />
         <Route path="/otherlinks" element={<Otherlinks />} />
+        <Route path="/iqac" element={<Iqac />} />
       </Routes>
       <Footer />
     </BrowserRouter>
