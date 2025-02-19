@@ -39,6 +39,7 @@
 }
 
 .point {
+  margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px;
   background-color: var(--light-bg);
@@ -51,8 +52,8 @@
   font-weight: 600;
 }
 
-.equipment_list {
-  columns: 2;
+.equipment_list li {
+  padding-bottom: 0.5rem;
   list-style-type: none;
 }
 
