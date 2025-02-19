@@ -56,17 +56,15 @@
   }
   
   @media (max-width: 768px) {
-    .container {
-        padding: 0 2rem;
-    }
-
     .section_title {
-      font-size: 24px;
+        margin: 40px 2rem 20px;
+        font-size: 24px;
     }
   
     .teaching_staffs {
       grid-template-columns: 1fr;
       gap: 1rem;
+      margin: 0 2rem 2rem 2rem;
     }
   
     .staffs {
