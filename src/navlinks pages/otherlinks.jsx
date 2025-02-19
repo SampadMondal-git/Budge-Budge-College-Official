@@ -5,7 +5,7 @@ export function Otherlinks() {
     return (
       <div className={myStyles.container}>
             <h2 className={myStyles.section_title}>Other Links</h2>
-        <div className={myStyles.governing_staffs}>
+        <div className={myStyles.otherlinks}>
         <div className={myStyles.staffs}>
           <h5>NAAC</h5>
           <p><Link to="/naac">Visit NAAC</Link></p>
