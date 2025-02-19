@@ -38,6 +38,7 @@ import { Notification } from './home page/notification.jsx'
 import { Naac } from './navlinks pages/naac.jsx';
 import { Otherlinks } from './navlinks pages/otherlinks.jsx';
 import { Iqac } from './navlinks pages/iqac.jsx';
+import { Studentzone } from './navlinks pages/studentzone.jsx';
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
         <Route path="/naac" element={<Naac />} />
         <Route path="/otherlinks" element={<Otherlinks />} />
         <Route path="/iqac" element={<Iqac />} />
+        <Route path="/studentzone" element={<Studentzone />} />
       </Routes>
       <Footer />
     </BrowserRouter>
