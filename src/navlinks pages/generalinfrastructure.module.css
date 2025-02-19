@@ -70,7 +70,6 @@
 }
 
 .equipment_list {
-  columns: 2;
   list-style-type: none;
 }
 
@@ -92,6 +91,10 @@
 @media (max-width: 768px) {
   .section_title {
     margin: 40px 2rem 20px;
+  }
+
+  .grid {
+    margin: 0 2rem 2rem 2rem;
   }
 
   .general_infrastructure h1 {
