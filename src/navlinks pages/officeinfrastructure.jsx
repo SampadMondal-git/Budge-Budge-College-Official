@@ -41,7 +41,7 @@ export function Officeinfrastructure() {
                         <h3>Server Infrastructure</h3>
                         <div className={myStyles.point}>Powered by Dell PowerEdge T610 Main Server</div>
                         <div className={myStyles.server_features}>
-                            <h4>Key Features:</h4>
+                            <span className={myStyles.highlight}>Key Features:</span>
                             <ul className={myStyles.equipment_list}>
                                 <li>Dual-socket Intel Xeon processors for high-performance computing</li>
                                 <li>Advanced virtualization capabilities for efficient resource management</li>
