@@ -16,7 +16,7 @@ export function Otherlinks() {
         </div>
         <div className={myStyles.staffs}>
           <h5>Student's Zone</h5>
-          <p><Link to="/studentszone">Visit Student's Zone</Link></p>
+          <p><Link to="/studentzone">Visit Student's Zone</Link></p>
         </div>
         <div className={myStyles.staffs}>
           <h5>Activities</h5>
