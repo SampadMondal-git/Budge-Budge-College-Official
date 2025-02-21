@@ -173,14 +173,14 @@ export function Naac() {
                 </div>
             </div>
 
-            <div class={myStyles.container}>
-                <h2 class={myStyles.section_title}>SSR</h2>
-                <div class={myStyles.grid}>
-                    <div class={myStyles.card}>
+            <div className={myStyles.container}>
+                <h2 className={myStyles.section_title}>SSR</h2>
+                <div className={myStyles.grid}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 1</h3>
-                        <div class={`${myStyles.point} ${myStyles.highlight}`}>1.3.2.1: Number of students undertaking project work/field work/internship</div>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={`${myStyles.point} ${myStyles.highlight}`}>1.3.2.1: Number of students undertaking project work/field work/internship</div>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_1_pd1_1} download="1.3.2.1-A">1.3.2.1-A</a></li>
                                 <li><a href={cr_1_pd1_2} download="1.3.2.1-B">1.3.2.1-B</a></li>
                                 <li><a href={cr_1_pd1_3} download="1.3.2.1-C">1.3.2.1-C</a></li>
@@ -191,20 +191,20 @@ export function Naac() {
                         </div>
                     </div>
 
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 2</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_2_pdf_1} download="17105954162.3.1 sign.PDF">2.3.1: Additional Information</a></li>
                                 <li><a href={cr_2_pdf_2} download="17105960602.4.2-Copies of PhD Certificates attested.pdf">2.4.2: Copies of Ph.D. Certificates</a></li>
                                 <li><a href={cr_2_pdf_3} download="1777772.6.1 2.6.2 BudgeBudgeCollege_POCOCBCS_signed.pdf">2.6.1: Programme Outcomes (POs) and Course Outcomes (COs)</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 3</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_3_pdf_1} download="17107435373.2.2-Seminar-report-Final sign.pdf">3.2.2: Seminar Report</a></li>
                                 <li><a href={cr_3_pdf_2} download="17107415603.3.2-Copy of relevant pages_signed.pdf">3.3.2: Relevant Pages</a></li>
                                 <li><a href={cr_3_pdf_3} download="17107422463.4.3 (a) Photographs sign.pdf">3.4.3: Photographs</a></li>
@@ -213,19 +213,19 @@ export function Naac() {
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 4</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_4_pdf_1} download="17107525764.3.2.1 Photographs of Computers Used by the Students.pdf">4.3.2.1: Computers Used by the Students</a></li>
                                 <li><a href={cr_4_pdf_2} download="17105965314.4.1-Audited Statement.pdf">4.4.1: Audited Statement</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 5</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_5_pdf_1} download="17105967375.1.1.1. (a) Year-wise list of beneficiary students sign.pdf">5.1.1.1: Year-wise List of Beneficiary Students</a></li>
                                 <li><a href={cr_5_pdf_2} download="17105968335.2.1.1. List of students placed sign.pdf">5.2.1.1: List of Students Placed</a></li>
                                 <li><a href={cr_5_pdf_3} download="17105970275.2.1.1. List of students progressing for Higher Education sign.pdf">5.2.1.1: List of Students Progressing for Higher Education</a></li>
@@ -233,20 +233,20 @@ export function Naac() {
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 6</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_6_pdf_1} download="17105982606.3.3 (b)-Copy of the certificates of the program sign.pdf">6.3.3.1: Copy of the Certificates of the Program</a></li>
                                 <li><a href={cr_6_pdf_2} download="17107506706.5.2-Quality Audit Report.pdf">6.5.2: Quality Audit Report</a></li>
                                 <li><a href={cr_6_pdf_3} download="17106829016.5.2-Minutes of IQAC Meetings attested-1.pdf">6.5.2: Minutes of IQAC Meetings Attested</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 7</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_7_pdf_1} download="17106793577.1.2-Supporting Documents.pdf">7.1.2: Supporting Documents</a></li>
                                 <li><a href={cr_7_pdf_2} download="17107589807.1.2-Divyagjan sign.pdf">7.1.2: Divyagjan</a></li>
                                 <li><a href={cr_7_pdf_3} download="17107477597.1.3-Beyond the campus env protection sign.pdf">7.1.3: Beyond the Campus Environment Protection</a></li>
@@ -256,10 +256,10 @@ export function Naac() {
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>SSR</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_ssr_pdf_1} download="58309SSR-WBCOGN12389.pdf">SSR-CYCLE-3</a></li>
                                 <li><a href={cr_ssr_pdf_2} download="SSR-Cycle 2.pdf">SSR-CYCLE-2</a></li>
                             </ul>
@@ -268,12 +268,12 @@ export function Naac() {
                 </div>
             </div>
 
-            <div class={myStyles.container}>
-                <h2 class={myStyles.section_title}>AQAR</h2>
-                <div class={myStyles.grid}>
-                    <div class={myStyles.card}>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+            <div className={myStyles.container}>
+                <h2 className={myStyles.section_title}>AQAR</h2>
+                <div className={myStyles.grid}>
+                    <div className={myStyles.card}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_aqar_pdf_1} download="83172AQAR 2023-24 REPORT.pdf">AQAR REPORT 2023-24</a></li>
                                 <li><a href={cr_aqar_pdf_2} download="17356Cateogry-wise Sem 1 All Students 2023-2024-Final.pdf">AQAR 2023-24 EXTENDED 2.2</a></li>
                                 <li><a href={cr_aqar_pdf_3} download="466475.1.2.pdf">AQAR 2023-24 5.1.2</a></li>
@@ -300,9 +300,9 @@ export function Naac() {
                         </div>
                     </div>
 
-                    <div class={myStyles.card}>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                    <div className={myStyles.card}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_aqar_pdf_23} download="892062.3.2.pdf">AQAR 2023-24 2.3.2</a></li>
                                 <li><a href={cr_aqar_pdf_24} download="700774.1.3.pdf">AQAR 2023-24 4.1.3</a></li>
                                 <li><a href={cr_aqar_pdf_25} download="264624.1.2.pdf">AQAR 2023-24 4.1.2</a></li>
@@ -331,35 +331,35 @@ export function Naac() {
                 </div>
             </div>
 
-            <div class={myStyles.container}>
-                <h2 class={myStyles.section_title}>IIQA</h2>
-                <div class={myStyles.grid}>
-                    <div class={myStyles.card}>
+            <div className={myStyles.container}>
+                <h2 className={myStyles.section_title}>IIQA</h2>
+                <div className={myStyles.grid}>
+                    <div className={myStyles.card}>
                         <h3>Sustainability Measures</h3>
-                        <div class={myStyles.point}><a href={cr_iiqa_pdf_1} download="IIQA-UNDERTAKING.pdf">IIQA UNDERTAKING</a></div>
-                        <div class={myStyles.point}><a href={cr_iiqa_pdf_2} download="IQAC Meetings & ATR.pdf">Minutes of IQAC Meeting & Action Taken Report</a></div>
-                        <div class={myStyles.point}><a href={cr_iiqa_pdf_3} download="IIQA.pdf">IIQA</a></div>
+                        <div className={myStyles.point}><a href={cr_iiqa_pdf_1} download="IIQA-UNDERTAKING.pdf">IIQA UNDERTAKING</a></div>
+                        <div className={myStyles.point}><a href={cr_iiqa_pdf_2} download="IQAC Meetings & ATR.pdf">Minutes of IQAC Meeting & Action Taken Report</a></div>
+                        <div className={myStyles.point}><a href={cr_iiqa_pdf_3} download="IIQA.pdf">IIQA</a></div>
                     </div>
                 </div>
             </div>
 
-            <div class={myStyles.container}>
-                <h2 class={myStyles.section_title}>DVV</h2>
-                <div class={myStyles.grid}>
-                    <div class={myStyles.card}>
+            <div className={myStyles.container}>
+                <h2 className={myStyles.section_title}>DVV</h2>
+                <div className={myStyles.grid}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 1</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_dvv_pdf_1} download="93282DVV-1.3.2_signed.pdf">1.3.2 Percentage of students undertaking project work/field work/ internships</a></li>
                                 <li><a href={cr_dvv_pdf_2} download="92304DVV-1.4.1 sign.pdf">1.4.1 Institution obtains feedback on the academic performance and ambience of the institution from various stakeholders and action taken report on the feedback is made available on institutional website</a></li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 2</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_dvv_pdf_3} download="12325DVV-2.2.1 Sign.pdf">2.2.1 Student – Full time Teacher Ratio</a></li>
                                 <li><a href={cr_dvv_pdf_4} download="43045DVV2.4.1_signed.pdf">2.4.1 Percentage of full-time teachers against sanctioned posts during the last five years</a></li>
                                 <li><a href={cr_dvv_pdf_5} download="72368DVV-2.6.3 Sign.pdf">2.4.2 Percentage of full time teachers with NET/SET/SLET/ Ph. D./D.Sc. / D.Litt./L.L.D. during the last five years</a></li>
@@ -369,10 +369,10 @@ export function Naac() {
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 3</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_dvv_pdf_9} download="484173.3.1-Journal Articles sign.pdf">3.3.1 B - Research papers published by teachers in UGC CARE listed Journals</a></li>
                                 <li><a href={cr_dvv_pdf_10} download="89698DVV-3.2.2 Sign.pdf">3.2.2 Number of workshops/seminars/conferences including on Research Methodology, Intellectual Property Rights (IPR) and entrepreneurship conducted during the last five years</a></li>
                                 <li><a href={cr_dvv_pdf_11} download="71522DVV-3.3.1 Sign.pdf">3.3.1 Number of research papers published per teacher in the Journals notified on UGC care list during the last five years</a></li>
@@ -382,20 +382,20 @@ export function Naac() {
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 4</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_dvv_pdf_15} download="93676DVV-4.1.2.pdf">4.1.2 Percentage of expenditure for infrastructure development and augmentation excluding salary during the last five years</a></li>
                                 <li><a href={cr_dvv_pdf_16} download="76511DVV-4.3.2.pdf">4.3.2 Student – Computer ratio</a></li>
                                 <li><a href={cr_dvv_pdf_17} download="36836DVV-4.4.1.pdf">4.4.1 Percentage expenditure incurred on maintenance of physical facilities and academic support facilities excluding salary component, during the last five years</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 5</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_dvv_pdf_18} download="96982DVV-5.1.1 sign.pdf">5.1.1 Percentage of students benefited by scholarships and freeships provided by the institution, government and non-government bodies, industries, individuals, philanthropists during the last five years</a></li>
                                 <li><a href={cr_dvv_pdf_19} download="83596DVV-5.1.3 sign.pdf">5.1.3 Percentage of students benefitted by guidance for competitive examinations and career counseling offered by the Institution during the last five years</a></li>
                                 <li><a href={cr_dvv_pdf_20} download="17105965314.4.1-Audited Statement.pdf">5.2.2 Percentage of students qualifying in state/national/ international level examinations during the last five years</a></li>
@@ -407,29 +407,29 @@ export function Naac() {
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 6</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_dvv_pdf_26} download="17105967375.1.1.1. (a) Year-wise list of beneficiary students sign.pdf">6.3.3 Percentage of teaching and non-teaching staff participating in Faculty development Programmes (FDP), Management Development Programmes (MDPs) professional development /administrative training programs during the last five years</a></li>
                                 <li><a href={cr_dvv_pdf_27} download="17105968335.2.1.1. List of students placed sign.pdf">6.2.2 : Institution implements e-governance in its operations</a></li>
                                 <li><a href={cr_dvv_pdf_28} download="17105970275.2.1.1. List of students progressing for Higher Education sign.pdf">6.5.2:Quality assurance initiatives of the institution</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>Criterion 7</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_dvv_pdf_29} download="17105982606.3.3 (b)-Copy of the certificates of the program sign.pdf">7.1.3 Quality audits on environment and energy regularly undertaken by the Institution.</a></li>
                                 <li><a href={cr_dvv_pdf_30} download="17107506706.5.2-Quality Audit Report.pdf">7.1.2: The Institution has facilities and initiatives for</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class={myStyles.card}>
+                    <div className={myStyles.card}>
                         <h3>EXTENDED PROFILE</h3>
-                        <div class={myStyles.point}>
-                            <ul class={myStyles.equipment_list}>
+                        <div className={myStyles.point}>
+                            <ul className={myStyles.equipment_list}>
                                 <li><a href={cr_dvv_pdf_31} download="17106793577.1.2-Supporting Documents.pdf">2.1 Number of teaching staff / full time teachers during the last five years</a></li>
                                 <li><a href={cr_dvv_pdf_32} download="17107589807.1.2-Divyagjan sign.pdf">2.2 Number of teaching staff / full time teachers year wise during the last five years
                                 </a></li>
