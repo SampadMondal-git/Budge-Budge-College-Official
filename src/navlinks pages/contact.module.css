@@ -48,6 +48,10 @@
     border-radius: 5px;
 }
 
+.point p {
+    text-align: start;
+}
+
 .contact_info {
     color: #2c3e50;
     line-height: 1.6;
@@ -64,6 +68,15 @@
     color: blue;
     text-decoration: underline;
 }
+
+.card a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
 
 @media (max-width: 768px) {
     .container {
