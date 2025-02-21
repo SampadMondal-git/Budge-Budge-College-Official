@@ -369,7 +369,6 @@ export function Studentzone() {
                     <h2 className={myStyles.section_title}>Programme and Course Outcomes</h2>
                     <div className={myStyles.grid}>
                         <div className={myStyles.card}>
-                            <h3>Sustainability Measures</h3>
                             <div className={myStyles.point}><a href={pdf_1} download="11666POCO-CCF.pdf">11666POCO-CCF</a></div>
                             <div className={myStyles.point}><a href={pdf_2} download="82083POCO-CBCS.pdf">82083POCO-CBCS</a></div>
                         </div>
