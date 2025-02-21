@@ -1,0 +1,180 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section_title {
+    color: var(--primary-color);
+    margin: 40px 0 20px;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .point {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: var(--light-bg);
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 5px;
+  }
+  
+
+  .staffs {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .staffs:hover {
+    transform: translateY(-5px);
+  }
+  
+  .staffs h5 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+    font-size: 1rem;
+  }
+  
+  .details p {
+    color: var(--dark-text);
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+  }
+  
+  .staffs a, .point a {
+    color: var(--secondary-color);
+    margin: 0.5rem 0;
+    text-decoration: none;
+  }
+  
+  .staffs a:hover, .point a:hover {
+    text-decoration: underline;
+  }
+  
+  .highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+  }
+
+ .card img {
+    width: 100%;
+    height:fit-content;
+    object-fit: cover;
+ }
+
+ 
+.point li {
+    list-style: none;
+  }
+  
+  .point li::before {
+    content: "▹";
+    color: var(--secondary-color);
+    margin-right: 10px;
+  }
+
+  
+.image_card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.image_card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery_image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: opacity 0.3s ease;
+}
+
+.image_card:hover .gallery_image {
+  opacity: 0.9;
+}
+
+.image_caption {
+  padding: 15px;
+  background: var(--light-bg);
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-align: center;
+  border-top: 3px solid var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .section_title {
+    margin: 40px 2rem 20px;
+    font-size: 24px;
+  }
+
+  .teaching_staffs {
+    grid-template-columns: 1fr;
+    margin: 0 2rem 2rem 2rem;
+    gap: 1rem;
+  }
+
+  .staffs {
+    padding: 1.2rem;
+  }
+
+  .equipment_list {
+    columns: 1;
+  }
+
+  .stats_table {
+    font-size: 14px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin: 0 2rem 2rem 2rem;
+  }
+  
+  .details p {
+    color: var(--dark-text);
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+  }
+
+  .gallery_image {
+    height: 200px;
+  }
+}
