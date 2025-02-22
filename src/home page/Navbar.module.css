@@ -14,8 +14,8 @@
 }
 
 .info {
-  background-color: rgb(2, 2, 46);
-  color: orangered;
+  background-color: var(--primary-color);
+  color: var(--light-bg);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -30,7 +30,7 @@
 }
 
 .contact p a {
-  color: orangered;
+  color: var(--light-bg);
   text-decoration: none;
 }
 
@@ -57,8 +57,8 @@
 }
 
 button {
-  background-color: orangered;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--light-bg);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -68,8 +68,8 @@ button {
   font-family: sans-serif;
 
   &:hover {
-    background-color: white;
-    color: rgb(2, 2, 46);
+    background-color: var(--light-bg);
+    color: var(--primary-color);
     transition: all 0.3s ease-in-out;
   }
 }
