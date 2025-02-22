@@ -39,10 +39,20 @@ import { Naac } from './navlinks pages/naac.jsx';
 import { Otherlinks } from './navlinks pages/otherlinks.jsx';
 import { Iqac } from './navlinks pages/iqac.jsx';
 import { Studentzone } from './navlinks pages/studentzone.jsx';
+import { Activities } from './navlinks pages/activities.jsx';
+import { Alumni } from './navlinks pages/alumni.jsx';
+import { Feedback } from './navlinks pages/feedback.jsx';
+import { Imagegallery } from './navlinks pages/imagegallery.jsx';
+import { Nsoustudycentre } from './navlinks pages/nsoustudycentre.jsx';
+import { Library } from './navlinks pages/library.jsx';
+import { Rti } from './navlinks pages/rti.jsx';
+import { Nirf } from './navlinks pages/nirf.jsx';
+import ScrollToTop from './navlinks pages/scrolltotop.jsx';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Body />} />
@@ -83,6 +93,14 @@ function App() {
         <Route path="/otherlinks" element={<Otherlinks />} />
         <Route path="/iqac" element={<Iqac />} />
         <Route path="/studentzone" element={<Studentzone />} />
+        <Route path="/activities" element={<Activities />} />
+        <Route path="/alumni" element={<Alumni />} />
+        <Route path="/feedback" element={<Feedback />} />
+        <Route path="/imagegallery" element={<Imagegallery />} />
+        <Route path="/nsoustudycentre" element={<Nsoustudycentre />} />
+        <Route path="/library" element={<Library />} />
+        <Route path="/rti" element={<Rti />} />
+        <Route path="/nirf" element={<Nirf />} />
       </Routes>
       <Footer />
     </BrowserRouter>
