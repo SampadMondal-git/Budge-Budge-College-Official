@@ -94,6 +94,10 @@
     object-fit: cover;
  }
 
+ .card ul {
+  padding-right: 0 !important;
+ }
+
  
 .point li {
     list-style: none;
