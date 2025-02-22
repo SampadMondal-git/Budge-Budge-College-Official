@@ -1,0 +1,104 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section_title {
+    color: var(--primary-color);
+    margin: 40px 0 20px;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .point {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: var(--light-bg);
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 5px;
+  }
+  
+  .highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+  }
+  
+  .equipment_list {
+    list-style-type: none;
+  }
+  
+  .equipment_list ul {
+    margin-bottom: 0;
+    padding-right: 0;
+  }
+  
+  .equipment_list li {
+    padding: 0.2rem 0;
+  }
+  
+  .equipment_list li::before {
+    content: "▹";
+    color: var(--secondary-color);
+    margin-right: 10px;
+  }
+
+  .point a {
+    text-decoration: none;
+    font-weight: normal;
+    color: var(--secondary-color);
+  }
+  
+  .point a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      margin: 0 2rem;
+    }
+  
+    .waste_management h1 {
+      font-size: 24px;
+    }
+  
+    .container h2 {
+      font-size: 24px;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .equipment-list {
+      columns: 1;
+    }
+  }
+  
