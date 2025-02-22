@@ -9,6 +9,8 @@ import summaryPdf from '../Pdf files/Students undertaking Project workField work
 import introPdf from '../Pdf files/Students undertaking Project workField workInternship/17105923051.3.2-201-400_signed.pdf'
 import surveyPdf from '../Pdf files/Students undertaking Project workField workInternship/17105925221.3.2-401-640_signed.pdf'
 import objectivePdf from '../Pdf files/Students undertaking Project workField workInternship/17105927391.3.2-641-838_signed.pdf'
+//NSS and NCC pdf
+import nss_ncc_pdf from '../Pdf files/NSS & NCC activities/17107422463.4.3 (a) Photographs sign.pdf'
 //NCC images
 import images1 from '../images/NCC images/image 1.jpg'
 import images2 from '../images/NCC images/image 2.jpg'
@@ -130,6 +132,24 @@ export function Activities() {
           <div className={myStyles.card}>
             <h3>Leadership and Coordination</h3>
             <p>NCC at Budge Budge College was initiated in 2019 under Care Taker Officer (CTO) Dr. Kishor Naskar, Assistant Professor in the Department of Economics. Currently, the NCC unit is led by CTO Mr. Buddham Tamang, Assistant Professor in the Department of Political Science, with a sanctioned strength of 100 cadets (SD & SW).</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={myStyles.container}>
+        <h2 className={myStyles.section_title}>NSS and NCC Activities</h2>
+        <div className={myStyles.grid}>
+          <div className={myStyles.staffs}>
+            <h5>NSS Activities</h5>
+            <div className={myStyles.details}>
+              <p><span className={myStyles.highlight}>Download NSS Activities:</span> <a href={nss_ncc_pdf} download="17107422463.4.3 (a) Photographs sign">17107422463.4.3 (a) Photographs sign</a></p>
+            </div>
+          </div>
+          <div className={myStyles.staffs}>
+            <h5>NCC Activities</h5>
+            <div className={myStyles.details}>
+              <p><span className={myStyles.highlight}>Download NCC Activities:</span> <a href={nss_ncc_pdf} download="17107422463.4.3 (a) Photographs sign">17107422463.4.3 (a) Photographs sign</a></p>
+            </div>
           </div>
         </div>
       </div>
