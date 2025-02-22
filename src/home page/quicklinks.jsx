@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import myStyles from './quicklinks.module.css'
 
 export function Quicklinks() {
@@ -14,11 +15,11 @@ export function Quicklinks() {
                         </div>
                         <div className={myStyles.foot_email}>
                         <i className="ri-message-3-fill"></i>
-                            <p>budgebudgecollege@gmail.com</p>
+                            <li><Link to="mailto:budgebudgecollege@gmail.com">budgebudgecollege@gmail.com</Link></li>
                         </div>
                         <div className={myStyles.foot_call}>
                         <i className="ri-phone-fill"></i>
-                            <p>033 24701454 | 033 24805168</p>
+                            <li><Link to="tel:03324701454">033 24701454</Link> | <Link to="tel:03324805168">033 24805168</Link></li>
                         </div>
                     </div>
                 </div>
@@ -32,11 +33,12 @@ export function Quicklinks() {
                 <div className={myStyles.links}>
                     <h1>Quick Links</h1>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">Courses</a></li>
-                        <li><a href="/">Admission</a></li>
-                        <li><a href="/">Notice</a></li>
-                        <li><a href="/">Contact Us</a></li>
+                        <li><Link to="/budgebudgecollege">Home</Link></li>
+                        <li><Link to="/coursesoffered">Courses</Link></li>
+                        <li><Link to="/admissionnotice">Admission</Link></li>
+                        <li><Link to="/notification">Notice</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li><Link to="mailto:sampadm310@outlook.com">Feedback</Link></li>
                     </ul>
                 </div>
             </div>
