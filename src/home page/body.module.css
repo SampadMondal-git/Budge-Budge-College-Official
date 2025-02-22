@@ -1,20 +1,19 @@
 :root {
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --accent-color: #e74c3c;
-  --light-bg: #f9f9f9;
-  --dark-text: #2c3e50;
+  --primary-color: #386641;
+  --secondary-color: #6A994E;
+  --accent-color: #A7C957;
+  --light-bg: #F2E8CF;
+  --dark-text: #BC4749;
 }
 
 .animatedSection {
   width: 100%;
 }
 
-/* Disable animations on mobile devices */
 @media (max-width: 768px) {
   .animatedSection {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;
   }
-} 
+}
