@@ -1,62 +1,95 @@
-.contact {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact h1 {
-    background-color: orangered;
-    color: rgb(2, 2, 46);
-    margin: 0;
-    padding: 1rem 0;
-    text-align: center;
-    font-size: 30px;
-}
-
 .container {
     max-width: 1200px;
-    margin: 0 auto 30vh auto;
-}
-
-.section_title {
-    color: #2c3e50;
+    margin: 0 auto;
+  }
+  
+  .section_title {
+    color: var(--primary-color);
     margin: 40px 0 20px;
     padding-bottom: 10px;
-    border-bottom: 3px solid #3498db;
+    border-bottom: 3px solid var(--secondary-color);
     font-size: 30px;
-}
-
-.grid {
+  }
+  
+  .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     margin-bottom: 2rem;
-}
+  }
+  
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .point {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: var(--light-bg);
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 5px;
+  }
 
-.contact_info {
-    font-size: 1.1rem;
-    color: #2c3e50;
-    line-height: 1.6;
-}
+  .point ul {
+    margin-bottom: 0;
+  }
 
+  .point li {
+    list-style-type: none;
+  }
 
-@media (max-width: 768px) {
+  .point li::before {
+    content: "▹";
+    padding-right: 10px;
+  }
+  
+  .highlight {
+    color: var(--accent-color);
+    font-weight: 600;
+  }
+  
+  .project-number {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
     .container {
         padding: 0 2rem;
     }
 
-    .contact h1 {
-        font-size: 24px;
-    }
-
     .section_title {
-        font-size: 24px;
+      font-size: 24px;
     }
     
     .grid {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
     }
-
-    .contact_info p {
-        text-align: center;
+    
+    .card {
+      padding: 20px;
     }
-}
+  }
