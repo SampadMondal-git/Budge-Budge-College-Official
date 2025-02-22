@@ -36,7 +36,7 @@ export function Otherlinks() {
         </div>
         <div className={myStyles.staffs}>
           <h5>NSOU (PG Courses)</h5>
-          <p><Link to="/nsougpcourses">Visit NSOU (PG Courses)</Link></p>
+          <p><Link to="/nsoustudycentre">Visit NSOU (PG Courses)</Link></p>
         </div>
         <div className={myStyles.staffs}>
           <h5>Library</h5>
@@ -44,7 +44,7 @@ export function Otherlinks() {
         </div>
         <div className={myStyles.staffs}>
           <h5>OPAC</h5>
-          <p><Link to="/opac">Visit OPAC</Link></p>
+          <p><Link to="https://bbc-opac.kohacloud.in/">Visit OPAC</Link></p>
         </div>
         <div className={myStyles.staffs}>
           <h5>RTI</h5>
