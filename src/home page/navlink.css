@@ -15,30 +15,30 @@
 }
 
 .container-fluid button[aria-expanded="true"] {
-  background-color: orangered !important;
+  background-color: var(--secondary-color) !important;
 }
 
 .bg-body-tertiary {
-  background-color: rgb(2, 2, 46) !important;
+  background-color: var(--secondary-color) !important;
 }
 
 .bg-body-tertiary a {
-  color: white !important;
+  color: var(--light-bg) !important;
   &:hover {
-    color: orangered !important;
+    color: var(--primary-color) !important;
   }
 }
 
 .dropdown-menu {
-  background-color: rgb(2, 2, 46) !important;
+  background-color: var(--secondary-color) !important;
   padding: 0;
   overflow: hidden;
 }
 
 .dropdown-menu a {
-  color: white !important;
+  color: var(--light-bg) !important;
   &:hover {
-    color: rgb(2, 2, 46) !important;
+    color: var(--primary-color) !important;
   }
 }
 
@@ -47,12 +47,12 @@
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu a {
-  color: rgb(2, 2, 46);
+  color: var(--primary-color);
   padding: 0.6rem 0.5rem;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu a:hover {
-  background-color: orangered;
+  background-color: var(--light-bg);
 }
 
 .navbar-toggler-icon {
@@ -128,13 +128,13 @@
   }
 
   .dropdown-menu a {
-    background-color: orangered;
-    color: rgb(2, 2, 46) !important;
+    background-color: var(--primary-color);
+    color: var(--light-bg) !important;
   }
 
   .dropdown-menu a:hover {
-    background-color: orangered !important;
-    color: white !important;
+    background-color: var(--light-bg) !important;
+    color: var(--primary-color) !important;
   }
 
   .container-fluid {
@@ -157,7 +157,7 @@
   }
 
   .nav-link.dropdown-toggle[aria-expanded="true"] {
-    color: orangered !important;
+    color: var(--primary-color) !important;
   }
 
   .dropdown-menu a {
@@ -186,12 +186,12 @@
   }
 
   .dropdown-menu a {
-    background-color: orangered;
-    color: rgb(2, 2, 46) !important;
+    background-color: var(--primary-color);
+    color: var(--light-bg) !important;
   }
 
   .dropdown-menu a:hover {
-    background-color: orangered !important;
-    color: white !important;
+    background-color: var(--light-bg) !important;
+    color: var(--primary-color) !important;
   }
 }
