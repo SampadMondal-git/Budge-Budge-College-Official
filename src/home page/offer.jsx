@@ -22,42 +22,42 @@ export function Offer() {
                         </p>
                     </div>
                     <div className={myStyles.offers_container}>
-                        <div className={myStyles.offer_items}>
+                        <div className={`${myStyles.box} ${myStyles.box_1}`}>
                             <img src={safety} alt="Safety First" />
                             <h2>Safety First</h2>
                             <p>Your safety is our top priority. We maintain a secure campus environment where students can learn
                                 and
                                 grow without any concerns.</p>
                         </div>
-                        <div className={myStyles.offer_item}>
+                        <div className={`${myStyles.box} ${myStyles.box_2}`}>
                             <img src={reading} alt="Regular Classes" />
                             <h2>Regular Classes</h2>
                             <p>Consistent and well-structured classes ensure that you stay on track with your studies, helping
                                 you
                                 achieve academic excellence.</p>
                         </div>
-                        <div className={myStyles.offer_item}>
+                        <div className={`${myStyles.box} ${myStyles.box_3}`}>
                             <img src={certified} alt="Certified Teachers" />
                             <h2>Certified Teachers</h2>
                             <p>Learn from highly qualified and experienced teachers who are dedicated to guiding you towards
                                 your
                                 academic and professional goals.</p>
                         </div>
-                        <div className={myStyles.offer_items}>
+                        <div className={`${myStyles.box} ${myStyles.box_4}`}>
                             <img src={classroom} alt="Sufficient Classrooms" />
                             <h2>Sufficient Classrooms</h2>
                             <p>Our spacious and well-equipped classrooms provide a conducive environment for effective learning
                                 and
                                 collaboration.</p>
                         </div>
-                        <div className={myStyles.offer_items}>
+                        <div className={`${myStyles.box} ${myStyles.box_5}`}>
                             <img src={creative} alt="Creative Lessons" />
                             <h2>Creative Lessons</h2>
                             <p>We encourage creativity and critical thinking through innovative lessons that go beyond
                                 traditional
                                 teaching methods.</p>
                         </div>
-                        <div className={myStyles.offer_item}>
+                        <div className={`${myStyles.box} ${myStyles.box_6}`}>
                             <img src={sport} alt="Sports Facilities" />
                             <h2>Sports Facilities</h2>
                             <p>Stay active and healthy with access to top-notch sports facilities, promoting physical well-being
