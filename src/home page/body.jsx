@@ -1,6 +1,6 @@
 import React from 'react'
 import './body.module.css'
-import { motion } from 'framer-motion'
+import { motion, useScroll, useSpring } from 'framer-motion'
 import styles from './body.module.css'
 import { Slideshow } from '../home page/slideshow.jsx'
 import { Facilities } from '../home page/facilities.jsx'
@@ -13,99 +13,73 @@ import { Campus } from '../home page/campus.jsx'
 
 const fadeInUp = {
   initial: {
-    y: 40,
-    opacity: 0
+    y: 60,
+    opacity: 0,
+    scale: 0.95
   },
   animate: {
     y: 0,
     opacity: 1,
+    scale: 1,
     transition: {
       duration: 1,
-      ease: [0.22, 1, 0.36, 1]
+      ease: [0.25, 1, 0.5, 1],
+      staggerChildren: 0.3
     }
   },
   exit: {
-    y: 40,
+    y: 60,
     opacity: 0,
+    scale: 0.95,
     transition: {
-      duration: 1
+      duration: 0.8
     }
   }
 }
 
+const sections = [
+  { Component: Facilities, id: 'facilities' },
+  { Component: Offer, id: 'offer' },
+  { Component: College, id: 'college' },
+  { Component: Courses, id: 'courses' },
+  { Component: Teachers, id: 'teachers' },
+  { Component: Quote, id: 'quote' },
+  { Component: Campus, id: 'campus' }
+]
+
 export function Body() {
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 500,
+    damping: 30,
+    restDelta: 0.001
+  })
+
   return (
     <>
+      <motion.div className={styles.progressBar} style={{ scaleX }} />
+
       <Slideshow />
-      <motion.div
-        className={styles.animatedSection}
-        initial="initial"
-        whileInView="animate"
-        exit="exit"
-        viewport={{ amount: 0.4 }}
-        variants={fadeInUp}>
-        <Facilities />
-      </motion.div>
-
-      <motion.div
-        className={styles.animatedSection}
-        initial="initial"
-        whileInView="animate"
-        exit="exit"
-        viewport={{ amount: 0.4 }}
-        variants={fadeInUp}>
-        <Offer />
-      </motion.div>
-
-      <motion.div
-        className={styles.animatedSection}
-        initial="initial"
-        whileInView="animate"
-        exit="exit"
-        viewport={{ amount: 0.4 }}
-        variants={fadeInUp}>
-        <College />
-      </motion.div>
-
-      <motion.div
-        className={styles.animatedSection}
-        initial="initial"
-        whileInView="animate"
-        exit="exit"
-        viewport={{ amount: 0.4 }}
-        variants={fadeInUp}>
-        <Courses />
-      </motion.div>
-
-      <motion.div
-        className={styles.animatedSection}
-        initial="initial"
-        whileInView="animate"
-        exit="exit"
-        viewport={{ amount: 0.4 }}
-        variants={fadeInUp}>
-        <Teachers />
-      </motion.div>
-
-      <motion.div
-        className={styles.animatedSection}
-        initial="initial"
-        whileInView="animate"
-        exit="exit"
-        viewport={{ amount: 0.4 }}
-        variants={fadeInUp}>
-        <Quote />
-      </motion.div>
-
-      <motion.div
-        className={styles.animatedSection}
-        initial="initial"
-        whileInView="animate"
-        exit="exit"
-        viewport={{ amount: 0.4 }}
-        variants={fadeInUp}>
-        <Campus />
-      </motion.div>
+      {sections.map(({ Component, id }, index) => (
+        <motion.div
+          key={id}
+          id={id}
+          className={styles.animatedSection}
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
+          layout
+          viewport={{ once: false, amount: 0.5 }}
+          variants={fadeInUp}
+          style={{
+            transformOrigin: 'top center',
+            overflow: 'hidden',
+            zIndex: sections.length - index
+          }}
+        >
+          <Component />
+        </motion.div>
+      ))}
     </>
   )
 }
