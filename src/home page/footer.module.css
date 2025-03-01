@@ -1,15 +1,14 @@
 .footer {
     display: block;
-    background-color: rgb(2, 2, 46);
-    color: orangered;
+    background-color: var(--color-1);
+    color: var(--color-2);
     padding: 0.5rem 0;
     border-top: 1px solid rgb(100, 100, 100);
 }
 
 .copyright {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     gap: 0.3rem;
     padding: 0.5rem 0;
 }
@@ -37,6 +36,7 @@
     }
 
     .copyright {
+        flex-direction: column;
         padding: 1rem 0;
     }
     

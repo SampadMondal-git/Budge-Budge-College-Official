@@ -14,8 +14,8 @@
 }
 
 .info {
-  background-color: var(--primary-color);
-  color: var(--light-bg);
+  background-color: var(--color-1);
+  color: var(--color-2);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -30,12 +30,12 @@
 }
 
 .contact p a {
-  color: var(--light-bg);
+  color: var(--color-2);
   text-decoration: none;
 }
 
 .contact p a:hover {
-  color: white;
+  color: var(--color-3);
 }
 
 .contact p {
@@ -57,19 +57,18 @@
 }
 
 button {
-  background-color: var(--secondary-color);
-  color: var(--light-bg);
+  background-color: var(--color-3);
+  color: var(--color-2);
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
-
+  border-radius: 10px;
   font-size: 14px;
   line-height: normal;
   font-family: sans-serif;
 
   &:hover {
-    background-color: var(--light-bg);
-    color: var(--primary-color);
+    background-color: var(--color-4);
+    color: var(--color-2);
     transition: all 0.3s ease-in-out;
   }
 }

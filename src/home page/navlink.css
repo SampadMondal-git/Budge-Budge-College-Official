@@ -15,30 +15,31 @@
 }
 
 .container-fluid button[aria-expanded="true"] {
-  background-color: var(--secondary-color) !important;
+  background-color: var(--color-1) !important;
 }
 
 .bg-body-tertiary {
-  background-color: var(--secondary-color) !important;
+  background-color: var(--color-1) !important;
 }
 
 .bg-body-tertiary a {
-  color: var(--light-bg) !important;
+  color: var(--color-2) !important;
   &:hover {
-    color: var(--primary-color) !important;
+    color: var(--color-3) !important;
   }
 }
 
 .dropdown-menu {
-  background-color: var(--secondary-color) !important;
+  background-color: var(--color-1) !important;
   padding: 0;
   overflow: hidden;
 }
 
 .dropdown-menu a {
-  color: var(--light-bg) !important;
+  color: var(--color-2) !important;
   &:hover {
-    color: var(--primary-color) !important;
+    background-color: var(--color-3) !important;
+    color: var(--color-5) !important;
   }
 }
 
@@ -47,17 +48,16 @@
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu a {
-  color: var(--primary-color);
+  color: var(--color-3);
   padding: 0.6rem 0.5rem;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu a:hover {
-  background-color: var(--light-bg);
+  background-color: var(--color-1);
 }
 
 .navbar-toggler-icon {
-  filter: invert(86%) sepia(100%) saturate(4%) hue-rotate(291deg)
-    brightness(113%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7491%) hue-rotate(260deg) brightness(114%) contrast(100%);
 }
 
 .navbar-brand {
@@ -128,13 +128,13 @@
   }
 
   .dropdown-menu a {
-    background-color: var(--primary-color);
-    color: var(--light-bg) !important;
+    background-color: var(--color-2);
+    color: var(--color-5) !important;
   }
 
   .dropdown-menu a:hover {
-    background-color: var(--light-bg) !important;
-    color: var(--primary-color) !important;
+    background-color: var(--color-1) !important;
+    color: var(--color-2) !important;
   }
 
   .container-fluid {
@@ -157,7 +157,7 @@
   }
 
   .nav-link.dropdown-toggle[aria-expanded="true"] {
-    color: var(--primary-color) !important;
+    color: var(--color-3) !important;
   }
 
   .dropdown-menu a {
@@ -186,12 +186,12 @@
   }
 
   .dropdown-menu a {
-    background-color: var(--primary-color);
-    color: var(--light-bg) !important;
+    background-color: var(--color-2);
+    color: var(--color-5) !important;
   }
 
   .dropdown-menu a:hover {
-    background-color: var(--light-bg) !important;
-    color: var(--primary-color) !important;
+    background-color: var(--color-1) !important;
+    color: var(--color-2) !important;
   }
 }

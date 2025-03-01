@@ -1,5 +1,6 @@
 .div {
     display: flex;
+    background-color: var(--color-2);
 }
 
 .offers {
@@ -8,12 +9,12 @@
 }
 
 .offer_head h1 {
-    color: orangered;
+    color: var(--color-1);
     font-size: 30px;
 }
 
-.offer-head p {
-    color: rgb(2, 2, 46);
+.offer_head p {
+    color: var(--color-5);
 }
 
 .offers_container {
@@ -22,61 +23,66 @@
     justify-content: space-between;
 }
 
-.offer_item,
-.offer_items {
+.box {
     text-align: center;
     align-items: center;
     flex: 1 1 300px;
     margin: 10px;
 }
 
-.offer_item h2, .offer_items h2 {
+.box h2 {
     font-size: 26px;
 }
 
-.offer_item,
 .offer_head p,
-.offer_items p,
+.box p,
 .principal-desk p {
     font-size: 16px;
+    text-align: start;
 }
 
-.offer_item img,
-.offer_items img {
+.box img {
     width: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.offer_items img {
-    filter: brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(6955%)
-        hue-rotate(-15deg) brightness(94%) contrast(175%);
+.box p,
+.box h2 {
+    color: var(--color-3);
 }
 
-.offer_items p,
-.offer_items h2 {
-    color: orangered;
+.box_2 h2, .box_3 h2, .box_6 h2 {
+    color: var(--color-1);
 }
 
-.offer_item p,
-.offer_item h2 {
-    color: rgb(2, 2, 46);
+.box_2 p, .box_3 p, .box_6 p {
+    color: var(--color-5);
+}
+
+.box_2 img, .box_3 img, .box_6 img {
+    filter: brightness(0) saturate(100%) invert(6%) sepia(94%) saturate(3338%) hue-rotate(200deg) brightness(98%) contrast(102%);}
+
+.box_1 img, .box_4 img, .box_5 img {
+    filter: brightness(0) saturate(100%) invert(69%) sepia(76%) saturate(6406%) hue-rotate(4deg) brightness(106%) contrast(103%);
 }
 
 .principal_desk {
-    background-color: aliceblue;
-    color: rgb(2, 2, 46);
+    background-color: var(--color-1);
+    color: var(--color-2);
     display: flex;
     border-left: 2px solid rgba(2, 2, 46, 0.05);
     border-bottom: 2px solid rgba(2, 2, 46, 0.05);
-    border-radius: 0 0 0 10px;
+    /* border-radius: 50% 0 0 50%; */
+    border-radius: 20px 0 0 20px;
+    box-shadow: -5px 0 10px rgba(0, 33, 71, 0.6);
 }
 
 .principal {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .principal .image {
@@ -90,7 +96,7 @@
     display: block;
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 20px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -103,7 +109,7 @@
 
 .about_principal h1 {
     font-size: 30px;
-    color: orangered;
+    color: var(--color-2);
 }
 
 
@@ -111,17 +117,17 @@
     margin-top: 4.2rem;
     padding: 10px 20px;
     font-size: 16px;
-    color: #fff;
-    background-color: rgb(2, 2, 46);
+    background-color: var(--color-3);
+    color: var(--color-2);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .principal button:hover {
-    background-color: orangered;
-    color: #fff;
+    background-color: var(--color-4);
+    color: var(--color-2);
 }
 
 .offers, .principal_desk p {
@@ -166,6 +172,30 @@
 
     .offer_head h1, .offers_container h2 {
         font-size: 24px;
+    }
+
+    .box_1 h2, .box_3 h2, .box_5 h2 {
+        color: var(--color-3);
+    }
+
+    .box_1 p, .box_3 p, .box_5 p {
+        color: var(--color-3);
+    }
+
+    .box_1 img, .box_3 img, .box_5 img {
+        filter: brightness(0) saturate(100%) invert(69%) sepia(76%) saturate(6406%) hue-rotate(4deg) brightness(106%) contrast(103%);
+    }
+
+    .box_2 h2, .box_4 h2, .box_6 h2 {
+        color: var(--color-1);
+    }
+
+    .box_2 p, .box_4 p, .box_6 p {
+        color: var(--color-5);
+    }
+
+    .box_2 img, .box_4 img, .box_6 img {
+        filter: brightness(0) saturate(100%) invert(6%) sepia(94%) saturate(3338%) hue-rotate(200deg) brightness(98%) contrast(102%);
     }
 
     .principal_desk {

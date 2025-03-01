@@ -1,7 +1,7 @@
 .links_section {
-  background-color: rgb(2, 2, 46);
+  background-color: var(--color-1);
   display: flex;
-  color: orangered;
+  color: var(--color-2);
   justify-content: space-between;
   padding: 2rem 5rem;
   border-top: 1px solid rgb(100, 100, 100);
@@ -68,9 +68,9 @@
 
 .links_section a {
   text-decoration: none;
-  color: orangered;
+  color: var(--color-2);
   &:hover {
-    color: white;
+    color: var(--color-3);
   }
 }
 
