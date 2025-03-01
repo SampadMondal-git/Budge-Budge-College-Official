@@ -1,13 +1,34 @@
 :root {
-  --primary-color: #386641;
-  --secondary-color: #6A994E;
-  --accent-color: #A7C957;
-  --light-bg: #F2E8CF;
-  --dark-text: #BC4749;
+  --color-1: #002147; /* navbar, footer, heading */
+  --color-2: #FFFFFF; /* text color */
+  --color-3: #FF6B00; /* button color, text hover, highlight color */
+  --color-4: #CC5700; /* button hover color */
+  --color-5: #333333; /* body text color */
+  --color-6: #E6F0FA;  /* div background color */
+  --color-7: #FFEDD5; /* div background color */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-6);
 }
 
 .animatedSection {
   width: 100%;
+}
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3.5px;
+  background: linear-gradient(to right, var(--color-2), var(--color-3));
+  transform-origin: 0%;
+  z-index: 999;
 }
 
 @media (max-width: 768px) {
