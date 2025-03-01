@@ -6,28 +6,6 @@ import BCom from '../icons/commerce.png'
 export function Courses() {
     return (
         <>
-        <div className={myStyles.courses_container}>
-            <div className={`${myStyles.certified_teachers} ${myStyles.item}`}>
-                <h1>45+</h1>
-                <p>Certified Teachers</p>
-            </div>
-
-            <div className={`${myStyles.students} ${myStyles.item}`}>
-                <h1>2000+</h1>
-                <p>Students</p>
-            </div>
-
-            <div className={`${myStyles.courses} ${myStyles.item}`}>
-                <h1>25+</h1>
-                <p>Courses</p>
-            </div>
-
-            <div className={`${myStyles.awards_won} ${myStyles.item}`}>
-                <h1>20+</h1>
-                <p>Awards Won</p>
-            </div>
-        </div>
-
             <div className={myStyles.our_courses}>
                 <div className={myStyles.title}>
                     <h1>Our Courses</h1>
