@@ -1,5 +1,6 @@
 .college_container {
     display: flex;
+    background-color: var(--color-2);
 }
 
 .college_image, .about_college {
@@ -19,24 +20,39 @@
 .college_image img {
     max-width: 80%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-bottom: 0;
+    box-shadow: -10px 10px 10px rgba(0, 33, 71, 0.5);
 }
 
 .about_college h1 {
     font-size: 30px;
-    color: orangered;
+    color: var(--color-1);
     margin-bottom: 1rem;
 }
 
 .about_college p {
     font-size: 16px;
-    color: rgb(2, 2, 46);
+    color: var(--color-5);
     line-height: 2rem;
     text-align: start;
 }
 
+.courses_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 10rem;
+  }
+
 @media (max-width: 768px) {
+    .courses_container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem 1rem 2rem 1rem;
+        gap: 2rem 0;
+      }
+      
     .college_container {
         flex-direction: column;
     }
