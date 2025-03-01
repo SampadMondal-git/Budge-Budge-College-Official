@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   margin: 3rem 10rem;
-  color: rgb(2, 2, 46);
 }
 
 .our_courses {
@@ -12,13 +11,13 @@
 }
 
 .title h1 {
-  color: orangered;
+  color: var(--color-1);
   margin-bottom: 2rem;
   font-size: 30px;
 }
 
 .title p {
-  color: rgb(2, 2, 46);
+  color: var(--color-5);
   font-size: 16px;
   margin-bottom: 30px;
   line-height: 2rem;
@@ -26,6 +25,7 @@
 
 .course {
   display: flex;
+  justify-content: space-evenly;
   text-align: center;
   margin-top: 2rem;
 }
@@ -47,35 +47,40 @@
 .course1,
 .course2,
 .course3 {
-  width: 33.33%;
+  width: 30%;
   font-size: 16px;
   line-height: 2rem;
   padding: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 33, 71, 0.25);
 }
 
 .course1 {
-  background-color: rgb(2, 2, 46);
-  color: orangered;
+  background-color: var(--color-1);
+  color: var(--color-2);
   margin-left: 20px;
 }
 
 .course2 {
-  background-color: orangered;
-  color: rgb(2, 2, 46);
+  background-color: var(--color-2);
+  color: var(--color-1);
   margin-right: 20px;
   margin-left: 20px;
 }
 
 .course3 {
-  background-color: rgb(2, 2, 46);
-  color: orangered;
+  background-color: var(--color-1);
+  color: var(--color-2);
   margin-right: 20px;
+}
+
+.course2 img {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(32%) saturate(4611%) hue-rotate(195deg) brightness(97%) contrast(105%);
 }
 
 .course1 img,
 .course3 img {
-  filter: brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(6955%)
-    hue-rotate(-15deg) brightness(94%) contrast(175%);
+  filter: invert(95%) sepia(100%) saturate(0%) hue-rotate(313deg) brightness(102%) contrast(102%);
 }
 
 @media (max-width: 768px) {
