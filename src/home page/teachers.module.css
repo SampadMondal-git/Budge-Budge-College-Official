@@ -1,3 +1,7 @@
+.certified_teachers {
+    margin-bottom: 2rem;
+}
+
 .teachers_heading {
     display: flex;
     flex-direction: column;
@@ -10,7 +14,7 @@
 }
 
 .teachers_heading p {
-    color: var(--color-1);
+    color: var(--color-5);
     line-height: 2rem;
 }
 
@@ -39,12 +43,22 @@
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+    .certified_teachers {
+        margin: 0 2rem;
+    }
+
     .teachers_heading h1 {
         font-size: 24px;
     }
+
+    .teachers_heading p {
+        margin-bottom: 2rem !important;
+    }
+
     .teachers_list {
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
     }
     
     .teachers {
@@ -54,35 +68,44 @@
     }
 
     .max_width {
-        background-color: orangered;
-        color: rgb(2, 2, 46);
+        background-color: var(--color-1);
+        color: var(--color-2);
     }
 
     .min_width {
-        background-color: rgb(2, 2, 46);
-        color: orangered;
+        background-color: var(--color-2);
+        color: var(--color-1);
     }
 }
 
 @media (max-width: 767px) {
+    .certified_teachers {
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .teachers_heading {
+        margin-bottom: 1rem;
+    }
+
     .teachers_heading h1 {
         font-size: 24px;
     }
 
     .teachers_heading p {
         font-size: 16px;
-        text-align: center;
         margin: 0 1rem 2rem 1rem;
     }
 
     .teachers_list {
         display: flex;
         flex-direction: column;
+        gap: 2rem;
     }
     
     .teachers {
         width: 100%;
         margin: 0;
         height: auto;
+        border-radius: 20px;
     }
 }
