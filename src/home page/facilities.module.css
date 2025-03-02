@@ -67,9 +67,11 @@
   .boxes {
     flex-direction: column;
   }
+  
   .box {
     width: 100%;
     animation-delay: 0.2s !important;
+    border-radius: 20px;
   }
   
   .box:not(:first-child) {
