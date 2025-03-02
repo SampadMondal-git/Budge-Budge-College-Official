@@ -10,7 +10,7 @@ export function Aimsandobjective() {
             <div className={myStyles.card}>
                 <h3>Educational Philosophy</h3>
                 <div className={myStyles.point}>
-                    <p>The College aims to foster an atmosphere of all-round development amongst the students through:</p>
+                    <p className={myStyles.highlight}>The College aims to foster an atmosphere of all-round development amongst the students through:</p>
                     <ul className={myStyles.equipment_list}>
                         <li>Innovative teaching-learning processes</li>
                         <li>Modern academic curriculum</li>
@@ -23,19 +23,19 @@ export function Aimsandobjective() {
             <div className={myStyles.card}>
                 <h3>Core Objectives</h3>
                 <div className={myStyles.point}>
-                    <p><span className={myStyles.highlight}>1. Value-Based Education:</span> 
+                    <p><span className={myStyles.highlight}>1. Value-Based Education: </span> 
                         Inculcate moral values and nurture student potential across all dimensions
                     </p>
-                    <p><span className={myStyles.highlight}>2. Digital Empowerment:</span> 
+                    <p><span className={myStyles.highlight}>2. Digital Empowerment: </span> 
                         Provide access to modern ICT resources and learning materials
                     </p>
-                    <p><span className={myStyles.highlight}>3. Social Commitment:</span> 
+                    <p><span className={myStyles.highlight}>3. Social Commitment: </span> 
                         Empower rural and female students for better societal participation
                     </p>
                 </div>
 
-                <div className={myStyles.point} style={{backgroundColor: "#e8f4fc", marginTop: "20px"}}>
-                    <p>🌟 Special Focus: Upliftment of female students from South 24 Parganas region</p>
+                <div className={myStyles.point} style={{marginTop: "20px"}}>
+                    <p><span className={myStyles.highlight}>🌟 Special Focus: </span>Upliftment of female students from South 24 Parganas region</p>
                 </div>
             </div>
         </div>
