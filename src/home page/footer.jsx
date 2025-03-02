@@ -7,8 +7,8 @@ export function Footer() {
             <Quicklinks />
             <div className={myStyles.footer}>
                 <div className={myStyles.copyright}>
-                    <p>Copyright &copy; 2025 <a href="/">Budge Budge College</a>. All Rights Reserved.</p>
-                    <p>Designed by <a href="https://www.instagram.com/samx4sure/" target="_blank" rel="noreferrer">Samy</a></p>
+                    <p>Copyright &copy; 2025 Budge Budge College. All Rights Reserved.</p>
+                    <p className={myStyles.hover}>Designed by <a href="https://www.instagram.com/samx4sure/" target="_blank" rel="noreferrer">Samy</a></p>
                 </div>
             </div>
         </>
