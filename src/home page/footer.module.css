@@ -1,46 +1,50 @@
 .footer {
-    display: block;
-    background-color: var(--color-1);
-    color: var(--color-2);
-    padding: 0.5rem 0;
-    border-top: 1px solid rgb(100, 100, 100);
+  display: block;
+  background-color: var(--color-1);
+  color: var(--color-2);
+  padding: 0.5rem 0;
+  border-top: 1px solid rgb(100, 100, 100);
 }
 
 .copyright {
-    display: flex;
-    justify-content: center;
-    gap: 0.3rem;
-    padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.5rem 0;
 }
 
 .copyright a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: var(--color-3);
+    transition: all 0.3s ease;
+  }
 }
 
 @media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        font-size: 0.9rem;
-    }
+  .footer {
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
 
-    .copyright {
-        gap: 0.5rem;
-    }
+  .copyright {
+    gap: 0.5rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .footer {
-        display: flex;
-        font-size: 0.8rem;
-    }
+  .footer {
+    display: flex;
+    font-size: 0.8rem;
+  }
 
-    .copyright {
-        flex-direction: column;
-        padding: 1rem 0;
-    }
-    
-    .copyright p {
-        text-align: center;
-    }
+  .copyright {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .copyright p {
+    text-align: center;
+  }
 }
