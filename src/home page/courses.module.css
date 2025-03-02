@@ -12,7 +12,6 @@
 
 .title h1 {
   color: var(--color-1);
-  margin-bottom: 2rem;
   font-size: 30px;
 }
 
@@ -63,7 +62,7 @@
 
 .course2 {
   background-color: var(--color-2);
-  color: var(--color-1);
+  color: var(--color-5);
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -99,7 +98,7 @@
   }
 
   .our_courses {
-    margin-top: 0;
+    margin: 0 2rem;
   }
 
   .title {
@@ -107,7 +106,7 @@
   }
 
   .title h1 {
-    color: orangered;
+    color: var(--color-1);
     margin-bottom: 0.5rem;
     font-size: 24px;
   }
@@ -115,6 +114,7 @@
   .course {
     flex-direction: column;
     margin-top: 1rem;
+    gap: 2rem;
   }
 
   .course1,
@@ -125,5 +125,58 @@
     margin: 0;
     padding: 30px 20px;
     line-height: 1.5rem;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .courses_container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 1rem 2rem 1rem;
+    gap: 2rem 0;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our_courses {
+    margin-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  .our_courses p {
+    text-align: start;
+  }
+
+  .title {
+    margin: 0 10px;
+  }
+
+  .title h1 {
+    color: var(--color-1);
+    margin-bottom: 0.5rem;
+    font-size: 24px;
+  }
+
+  .course {
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 2rem;
+  }
+
+  .course1,
+  .course2,
+  .course3 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 30px 20px;
+    line-height: 1.5rem;
+    border-radius: 20px;
   }
 }
