@@ -9,7 +9,7 @@ export function Researchproject() {
 
                 <div className={myStyles.grid}>
                     <div className={myStyles.card}>
-                        <h3><span className={myStyles.project_number}>1</span> Microbial Biodiversity</h3>
+                        <h3><span className={myStyles.project_number}>1.</span> Microbial Biodiversity</h3>
                         <div className={myStyles.point}>
                             <p>UGC Minor Research Project</p>
                             <p><span className={myStyles.highlight}>Researcher:</span> Dr. Partha Pratim Chaudhuri (Zoology)</p>
@@ -21,7 +21,7 @@ export function Researchproject() {
                     </div>
 
                     <div className={myStyles.card}>
-                        <h3><span className={myStyles.project_number}>2</span> Body Studies</h3>
+                        <h3><span className={myStyles.project_number}>2.</span> Body Studies</h3>
                         <div className={myStyles.point}>
                             <p>UGC XIth Plan MRP <span className={myStyles.highlight}>(Rs 1,14,000)</span></p>
                             <p><span className={myStyles.highlight}>Researcher:</span> Dr. Kakali Ghoshal (Philosophy)</p>
@@ -33,7 +33,7 @@ export function Researchproject() {
                     </div>
 
                     <div className={myStyles.card}>
-                        <h3><span className={myStyles.project_number}>3</span> Metaphysical Implications</h3>
+                        <h3><span className={myStyles.project_number}>3.</span> Metaphysical Implications</h3>
                         <div className={myStyles.point}>
                             <p>UGC Minor Research Project <span className={myStyles.highlight}>(Rs 1,04,000)</span></p>
                             <p><span className={myStyles.highlight}>Researcher:</span> Dr. Kakali Ghoshal (Philosophy)</p>
@@ -45,7 +45,7 @@ export function Researchproject() {
                     </div>
 
                     <div className={myStyles.card}>
-                        <h3><span className={myStyles.project_number}>4</span> Pollen Analysis</h3>
+                        <h3><span className={myStyles.project_number}>4.</span> Pollen Analysis</h3>
                         <div className={myStyles.point}>
                             <p>UGC Minor Research Project <span className={myStyles.highlight}>(Rs 4,45,000)</span></p>
                             <p><span className={myStyles.highlight}>Researcher:</span> Dr. Debashis Upadhyay (Botany)</p>
@@ -57,7 +57,7 @@ export function Researchproject() {
                     </div>
 
                     <div className={myStyles.card}>
-                        <h3><span className={myStyles.project_number}>5</span> IPO & SEO Performance</h3>
+                        <h3><span className={myStyles.project_number}>5.</span> IPO & SEO Performance</h3>
                         <div className={myStyles.point}>
                             <p>UGC Minor Research Project <span className={myStyles.highlight}>(Rs 2,50,000)</span></p>
                             <p><span className={myStyles.highlight}>Researcher:</span> Dr. Gautam Das (Commerce)</p>
@@ -68,7 +68,7 @@ export function Researchproject() {
                     </div>
 
                     <div className={myStyles.card}>
-                        <h3><span className={myStyles.project_number}>6</span> Indian Psyche</h3>
+                        <h3><span className={myStyles.project_number}>6.</span> Indian Psyche</h3>
                         <div className={myStyles.point}>
                             <p>UGC Minor Research Project <span className={myStyles.highlight}>(Rs 2,45,000)</span></p>
                             <p><span className={myStyles.highlight}>Researcher:</span> Dr. Sushmita Bhowmik (Philosophy)</p>
@@ -79,7 +79,7 @@ export function Researchproject() {
                     </div>
 
                     <div className={myStyles.card}>
-                        <h3><span className={myStyles.project_number}>7</span> Non-Simple Liquids</h3>
+                        <h3><span className={myStyles.project_number}>7.</span> Non-Simple Liquids</h3>
                         <div className={myStyles.point}>
                             <p>UGC Minor Research Project</p>
                             <p><span className={myStyles.highlight}>Researcher:</span> Dr. Anup Kumar Sahoo (Physics)</p>
@@ -90,7 +90,7 @@ export function Researchproject() {
                     </div>
 
                     <div className={myStyles.card}>
-                        <h3><span className={myStyles.project_number}>8</span> Maternal Malnutrition</h3>
+                        <h3><span className={myStyles.project_number}>8.</span> Maternal Malnutrition</h3>
                         <div className={myStyles.point}>
                             <p>ICSSR Minor Research Project <span className={myStyles.highlight}>(Rs 50,000)</span></p>
                             <p><span className={myStyles.highlight}>Researcher:</span> Dr. Shruti Agrawal (Food & Nutrition)</p>
