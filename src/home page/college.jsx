@@ -6,7 +6,7 @@ export function College() {
         <>
             <div className={myStyles.college_container}>
                 <div className={myStyles.college_image}>
-                <img src={collegeImage} alt="Budge Budge College" />
+                    <img src={collegeImage} alt="Budge Budge College" />
                 </div>
 
                 <div className={myStyles.about_college}>
@@ -15,7 +15,7 @@ export function College() {
                 </div>
             </div>
 
-                        <div className={myStyles.courses_container}>
+            <div className={myStyles.courses_container}>
                 <div className={`${myStyles.certified_teachers} ${myStyles.item}`}>
                     <h1>45+</h1>
                     <p>Certified Teachers</p>
