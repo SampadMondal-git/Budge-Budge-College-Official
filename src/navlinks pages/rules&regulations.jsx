@@ -10,7 +10,7 @@ export function Rulesandregulations() {
                 <div className={myStyles.card}>
                     <h3>General Conduct Expectations</h3>
                     <div className={myStyles.point}>
-                        <p>Students must maintain discipline and peace in:</p>
+                        <p className={myStyles.highlight}>Students must maintain discipline and peace in:</p>
                         <ul className={myStyles.equipment_list}>
                             <li>Class rooms</li>
                             <li>College office</li>
