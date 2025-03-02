@@ -4,11 +4,11 @@
   }
   
   .section_title {
-    color: var(--primary-color);
+    color: var(--color-1);
     margin: 40px 0 20px;
     font-size: 30px;
     padding-bottom: 10px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--color-8);
   }
   
   .grid {
@@ -31,8 +31,8 @@
   }
   
   .card h3 {
-    color: var(--secondary-color);
-    font-size: 1.2rem;
+    color: var(--color-8);
+    font-size: 1.1rem;
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 2px solid #eee;
@@ -41,14 +41,9 @@
   .point {
     margin-bottom: 15px;
     padding: 15px;
-    background-color: var(--light-bg);
-    border-left: 4px solid var(--secondary-color);
+    background-color: var(--color-6);
+    border-left: 4px solid var(--color-8);
     border-radius: 5px;
-  }
-  
-  .highlight {
-    color: var(--accent-color);
-    font-weight: 600;
   }
   
   .equipment_list {
@@ -66,16 +61,17 @@
   
   .equipment_list li::before {
     content: "▹";
-    color: var(--secondary-color);
+    color: var(--color-8);
     margin-right: 10px;
   }
 
   .equipment_list li a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--color-8);
   }
   
   .equipment_list li a:hover {
+    color: var(--color-1);
     text-decoration: underline;
   }
   

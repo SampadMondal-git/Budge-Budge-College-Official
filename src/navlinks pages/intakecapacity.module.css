@@ -1,173 +1,13 @@
-/* .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .section_title {
-    color: var(--primary-color);
-    margin: 40px 0 20px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid var(--secondary-color);
-    font-size: 30px;
-  }
-
-.div_container {
-    max-width: 1200px;
-    margin: 2rem auto;
-}
-
-.header {
-    text-align: center;
-    margin-bottom: 2rem;
-    padding: 0.5rem;
-    background: linear-gradient(135deg, #1a237e, #0d47a1);
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.header h1 {
-    font-size: 26px;
-}
-
-.header h2 {
-    font-size: 24px;
-    margin-bottom: 0;
-}
-
-.table-container {
-    overflow-x: auto;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.table_container table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 600px;
-}
-
-.table_container th, .table_container td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.center {
-    text-align: center;
-}
-
-.table_container th {
-    background-color: #f8f9fa;
-    font-weight: 600;
-    color: #2c3e50;
-}
-
-.table_container tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.table_container tr:hover {
-    background-color: #f1f4f7;
-}
-
-.notes {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    background-color: #fff9e6;
-    border-left: 4px solid #ffc107;
-    border-radius: 4px;
-    font-size: 0.9rem;
-}
-
-
-@media (max-width: 1024px) {
-    .container {
-        width: 95%;
-    }
-}
-
-@media (max-width: 768px) {
-    .section_title {
-        font-size: 24px;
-        text-align: center;
-    }
-    
-    .div_container {
-        padding: 10px;
-    }
-
-    .intake_capacity h1 {
-        font-size: 24px;
-    }
-    
-    .table_container th, .table_container td {
-        padding: 0.75rem;
-        font-size: 0.9rem;
-    }
-    
-    .header {
-        padding: 1.2rem;
-    }
-    
-    .header h1 {
-        font-size: 20px;
-    }
-
-    .header h2 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    .table_container table {
-        min-width: 100%;
-    }
-    
-    .table_container th, .table_container td {
-        padding: 0.6rem;
-        font-size: 0.85rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .intake_capacity h1 {
-        font-size: 20px;
-    }
-
-    .header {
-        padding: 1rem;
-    }
-    
-    .header h1 {
-        font-size: 20px;
-    }
-
-    .header h2 {
-        font-size: 18px;
-    }
-    
-    .table_container th, .table_container td {
-        padding: 0.5rem;
-        font-size: 0.8rem;
-    }
-    
-    .notes {
-        font-size: 0.85rem;
-    }
-} */
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .section_title {
-    color: var(--primary-color);
+    color: var(--color-1);
     margin: 40px 0 20px;
     padding-bottom: 10px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--color-8);
     font-size: 30px;
   }
 
@@ -190,21 +30,21 @@
 }
 
 .course_title {
-    color: var(--secondary-color);
+    color: var(--color-8);
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #eee;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .details p {
-    color: var(--dark-text);
+    color: var(--color-5);
     margin: 0.5rem 0;
     font-size: 0.95rem;
 }
 
 .highlight {
-    color: var(--accent-color);
+    color: var(--color-3);
     font-weight: 600;
 }
 
@@ -212,8 +52,9 @@
     margin-top: 1.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: #fff9e6;
+    color: var(--color-5);
     border-left: 4px solid #ffc107;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 0.9rem;
     margin-bottom: 2rem;
 }
@@ -222,7 +63,30 @@
     margin: 0.5rem 0;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .section_title {
+        font-size: 24px;
+    }
+    
+    .grid {
+        grid-template-columns: 2fr 2fr;
+    }
+    
+    .card {
+        padding: 1.2rem;
+    }
+    
+    .notes {
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 767px) {
     .container {
         padding: 0 2rem;
     }

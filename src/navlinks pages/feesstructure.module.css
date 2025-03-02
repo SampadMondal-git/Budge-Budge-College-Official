@@ -3,25 +3,16 @@
     flex-direction: column;
 }
 
-.contact h1 {
-    background-color: orangered;
-    color: rgb(2, 2, 46);
-    margin: 0;
-    padding: 1rem 0;
-    text-align: center;
-    font-size: 30px;
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto 30vh auto;
 }
 
 .section_title {
-    color: #2c3e50;
+    color: var(--color-1);
     margin: 40px 0 20px;
     padding-bottom: 10px;
-    border-bottom: 3px solid #3498db;
+    border-bottom: 3px solid var(--color-8);
     font-size: 30px;
 }
 
@@ -34,7 +25,7 @@
 
 .contact_info {
     font-size: 1.1rem;
-    color: #2c3e50;
+    color: var(--color-5);
     line-height: 1.6;
 }
 

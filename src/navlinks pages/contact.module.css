@@ -4,10 +4,10 @@
 }
 
 .section_title {
-    color: #2c3e50;
+    color: var(--color-1);
     margin: 40px 0 20px;
     padding-bottom: 10px;
-    border-bottom: 3px solid #3498db;
+    border-bottom: 3px solid var(--color-8);
     font-size: 30px;
 }
 
@@ -20,7 +20,7 @@
 
   
 .highlight {
-    color: var(--accent-color);
+    color: var(--color-3);
     font-weight: 600;
   }
 
@@ -38,9 +38,9 @@
 }
 
 .card h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: start;
-    color: #3498db;
+    color: var(--color-8);
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 2px solid #eee;
@@ -49,7 +49,7 @@
 .point {
     margin-bottom: 15px;
     padding: 15px;
-    background-color: #f9f9f9;
+    background-color: var(--color-6);
     border-left: 4px solid #3498db;
     border-radius: 5px;
 }
@@ -58,29 +58,14 @@
     text-align: start;
 }
 
-.contact_info {
-    color: #2c3e50;
-    line-height: 1.6;
-    text-align: start;
-}
-
-.contact_info a {
-    color: #2c3e50;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact_info a:hover {
-    color: blue;
-    text-decoration: underline;
-}
 
 .card a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--color-8);
   }
   
   .card a:hover {
+    color: var(--color-1);
     text-decoration: underline;
   }
 

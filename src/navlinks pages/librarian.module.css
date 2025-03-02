@@ -1,13 +1,14 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    height: 50vh;
 }
 
 .section_title {
-    color: var(--primary-color);
+    color: var(--color-1);
     margin: 40px 0 20px;
     padding-bottom: 10px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--color-8);
     font-size: 30px;
   }
 
@@ -32,7 +33,7 @@
 }
 
 .staffs h5 {
-    color: var(--secondary-color);
+    color: var(--color-8);
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #eee;
@@ -40,27 +41,30 @@
 }
 
 .details p {
-    color: var(--dark-text);
+    color: var(--color-5);
     margin: 0.5rem 0;
     font-size: 0.95rem;
 }
 
 .details a {
-    color: var(--secondary-color);
+    color: var(--color-8);
     margin: 0.5rem 0;
     text-decoration: none;
+    &:hover {
+        color: var(--color-1);
+        text-decoration: underline;
+    }
 }
 
-
-
 .highlight {
-    color: var(--accent-color);
+    color: var(--color-3);
     font-weight: 600;
 }
 
 @media (max-width: 768px) {
     .container {
         padding: 0 2rem;
+        height: unset;
     }
 
     .section_title {
