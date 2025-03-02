@@ -4,10 +4,10 @@
 }
 
 .section_title {
-  color: var(--primary-color);
+  color: var(--color-1);
   margin: 40px 0 20px;
   padding-bottom: 10px;
-  border-bottom: 3px solid var(--secondary-color);
+  border-bottom: 3px solid var(--color-8);
   font-size: 30px;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .staffs h5 {
-  color: #3498db;
+  color: var(--color-8);
   margin-bottom: 0.8rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #eee;
@@ -39,21 +39,40 @@
 }
 
 .staffs p {
-  color: #2c3e50;
+  color: var(--color-9);
   line-height: 1.6;
   font-size: 0.95rem;
 }
 
 .designation {
-  color: #666;
+  color: var(--color-10);
   font-size: 0.9rem;
   display: block;
   margin-top: 0.5rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .container {
-    padding: 0 2rem;
+      padding: 0 2rem;
+  }
+
+  .section_title {
+    font-size: 24px;
+  }
+
+  .governing_staffs {
+    grid-template-columns: 2fr 2fr;
+    gap: 1rem;
+  }
+
+  .staffs {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+      padding: 0 2rem;
   }
 
   .section_title {

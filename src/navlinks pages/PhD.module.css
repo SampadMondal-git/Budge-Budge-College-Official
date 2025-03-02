@@ -88,11 +88,11 @@
 }
 
 .section_title {
-  color: var(--primary-color);
+  color: var(--color-1);
   margin: 40px 0 20px;
   font-size: 30px;
   letter-spacing: 1.5px;
-  border-bottom: 3px solid var(--secondary-color);
+  border-bottom: 3px solid var(--color-8);
   padding-bottom: 0.5rem;
 }
 
@@ -122,24 +122,24 @@
 }
 
 .scholar_header h3 {
-  color: var(--secondary-color);
+  color: var(--color-8);
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
 
 .designation {
-  color: var(--dark-text);
+  color: var(--color-1);
   font-size: 0.9rem;
 }
 
 .department {
-  color: var(--accent-color);
+  color: var(--color-3);
   font-weight: 600;
   margin: 0.5rem 0;
 }
 
 .thesis {
-  color: var(--dark-text);
+  color: var(--color-5);
   font-size: 0.95rem;
   line-height: 1.4;
   margin: 1rem 0;
@@ -154,18 +154,36 @@
 }
 
 .university {
-  color: var(--secondary-color);
+  color: var(--color-8);
   font-style: italic;
 }
 
 .year {
-  background: var(--light-bg);
+  background: var(--color-6);
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px){
+  .container {
+    padding: 0 2rem;
+  }
+
+  .section_title {
+      font-size: 24px;
+  }
+  
+  .grid {
+      grid-template-columns: 2fr 2fr;
+  }
+  
+  .card {
+      padding: 1.2rem;
+  }
+}
+
+@media (max-width: 767px) {
   .container {
     padding: 0 2rem;
   }
