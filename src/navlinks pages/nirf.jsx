@@ -6,7 +6,7 @@ export function Nirf() {
     return (
         <>
             <div className={myStyles.container}>
-                <h2 className={myStyles.section_title}>Right to Information</h2>
+                <h2 className={myStyles.section_title}>National Institutional Ranking Framework - NIRF</h2>
 
                 <div className={myStyles.grid}>
                     <div className={myStyles.card}>
