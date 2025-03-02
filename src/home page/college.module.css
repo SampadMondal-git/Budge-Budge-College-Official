@@ -22,7 +22,7 @@
     height: 100%;
     border-radius: 20px;
     margin-bottom: 0;
-    box-shadow: -10px 10px 10px rgba(0, 33, 71, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 33, 71, 0.25);
 }
 
 .about_college h1 {
@@ -41,16 +41,23 @@
 .courses_container {
     display: flex;
     justify-content: space-between;
-    margin: 3rem 10rem;
+    margin: 3rem 2rem;
+    background-color: var(--color-2);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 95%;
   }
 
-@media (max-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1200px) {
     .courses_container {
         display: grid;
         justify-content: center;
+        align-items: center;
+        text-align: center;
         grid-template-columns: repeat(2, 1fr);
-        margin: 1rem 1rem 2rem 1rem;
-        gap: 2rem 0;
+        margin: 1rem auto;
+        padding: 2rem;
+        gap: 2rem;
       }
       
     .college_container {
@@ -66,6 +73,49 @@
         height: 200px;
         margin-top: 1rem;
         padding: 0;
+    }
+
+    .college_image img {
+        max-width: 95%;
+        width: 100%;
+        height: 16rem;
+    }
+
+    .about_college h1 {
+        font-size: 24px;
+        margin-top: 2rem;
+    }
+  }
+
+@media (max-width: 767px) {
+    .courses_container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem auto;
+        padding: 2rem;
+        gap: 2rem;
+      }
+      
+    .college_container {
+        flex-direction: column;
+    }
+
+    .college_container, .about_college, .college_image {
+        width: 100%;
+        align-items: center;
+    }
+
+    .college_image {
+        height: 200px;
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    .college_image img {
+        max-width: 90%;
     }
 
     .about_college h1 {
