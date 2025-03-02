@@ -4,11 +4,11 @@
   }
   
   .section_title {
-    color: var(--primary-color);
+    color: var(--color-1);
     margin: 40px 0 20px;
     font-size: 30px;
     padding-bottom: 10px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--color-8);
   }
 
   .grid {
@@ -31,7 +31,7 @@
   }
   
   .card h3 {
-    color: var(--secondary-color);
+    color: var(--color-8);
     font-size: 1.2rem;
     margin-bottom: 15px;
     padding-bottom: 10px;
@@ -41,8 +41,8 @@
   .point {
     margin-bottom: 15px;
     padding: 15px;
-    background-color: var(--light-bg);
-    border-left: 4px solid var(--secondary-color);
+    background-color: var(--color-6);
+    border-left: 4px solid var(--color-8);
     border-radius: 5px;
   }
   
@@ -60,7 +60,7 @@
   }
   
   .staffs h5 {
-    color: var(--secondary-color);
+    color: var(--color-8);
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #eee;
@@ -68,30 +68,31 @@
   }
   
   .details p {
-    color: var(--dark-text);
+    color: var(--color-5);
     margin: 0.5rem 0;
     font-size: 0.95rem;
   }
   
   .staffs a, .point a {
-    color: var(--secondary-color);
+    color: var(--color-8);
     margin: 0.5rem 0;
     text-decoration: none;
   }
   
   .staffs a:hover, .point a:hover {
+    color: var(--color-1);
     text-decoration: underline;
   }
   
   .highlight {
-    color: var(--accent-color);
+    color: var(--color-3);
     font-weight: 600;
   }
 
  .card img {
     width: 100%;
     height:fit-content;
-    object-fit: cover;
+    object-fit: fill;
  }
 
  .card ul {
@@ -105,7 +106,7 @@
   
   .point li::before {
     content: "▹";
-    color: var(--secondary-color);
+    color: var(--color-8);
     margin-right: 10px;
   }
 
@@ -134,25 +135,44 @@
   opacity: 0.9;
 }
 
-.image_caption {
-  padding: 15px;
-  background: var(--light-bg);
-  color: var(--secondary-color);
-  font-weight: 600;
-  text-align: center;
-  border-top: 3px solid var(--accent-color);
-}
-
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .section_title {
     margin: 40px 2rem 20px;
     font-size: 24px;
   }
 
-  .teaching_staffs {
-    grid-template-columns: 1fr;
+  .staffs {
+    padding: 1.2rem;
+  }
+
+  .equipment_list {
+    columns: 1;
+  }
+
+  .stats_table {
+    font-size: 14px;
+  }
+
+  .grid {
+    grid-template-columns: 2fr 2fr;
     margin: 0 2rem 2rem 2rem;
-    gap: 1rem;
+  }
+  
+  .details p {
+    color: var(--dark-text);
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+  }
+
+  .gallery_image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section_title {
+    margin: 40px 2rem 20px;
+    font-size: 24px;
   }
 
   .staffs {
