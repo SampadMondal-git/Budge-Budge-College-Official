@@ -10,7 +10,7 @@ export function Missionandvision() {
             <div className={myStyles.card}>
                 <h3>Our Vision</h3>
                 <div className={myStyles.point}>
-                    <p>To create self-reliant individuals who embody:</p>
+                    <p className={myStyles.highlight}>To create self-reliant individuals who embody:</p>
                     <ul className={myStyles.equipment_list}>
                         <li>Love for knowledge</li>
                         <li>Holistic inclusive education</li>
@@ -26,7 +26,7 @@ export function Missionandvision() {
             <div className={myStyles.card}>
                 <h3>Our Mission</h3>
                 <div className={myStyles.point}>
-                    <p>Pursuing excellence in higher education through:</p>
+                    <p className={myStyles.highlight}>Pursuing excellence in higher education through:</p>
                     <ul className={myStyles.equipment_list}>
                         <li>Coordinated teacher-student-staff collaboration</li>
                         <li>Comprehensive academic &amp; curricular development</li>
@@ -45,8 +45,8 @@ export function Missionandvision() {
                     </ul>
                 </div>
 
-                <div className={myStyles.point} style={{backgroundColor: "#f0f8ff", marginTop: "20px"}}>
-                    <p>🌟 Special Emphasis: Creating gender-equitable learning environment</p>
+                <div className={myStyles.point} style={{marginTop: "20px"}}>
+                    <p><span className={myStyles.highlight}>🌟 Special Emphasis:</span> Creating gender-equitable learning environment</p>
                 </div>
             </div>
         </div>
