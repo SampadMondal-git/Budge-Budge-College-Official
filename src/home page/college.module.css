@@ -40,7 +40,7 @@
 
 .courses_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 3rem 2rem;
     background-color: var(--color-2);
     padding: 2rem;
