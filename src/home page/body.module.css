@@ -1,14 +1,14 @@
 :root {
-  --color-1: #002147; /* navbar, footer, heading */
-  --color-2: #FFFFFF; /* text color */
-  --color-3: #FF6B00; /* button color, text hover, highlight color */
-  --color-4: #CC5700; /* button hover color */
-  --color-5: #333333; /* body text color */
-  --color-6: #E6F0FA;  /* div background color */
-  --color-7: #FFEDD5; /* div background color */
-  --color-8: #3498db; /* sub heading */
-  --color-9: #2c3e50; /* staffs */
-  --color-10: #666; /* designation */
+  --color-1: #002147;
+  --color-2: #FFFFFF;
+  --color-3: #FF6B00;
+  --color-4: #CC5700;
+  --color-5: #333333;
+  --color-6: #E6F0FA;
+  --color-7: #FFEDD5;
+  --color-8: #3498db;
+  --color-9: #2c3e50;
+  --color-10: #666;
 }
 
 html {
@@ -27,5 +27,5 @@ body {
   height: 3.5px;
   background: linear-gradient(to right, var(--color-2), var(--color-3));
   transform-origin: 0%;
-  z-index: 999;
+  z-index: 1000;
 }
