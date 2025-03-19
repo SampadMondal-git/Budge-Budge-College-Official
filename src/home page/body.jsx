@@ -9,6 +9,7 @@ import { Courses } from '../home page/courses.jsx'
 import { Teachers } from '../home page/teachers.jsx'
 import { Quote } from '../home page/quote.jsx'
 import { Campus } from '../home page/campus.jsx'
+import { Popup } from '../home page/popup.jsx'
 
 export function Body() {
   // State to track whether animations should be enabled
@@ -45,6 +46,7 @@ export function Body() {
 
   return (
     <>
+      <Popup />
       <motion.div className={styles.progressBar} style={{ scaleX }} />
 
       <motion.main>
@@ -85,6 +87,7 @@ export function Body() {
         ) : (
           // Render components normally without animations on small screens
           <>
+            <Popup />
             <Slideshow />
             <Facilities />
             <Offer />
