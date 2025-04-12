@@ -47,6 +47,7 @@ import { Nsoustudycentre } from './navlinks pages/nsoustudycentre.jsx';
 import { Library } from './navlinks pages/library.jsx';
 import { Rti } from './navlinks pages/rti.jsx';
 import { Nirf } from './navlinks pages/nirf.jsx';
+import { Error } from './navlinks pages/error.jsx';
 import ScrollToTop from './navlinks pages/scrolltotop.jsx';
 
 function App() {
@@ -56,7 +57,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Body />} />
-        <Route path="/budgebudgecollege" element={<Body />} />
         <Route path="/notification" element={<Notification />} />
         <Route path="/rules&regulations" element={<Rulesandregulations />} />
         <Route path="/aims&objectives" element={<Aimsandobjective />} />
@@ -101,6 +101,7 @@ function App() {
         <Route path="/library" element={<Library />} />
         <Route path="/rti" element={<Rti />} />
         <Route path="/nirf" element={<Nirf />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
