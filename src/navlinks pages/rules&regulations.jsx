@@ -38,13 +38,14 @@ export function Rulesandregulations() {
                     <h3>Essential Rules & Regulations</h3>
                     <div className={myStyles.point}>
                         <p><span className={myStyles.highlight}>1. Respectful Conduct:</span> Courtesy towards staff and peers on/off campus</p>
-                        <p><span className={myStyles.highlight}>2. Class Discipline:</span>
+                        <div>
+                            <span className={myStyles.highlight}>2. Class Discipline:</span>
                             <ul>
                                 <li>Be seated before bell rings</li>
                                 <li>No unauthorized entry/exit</li>
                                 <li>Mandatory regular attendance</li>
                             </ul>
-                        </p>
+                        </div>
                         <p><span className={myStyles.highlight}>3. Movement Restrictions:</span> No corridor loitering</p>
                         <p><span className={myStyles.highlight}>4. Collective Responsibility:</span> Class accountability for member conduct</p>
                     </div>
