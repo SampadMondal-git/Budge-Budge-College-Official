@@ -49,7 +49,7 @@ export function Auth() {
     setError("");
 
     try {
-      const MY_CLOUD_NAME = process.env.REACT_APP_CLOUDINARY_CLOUD_NAME;
+      const MY_CLOUD_NAME = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
       const formData = new FormData();
       formData.append("file", file);
       formData.append("upload_preset", "notice");

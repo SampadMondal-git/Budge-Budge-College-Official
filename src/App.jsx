@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import './App.css';
 import { Navbar } from './home page/navbar.jsx';
 import { Body } from './home page/body.jsx';
@@ -108,6 +110,8 @@ function App() {
         <Route path="/support" element={<Support />} />
       </Routes>
       <Footer />
+      <Analytics />
+      <SpeedInsights />
     </BrowserRouter>
   );
 }
