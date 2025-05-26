@@ -49,6 +49,8 @@ import { Rti } from './navlinks pages/rti.jsx';
 import { Nirf } from './navlinks pages/nirf.jsx';
 import { Error } from './navlinks pages/error.jsx';
 import ScrollToTop from './navlinks pages/scrolltotop.jsx';
+import { Auth } from './navlinks pages/authUploadPdf.jsx';
+import { Support } from './navlinks pages/support.jsx';
 
 function App() {
   return (
@@ -102,6 +104,8 @@ function App() {
         <Route path="/rti" element={<Rti />} />
         <Route path="/nirf" element={<Nirf />} />
         <Route path="*" element={<Error />} />
+        <Route path="/authUploadPdf" element={<Auth />} />
+        <Route path="/support" element={<Support />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,10 +1,10 @@
-import React from 'react'
-import myStyles from './governingbody.module.css'
+import React from "react";
+import myStyles from "./governingbody.module.css";
 export function Governingbody() {
-    return (
-      <div className={myStyles.container}>
-            <h2 className={myStyles.section_title}>Governing Body</h2>
-        <div className={myStyles.governing_staffs}>
+  return (
+    <div className={myStyles.container}>
+      <h2 className={myStyles.section_title}>Governing Body</h2>
+      <div className={myStyles.governing_staffs}>
         <div className={myStyles.staffs}>
           <h5>President</h5>
           <p>Shri Ashoke Deb - Hon’ble Member of Assembly-Budge Budge, W.B.</p>
@@ -23,7 +23,9 @@ export function Governingbody() {
         </div>
         <div className={myStyles.staffs}>
           <h5>Teachers’ Representative</h5>
-          <p>Dr. Partha Pratim Chaudhuri (Associate Professor, Dept of Zoology)</p>
+          <p>
+            Dr. Partha Pratim Chaudhuri (Associate Professor, Dept of Zoology)
+          </p>
         </div>
         <div className={myStyles.staffs}>
           <h5>Teachers’ Representative</h5>
@@ -49,7 +51,7 @@ export function Governingbody() {
           <h5>Ex-officio member</h5>
           <p>Shri Gautam Dasgupta (Chairman, Budge Budge Municipality)</p>
         </div>
-        </div>
       </div>
-    )
-  }
+    </div>
+  );
+}

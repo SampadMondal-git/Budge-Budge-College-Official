@@ -1,111 +1,379 @@
 .certified_teachers {
-    margin-bottom: 2rem;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, var(--color-2) 0%, var(--color-6) 100%);
 }
 
 .teachers_heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
 .teachers_heading h1 {
-    color: var(--color-1);
-    font-size: 30px;
+  font-size: 30px;
+  color: var(--color-1);
 }
 
 .teachers_heading p {
-    color: var(--color-5);
-    line-height: 2rem;
+  font-size: 16px;
+  color: var(--color-5);
+  line-height: 2rem;
 }
 
 .teachers_list {
-    display: flex;
-    justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .teachers {
-    background-color: var(--color-1);
-    color: var(--color-2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 23%;
-    height: 360px;
-    margin-top: 2rem;
-    border-radius: 20px;
-    box-shadow: 10px 0 10px rgba(0, 33, 71, 0.25);
+  background: white;
+  border-radius: 20px;
+  padding: 40px 32px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.teachers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--color-1), var(--color-8));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.teachers:hover::before {
+  opacity: 1;
+}
+
+.teachers:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 33, 71, 0.2);
+}
+
+.teachers img {
+  width: 160px !important;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 32px;
+  border: 5px solid rgba(0, 33, 71, 0.5);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.teachers:hover img {
+  transform: scale(1.08);
+  border-color: rgba(0, 33, 71, 0.8);
+  box-shadow: 0 16px 40px rgba(59, 130, 246, 0.2);
+}
+
+.teachers h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-1);
+  margin-bottom: 16px;
+}
+
+.teachers p {
+  font-size: 1rem;
+  color: var(--color-6);
+  font-weight: 500;
+  margin-bottom: 24px;
+  position: relative;
 }
 
 .color {
-    background-color: var(--color-2);
-    color: var(--color-1);
+  background-color: var(--color-1);
+  color: white;
+  border: none;
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-    .certified_teachers {
-        margin: 0 2rem;
-    }
-
-    .teachers_heading h1 {
-        font-size: 24px;
-    }
-
-    .teachers_heading p {
-        margin-bottom: 2rem !important;
-    }
-
-    .teachers_list {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 1rem;
-    }
-    
-    .teachers {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
-
-    .max_width {
-        background-color: var(--color-1);
-        color: var(--color-2);
-    }
-
-    .min_width {
-        background-color: var(--color-2);
-        color: var(--color-1);
-    }
+.color::before {
+  background: linear-gradient(
+    90deg,
+    rgba(230, 240, 250, 0.6),
+    rgba(52, 152, 219, 0.3)
+  );
 }
 
-@media (max-width: 767px) {
-    .certified_teachers {
-        margin: 0 2rem 2rem 2rem;
-    }
+.color h1 {
+  color: white;
+}
 
-    .teachers_heading {
-        margin-bottom: 1rem;
-    }
+.color p {
+  color: var(--color-6);
+}
 
-    .teachers_heading h1 {
-        font-size: 24px;
-    }
+.color img {
+  border-color: rgba(255, 255, 255, 0.3);
+}
 
-    .teachers_heading p {
-        font-size: 16px;
-        margin: 0 1rem 2rem 1rem;
-    }
+.color:hover img {
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
 
-    .teachers_list {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-    .teachers {
-        width: 100%;
-        margin: 0;
-        height: auto;
-        border-radius: 20px;
-    }
+.color p::after {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.8)
+  );
+  background-color: var(--color-2);
+}
+
+.max_width {
+  grid-column: span 1;
+}
+
+.min_width {
+  grid-column: span 1;
+}
+
+.teachers::after {
+  content: "Certified Teacher";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, var(--color-8), var(--color-1));
+  color: white;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.teachers:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.color::after {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3)
+  );
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.border {
+  padding: 0.2rem 1rem;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 15px;
+}
+
+.nth_border {
+  padding: 0.2rem 1rem;
+  background: rgba(0, 33, 71, 0.2);
+  color: var(--color-9) !important;
+  border-radius: 15px;
+}
+
+@media (max-width: 1200px) {
+  .teachers_list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certified_teachers {
+    padding: 60px 16px;
+  }
+
+  .teachers_heading h1 {
+    font-size: 2.75rem;
+  }
+
+  .teachers_heading p {
+    font-size: 1.125rem;
+  }
+
+  .teachers_list {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 0 16px;
+  }
+
+  .teachers {
+    padding: 32px 24px;
+  }
+
+  .teachers::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--color-1), var(--color-8));
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .color::before {
+    background: linear-gradient(
+      90deg,
+      rgba(230, 240, 250, 0.6),
+      rgba(52, 152, 219, 0.3)
+    );
+  }
+
+  .teachers img {
+    width: 140px !important;
+    height: 140px;
+    margin-bottom: 24px;
+  }
+
+  .teachers::after {
+    content: "Certified Teacher";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(45deg, var(--color-8), var(--color-1));
+    color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .color::after {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.3)
+    );
+    color: white;
+    backdrop-filter: blur(10px);
+  }
+
+  .max_width,
+  .min_width {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .teachers_heading h1 {
+    font-size: 2.25rem;
+  }
+
+  .teachers_heading p {
+    font-size: 1rem;
+  }
+
+  .teachers {
+    padding: 28px 20px;
+  }
+
+  .teachers img {
+    width: 150px !important;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .teachers h1 {
+    font-size: 1.5rem;
+  }
+
+  .teachers p {
+    font-size: 1rem;
+  }
+
+  .description {
+    gap: 0.25rem;
+  }
+
+  .border,
+  .nth_border {
+    padding: 0.5rem 0.8rem;
+    border-radius: 20px;
+  }
+}
+
+.teachers {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.teachers:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.teachers:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.teachers:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.teachers:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtlePulse {
+  0%,
+  100% {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  }
+  50% {
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.15);
+  }
+}
+
+.teachers img {
+  animation: subtlePulse 4s ease-in-out infinite;
+}
+
+.color img {
+  animation: none;
 }

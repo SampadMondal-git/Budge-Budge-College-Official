@@ -1,16 +1,13 @@
-.footer {
-  display: block;
-  background-color: var(--color-1);
-  color: var(--color-2);
-  padding: 0.5rem 0;
-  border-top: 1px solid rgb(100, 100, 100);
-}
-
 .copyright {
   display: flex;
   justify-content: center;
-  gap: 0.3rem;
+  align-items: center;
+  background-color: var(--color-1);
+  color: var(--color-2);
+  font-size: 0.9rem;
   padding: 0.5rem 0;
+  border-top: 1px solid rgb(100, 100, 100);
+  gap: 0.3rem;
 }
 
 .copyright a {
@@ -22,29 +19,17 @@
   }
 }
 
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    font-size: 0.9rem;
-  }
-
-  .copyright {
-    gap: 0.5rem;
-  }
+.supportLink {
+  cursor: pointer;
 }
 
-@media (max-width: 480px) {
-  .footer {
-    display: flex;
-    font-size: 0.8rem;
-  }
+.supportLink:hover {
+  color: var(--color-3);
+  transition: all 0.3s ease;
+}
 
+@media screen and (max-width: 768px) {
   .copyright {
     flex-direction: column;
-    padding: 1rem 0;
-  }
-
-  .copyright p {
-    text-align: center;
   }
 }

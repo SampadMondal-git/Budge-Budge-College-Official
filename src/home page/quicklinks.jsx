@@ -33,7 +33,7 @@ export function Quicklinks() {
                 <div className={myStyles.links}>
                     <h1>Quick Links</h1>
                     <ul>
-                        <li><Link to="/budgebudgecollege">Home</Link></li>
+                        <li><Link to="/">Home</Link></li>
                         <li><Link to="/coursesoffered">Courses</Link></li>
                         <li><Link to="/admissionnotice">Admission</Link></li>
                         <li><Link to="/notification">Notice</Link></li>

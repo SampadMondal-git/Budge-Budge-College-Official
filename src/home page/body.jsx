@@ -12,7 +12,6 @@ import { Campus } from '../home page/campus.jsx'
 import { Popup } from '../home page/popup.jsx'
 
 export function Body() {
-  // State to track whether animations should be enabled
   const [enableAnimations, setEnableAnimations] = useState(window.innerWidth > 768)
 
   useEffect(() => {
@@ -24,7 +23,6 @@ export function Body() {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  // Smooth scroll progress bar (always enabled)
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 600,
@@ -32,7 +30,6 @@ export function Body() {
     restDelta: 0.001
   })
 
-  // Animation variants
   const sectionVariants = enableAnimations
     ? {
         offscreen: { y: 50, opacity: 0 },
@@ -85,7 +82,6 @@ export function Body() {
             </motion.section>
           </>
         ) : (
-          // Render components normally without animations on small screens
           <>
             <Popup />
             <Slideshow />

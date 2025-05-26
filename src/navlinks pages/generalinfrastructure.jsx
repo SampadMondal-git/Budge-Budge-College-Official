@@ -85,6 +85,6 @@ export function Generalinfrastructure() {
                     </div>
                 </div>
             </div>
-            </>
-            )
+        </>
+    )
 }

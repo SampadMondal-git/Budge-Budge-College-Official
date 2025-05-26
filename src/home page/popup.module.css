@@ -6,12 +6,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
   gap: 1rem;
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  width: fit-content;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
@@ -19,7 +18,16 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  z-index: 1000;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .modelBoxContent {
@@ -36,30 +44,14 @@
   gap: 1rem;
   transform: translateX(120%) translateY(20px);
   opacity: 0;
-  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   z-index: 1000;
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.modelBox.active .modelBoxContent {
+.slideIn {
   transform: translateX(0) translateY(0);
   opacity: 1;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.modelBox.active .modelBoxContent {
-  animation: slideIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
-             bounce 2s ease-in-out infinite 0.5s;
+  animation: slideIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
 @keyframes slideIn {
@@ -73,20 +65,10 @@
   }
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
 .modelBoxContent img {
   display: block;
   margin: 0 auto;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7427%)
-    hue-rotate(23deg) brightness(118%) contrast(118%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7427%) hue-rotate(23deg) brightness(118%) contrast(118%);
 }
 
 .applyLink {
@@ -158,25 +140,6 @@
 }
 
 @media (max-width: 480px) {
-  /* .modelBoxContent img {
-    width: 25px;
-    height: 25px;
-  }
-
-  .modelBoxContent {
-    padding: 0.2rem 0.3rem;
-  }
-
-  .linkContent {
-    font-size: 0.8rem;
-  }
-
-  .modelClose {
-    width: 24px;
-    height: 24px;
-    font-size: 1.2rem;
-  } */
-
   .modelBox {
     display: none;
   }

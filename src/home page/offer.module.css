@@ -86,7 +86,6 @@
   background-color: var(--color-1);
   color: var(--color-2);
   display: flex;
-  /* border-radius: 50% 0 0 50%; */
   border-radius: 20px 0 0 20px;
   box-shadow: -5px 0 10px rgba(0, 33, 71, 0.6);
 }

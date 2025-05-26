@@ -5,19 +5,15 @@ import Logo from '../icons/college-logo-3.0.png'
 
 export function Navlink() {
     const handleLinkClick = (event) => {
-        // Find the parent dropdown
         const dropdownParent = event.target.closest('.dropdown');
-        
-        // Close the navbar collapse when a link is clicked
+
         const navbarCollapse = document.querySelector('.navbar-collapse');
         if (navbarCollapse.classList.contains('show')) {
             document.querySelector('.navbar-toggler').click();
         }
 
         if (dropdownParent) {
-            // Add navigating class to prevent hover
             dropdownParent.classList.add('navigating');
-            // Remove the class after navigation
             setTimeout(() => {
                 dropdownParent.classList.remove('navigating');
             }, 100);
