@@ -16,9 +16,9 @@ A modern web application for Budge-Budge College, built with JavaScript (React.j
 ## 🛠️ Technologies Used
 
 - **Frontend:**
-  - JavaScript (React.js) (76.3%)
-  - CSS (23.3%)
-  - HTML (0.4%)
+  - JavaScript (React.js)
+  - CSS
+  - HTML
 
 ## 📁 Project Structure
 
