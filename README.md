@@ -126,7 +126,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 - **Creator:** Sampad Mondal
 - **GitHub:** [@SampadMondal-git](https://github.com/SampadMondal-git)
-- **Instagram:** [@samx4sure](https://www.instagram.com/samx4sure)
+- **Instagram:** [@11.11_s4m](https://www.instagram.com/11.11_s4m/)
 
 ## ✨ Acknowledgments
 
