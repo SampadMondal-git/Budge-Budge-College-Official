@@ -53,6 +53,8 @@ import { Error } from './navlinks pages/error.jsx';
 import ScrollToTop from './navlinks pages/scrolltotop.jsx';
 import { Auth } from './navlinks pages/authUploadPdf.jsx';
 import { Support } from './navlinks pages/support.jsx';
+import { Blog } from './navlinks pages/blog.jsx';
+import { BlogPost } from './navlinks pages/BlogPost.jsx';
 
 function App() {
   return (
@@ -107,6 +109,8 @@ function App() {
         <Route path="/nirf" element={<Nirf />} />
         <Route path="*" element={<Error />} />
         <Route path="/authUploadPdf" element={<Auth />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id/:slug" element={<BlogPost />} />
         <Route path="/support" element={<Support />} />
       </Routes>
       <Footer />

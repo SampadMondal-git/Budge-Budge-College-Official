@@ -84,6 +84,12 @@ export function Otherlinks() {
             <Link to="/authUploadPdf">Login</Link>
           </p>
         </div>
+        <div className={myStyles.staffs}>
+          <h5>Blog</h5>
+          <p>
+            <Link to="/blog">Latest Posts</Link>
+          </p>
+        </div>
       </div>
     </div>
   );
