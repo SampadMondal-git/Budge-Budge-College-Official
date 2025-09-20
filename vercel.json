@@ -1,15 +1,5 @@
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
-  ],
-  "overrides": {
-    "sitemap.xml": {
-      "path": "sitemap.xml",
-      "contentType": "application/xml"
-    },
-    "robots.txt": {
-      "path": "robots.txt",
-      "contentType": "text/plain"
-    }
-  }
+  ]
 }
