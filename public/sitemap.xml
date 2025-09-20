@@ -31,4 +31,10 @@
     <changefreq>yearly</changefreq>
   </url>
 
+  <url>
+    <loc>https://budge-budge-college-official.vercel.app/blog</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
 </urlset>
