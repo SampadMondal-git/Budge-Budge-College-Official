@@ -52,7 +52,7 @@ export const Slideshow = () => {
               alt={slide.alt}
               className={`${index === currentIndex ? myStyles.active :
                   index === previousIndex ? myStyles.previous : ''
-                }`}/>
+                }`} loading="lazy" />
           ))}
         </div>
 
