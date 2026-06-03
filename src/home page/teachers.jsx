@@ -21,7 +21,7 @@ export function Teachers() {
         <div
           className={`${myStyles.teachers} ${myStyles.color} ${myStyles.max_width}`}
         >
-          <img src={teacher1} alt="teacher 1" width={200} />
+          <img src={teacher1} alt="teacher 1" width={200} loading="lazy" />
           <h1>Dr. Papia Das</h1>
           <div className={myStyles.description}>
             <p className={myStyles.border}>M.Sc., Ph.D</p>
@@ -30,7 +30,7 @@ export function Teachers() {
           </div>
         </div>
         <div className={`${myStyles.teachers} ${myStyles.min_width}`}>
-          <img src={teacher2} alt="teacher 2" width={200} />
+          <img src={teacher2} alt="teacher 2" width={200} loading="lazy" />
           <h1>Dr.Debamita Nath Guha</h1>
           <div className={myStyles.description}>
             <p className={myStyles.nth_border}>M.A., M.Phil</p>
@@ -41,7 +41,7 @@ export function Teachers() {
         <div
           className={`${myStyles.teachers} ${myStyles.color} ${myStyles.min_width}`}
         >
-          <img src={teacher3} alt="teacher 3" width={200} />
+          <img src={teacher3} alt="teacher 3" width={200} loading="lazy" />
           <h1>Dr. Barnali Bera</h1>
           <div className={myStyles.description}>
             <p className={myStyles.border}>M.Sc., Ph.D</p>
@@ -50,7 +50,7 @@ export function Teachers() {
           </div>
         </div>
         <div className={`${myStyles.teachers} ${myStyles.max_width}`}>
-          <img src={teacher4} alt="teacher 4" width={200} />
+          <img src={teacher4} alt="teacher 4" width={200} loading="lazy" />
           <h1>Dr. Gautam Das</h1>
           <div className={myStyles.description}>
             <p className={myStyles.nth_border}>M.Com., M.Phil., Ph.D., SLET</p>

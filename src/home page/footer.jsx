@@ -11,7 +11,7 @@ export function Footer() {
                 <div className={myStyles.copyright}>
                     <p>Copyright &copy; 2025 Budge Budge College. All Rights Reserved.</p>
                     <p className={myStyles.hover}>
-                        Designed by <a href="https://www.instagram.com/samx4sure/" target="_blank" rel="noreferrer">Sam</a> | 
+                        Designed by <a href="https://www.instagram.com/11.11_s4m/" target="_blank" rel="noreferrer">Sam</a> | 
                         <Link to="/support"> Support the Developer</Link>
                     </p>
                 </div>
